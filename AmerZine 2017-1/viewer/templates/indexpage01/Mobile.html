@@ -1,0 +1,35 @@
+<div id="indexpage01_mobile" class="mobilePage">
+    <div id="interviewBackground">
+        <div class="wrapper im-ts-mobile-view">
+            <div class="scroller mobile_list">
+                <div class="top_header">
+                    <h3>{{{title}}}</h3>
+                </div>
+                <div class="introtext paragraph">
+                    {{{intromobile}}}
+                </div>
+                <div class='im-ts-list'>
+                    {{#link}}
+                    <a href="{{url}}" onclick="{{onclick}}" target="{{target}}" class="interviewButton">
+                        <span class="image border-right">
+                            <div>
+                                {{#thumb}}
+                                    <img src="{{thumb}}" style="width:80px;" />
+                                {{/thumb}}
+                            </div>
+                        </span>
+                        <span class="label">
+                            <h5>{{{title}}}</h5>
+                            <div>{{{intro}}}</div>
+                        </span>
+                        <span class="arrow">
+                            <span class="im-sp im-sp-arrow-right"></span>
+                        </span>
+                    </a>
+                    {{/link}}
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div><!-- container -->
+    </div>
+</div>

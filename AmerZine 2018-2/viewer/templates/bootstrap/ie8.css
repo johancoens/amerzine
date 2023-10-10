@@ -1,0 +1,158 @@
+.theme-2 #bootstrap {
+    width: 100%;
+    max-width: 960px;
+}
+
+#bootstrap.scroller {
+    position:static;
+}
+#bootstrap {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+#bootstrap .im-bs-cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 1;
+}
+
+.im-bs-cover .im-bs-scrolldown-message{
+    position:absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 260px;
+    left: 50%;
+    margin-left: -130px;
+    color: white;
+}
+
+.im-bs-cover .im-bs-message{
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 6px 8px;
+}
+
+
+#bootstrap .im-bs-image-text div {
+}
+
+#bootstrap .im-bs-img img {
+    position:relative;
+    margin:0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+#bootstrap .im-bs-thumbs,
+#bootstrap .im-bs-image-text {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+#bootstrap h2,#bootstrap h3, #bootstrap h4 {
+    /*display:block;*/
+}
+
+#bootstrap .im-bs-image-text:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#bootstrap .im-bs-text .paragraph{
+    max-width: 450px;
+    padding: 0 20px;
+    margin:auto;
+}
+
+#bootstrap .align-center .im-bs-text .paragraph{
+    max-width: 80%;
+}
+
+#bootstrap .im-bs-text h2,
+#bootstrap .im-bs-text h3 {
+    padding:0;
+    background: none;
+    display:inline-block;
+}
+
+/** CONTACTS ***/
+#bootstrap .im-bs-thumb .im-bs-img {
+    display:inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#bootstrap .im-bs-thumb .small .im-bs-img {
+    max-width: 200px;
+}
+
+#bootstrap .im-bs-thumb .im-bs-img img {
+    max-width: 100%;
+}
+
+#bootstrap .im-bs-thumb {
+    margin:0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+#bootstrap .im-bs-thumb h3,
+#bootstrap .im-bs-thumb h4 {
+    padding:0;
+    display:block;
+}
+
+#bootstrap h1.im-bs-text-center {
+    /*margin-top:-20px;*/
+    margin-bottom:20px;
+}
+#bootstrap .im-bs-text-center {
+    /*display: block;*/
+    max-width: 1100px;
+    margin: auto;
+}
+.tp-bootstrap a.down,
+.tp-bootstrap a.up{
+    display:block;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    left: 0px;
+    /*margin-left: -25px;*/
+}
+.tp-bootstrap a.up{
+    bottom: 41px;
+}
+.tp-bootstrap a.down{
+    bottom: 0px;
+}
+.tp-bootstrap a.down div,
+.tp-bootstrap a.up div{
+    height: 40px;
+    width: 40px;
+}
+.tp-bootstrap a.down div span,
+.tp-bootstrap a.up div span{
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.tp-bootstrap .im-ts-label {
+    position: absolute;
+    display: none;
+    z-index: 9;
+    overflow:hidden;
+    height: 40px;
+    bottom: 0px;
+    left: 41px;
+    line-height: 40px;
+    white-space: nowrap;
+    border-radius: 0;
+    text-align:center;
+    width: 0px;
+}

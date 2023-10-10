@@ -1,0 +1,132 @@
+#scroll .backgroundImage{
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+#scroll .mobile .backgroundImage{
+    height:120px;
+    background-size: cover;
+    background-position:center center;
+}
+#scroll .pageScroll {
+    width: 700px;
+    height: inherit;
+    margin:auto;
+    position: absolute;
+    left: 20%;
+}
+
+#scroll .pageScroll > div{
+    -moz-transition: top 300ms linear;
+}
+#scroll .pageScroll > div > div{
+    position:relative;
+}
+#scroll .pageScroll > div > div > div {
+    position:absolute;
+    width: 600px;
+    height:300px;
+    margin-left: 0px;
+    margin-top: 100px;
+}
+#scroll .pageScroll > div > div > div > img {
+    float:left;
+    margin-right: 20px;
+}
+#scroll {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+#scroll .controlsContainer {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    display:block;
+    height: 100%;
+    width: 150px;
+    background: rgba(0,0,0,0.7);
+}
+
+#scroll .controls {
+    position:absolute;
+    top: 25%;
+    left: 3%;
+    display:block;
+
+}
+#scroll .controls .up{
+    margin: 0 auto;
+    visibility: hidden;
+    display:block;
+    margin-bottom:30px;
+
+}
+
+#scroll .controls .down{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+}
+
+#scroll .controls .nav{
+}
+
+#scroll .controls .nav a{
+    width:20px;
+    height:21px;
+    display:inline-block;
+    margin: 15px 0 0 0;
+    border-radius: 100px;
+    webkit-border-radius: 100px;
+
+}
+#scroll .controls .nav li.active a{
+    border-radius: 100px;
+    webkit-border-radius: 100px;
+}
+#scroll .controls .nav li {
+    text-align: center;
+    list-style-position: outside;
+    list-style-type:none;
+}
+.pageScroll {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0)),color-stop(0.25, rgba(0,0,0,1)),color-stop(0.75, rgba(0,0,0,1)),color-stop(1, rgba(0,0,0,0)));
+    mask: url('../../theme/mask_gradient_tb.png');
+}
+
+#scroll h2 {
+
+	margin: 0 0 10px 0;
+    display:inline-block;
+}
+
+#scroll h4 {
+
+    display:inline-block;
+    margin: 0 0 10px 0;
+}
+
+#scroll img.image {
+    max-width: 250px;
+		max-height: 300px;
+		float:right;
+		margin: 10px 0 0 0;
+
+}
+
+#scroll .mytext {
+    float:left;
+    width: 300px;
+    margin: 10px 0 0 0;
+    max-height: 388px;
+    overflow: hidden;
+}
+
+#scroll .downPuls {
+		margin-top: 0;
+		top: -90px;
+		position: relative;
+	}

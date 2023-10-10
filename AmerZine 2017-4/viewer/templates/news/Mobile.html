@@ -1,0 +1,28 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller">
+        <div class="top_header">
+            <h3>{{#title}}{{{title}}}{{/title}}{{^title}}{{pagetitle}}{{/title}}</h3>
+        </div>
+        <div class='im-ts-list'>
+            {{#news}}
+            <a href="{{action.href}}" {{#action.target}}target="{{action.target}}"{{/action.target}} onclick="{{action.onclick}}" style="{{m_bg_style}}">
+                {{#image}}
+                <span class="thumb">
+                    {{#image}}
+                    <img src="{{helper(getImageUrl, {image.uri}, 124, 124, null, null, 1)}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />
+                    {{/image}}
+                </span>
+                {{/image}}
+                <span class="label">
+                    <h5 style="{{m_title_style}}">{{title}}</h5>
+                    <h6 style="{{m_subtitle_style}}">{{datetext}}</h6>
+                </span>
+                <span class="arrow">
+                    <span class="im-sp im-sp-arrow-right"></span>
+                </span>
+            </a>
+            {{/news}}
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

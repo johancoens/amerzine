@@ -1,0 +1,12 @@
+{{#channel.item}}<div class="item text-block" target="_blank" style="{{style.background}}">
+    {{#enclosure.@attributes.url}}<div class="image">
+        <img src="{{enclosure.@attributes.url}}" />
+    </div>
+    {{/enclosure.@attributes.url}}
+    <div class="description im-ts-paragraph" style="{{style.paragraph}}">
+        <time style="{{style.date}}">{{{pubDate}}}</time>
+        <h4 class="im-ts-subtitle" style="{{style.title}}">{{{title}}}</h4>
+        {{#description.#cdata-section}}{{{description.#cdata-section}}}{{/description.#cdata-section}}{{^description.#cdata-section}}{{{description}}}{{/description.#cdata-section}}
+        {{#link}}<br /><a href="{{link}}" class="button" target="_blank"  style="{{style.button}}">{{#label}}{{{label}}}{{/label}}{{^label}}{{helper(translate, btn_more)}}{{/label}}</a>{{/link}}
+    </div>
+</div>{{/channel.item}}

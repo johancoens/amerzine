@@ -1,0 +1,66 @@
+        <div id="cover2">
+            <div class="alignCenter">
+                <div class="article" style="display: block;">
+                    {{^no_header}}
+                    <table id="head">
+                        <tr>
+                            <td class="logotable">
+                            	{{#logo.uri}}
+                                    <div class="logo"><img src="{{logo.src}}" {{#logo.alt}} alt="{{logo.alt}}"{{/logo.alt}} /></div>
+                               {{/logo.uri}}
+                            </td>
+
+                            <td class="date">
+                            	{{#datetext}}
+                                <div class="datetext"><h6 class="im-ts-subtitle-background">{{{datetext}}}</h6></div>
+                                {{/datetext}}
+                            </td>
+
+                        </tr>
+                    </table>
+                     <div class="clear"></div>
+                     {{/no_header}}
+                     {{#title}}
+                        <div class="title">
+                        <h1 class="im-ts-title-background">{{{title}}}</h1>
+                    </div>
+                    {{/title}}
+                    <div class="clear"></div>
+                    {{#intro}}
+                    	<div class="text-block paragraph textBlockCover">{{{intro}}}</div>
+                    {{/intro}}
+                </div>
+
+                <div class="coverIndex">
+                    {{#subtitle}}
+                    <div class="subtitle">
+                    	<h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br />
+                    </div>
+                    {{/subtitle}}
+                    <div class="shortcutsContainer">
+
+                        <div class="shortcuts im-ts-border-radius">
+                            {{#shortcuts2}}
+                            <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="polaroid" {{{helper(trackEvent,Highlights,Click,{shortcut.title})}}}>
+                                <div class="im-tp-shortcut-label">
+                                        {{#image}}
+                                        <img src="{{helper(getImageUrl, {image.uri}, 157, 109, null, null, 1, 1)}}" title="{{shortcut.thumb.alt}}" align="left" />
+                                        {{/image}}
+                                        {{^image}}
+                                            {{#shortcut.thumb}}
+                                            <img src="{{helper(getImageUrl, {shortcut.thumb}, 157, 109, null, null, 1, 1)}}" title="{{shortcut.thumb.alt}}" align="left" />
+                                            {{/shortcut.thumb}}
+                                        {{/image}}
+                                        <span class="label">{{{label}}}</span>
+                                        {{#sublabel}}<br /><span class="sublabel">{{{sublabel}}}</span>{{/sublabel}}
+                                </div>
+                            </{{action.element}}>
+                            {{/shortcuts2}}
+                            <div class="clear"></div>
+                        </div>
+                        <a href="#" class="tp-cover02-sc-nav tp-cover02-up im-ts-button-background"><span class="im-sp im-sp-arrow-up-s-2"></span></a>
+                        <a href="#" class="tp-cover02-sc-nav tp-cover02-down im-ts-button-background"><span class="im-sp im-sp-arrow-down-s-2"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>

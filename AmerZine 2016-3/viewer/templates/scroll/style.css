@@ -1,0 +1,275 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .tp-scroll .pageScroll {
+        width: 768px;
+        height: inherit;
+        margin:auto;
+        position: absolute;
+        left: 27%;
+    }
+
+    .tp-scroll .pageScroll > div {
+        -moz-transition: top 300ms linear;
+    }
+
+    .tp-scroll .pageScroll > div > div{
+        position:relative;
+        top: 20%;
+
+    }
+
+    .tp-scroll .pageScroll.tween > div > div {
+        transition: .6s all cubic-bezier(.59,.22,.35,1.01);
+        -webkit-transition: .6s all cubic-bezier(.59,.22,.35,1.01);
+    }
+
+    .tp-scroll .pageScroll > div > div > div {
+        position:absolute;
+        width: 768px;
+
+        margin-left:0px;
+
+
+    }
+    .tp-scroll .controls .nav {
+        padding:0;
+        margin:0;
+    }
+    .tp-scroll .pageScroll > div > div > div > img {
+        float:left;
+        margin-right: 20px;
+    }
+    .tp-scroll {
+        width: 100%;
+        height: 100%;
+        position:absolute;
+    }
+
+    .tp-scroll .controlsContainer {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        display:block;
+        height: 100%;
+        width: 130px;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .tp-scroll .controls {
+        position:absolute;
+        top: 25%;
+        left: 3%;
+        display:block;
+
+    }
+    .tp-scroll .controls .up{
+        margin: 0 auto;
+        visibility: hidden;
+        display:block;
+        margin-bottom:15px;
+
+    }
+    .tp-scroll .controls .down{
+        margin: 0 auto;
+        margin-top: 40px;
+        display:block;
+    }
+
+    .tp-scroll .controls .nav{
+    }
+
+    .tp-scroll .controls .nav a{
+       position: relative;
+       display:inline-block;
+       padding: 12px;
+       background: none;
+    }
+
+    .tp-scroll .controls .nav li a span{
+        position: absolute;
+        border-radius: 100%;
+        webkit-border-radius: 100%;
+        margin: -2.5px 0 0 -2.5px;
+        width: 5px;
+        height: 5px;
+        background: white;
+        transition: .3s all cubic-bezier(.48,.23,.26,.99);
+        -webkit-transition: .3s all cubic-bezier(.48,.23,.26,.99);
+    }
+
+    .tp-scroll .controls .nav li.active a span{
+        width: 15px;
+        height: 15px;
+        margin: -7.5px 0 0 -7.5px;
+    }
+
+    .tp-scroll .controls .nav li {
+        text-align: center;
+        list-style-position: outside;
+        list-style-type:none;
+    }
+
+    .tp-scroll .pageScroll {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0)),color-stop(0.25, rgba(0,0,0,1)),color-stop(0.75, rgba(0,0,0,1)),color-stop(1, rgba(0,0,0,0)));
+    }
+
+    .tp-scroll h2 {
+        margin: 0 0 10px 0;
+        display:inline-block;
+    }
+
+    .tp-scroll h4 {
+
+        display:inline-block;
+        margin: 0 0 10px 0;
+    }
+
+    .tp-scroll img.image {
+        max-width: 250px;
+        max-height: 300px;
+        float:right;
+        margin: 10px 0 0 0;
+
+    }
+
+
+    .tp-scroll div.paragraph {
+        margin: 0 384px 0 0;
+        padding: 20px;
+        box-sizing: border-box;
+        max-height: 388px;
+        overflow-y: hidden;
+
+    }
+    .tp-scroll div.paragraph.has-image {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+    }
+
+    .tp-scroll .scroll-image  {
+        width: 384px;
+        height: 100%;
+        position: absolute;
+        background-size: cover!important;
+        background-position: center center!important;
+        right: 0;
+        top: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+
+    }
+    .tp-scroll .play-button {
+        font-family: entypo;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        color: black;
+        width: 50px;
+        display: block;
+        height: 50px;
+        left: 75%;
+        margin-left: -25px;
+        text-align: center;
+        background-color: white;
+        border-radius: 50%;
+        opacity: .5;
+    }
+    .tp-scroll img.scroll-img {
+
+        max-width: 384px;
+        position: absolute;
+        background-size: cover!important;
+        background-position: center center!important;
+        top: 0;
+        left: 400px;
+    }
+
+    .tp-scroll .close-button {
+        z-index: 10;
+    }
+
+    .tp-scroll .scroll-wrapper {
+        opacity: 1;
+        width: 768px;
+        position: absolute;
+    }
+
+    .shadow {
+
+    }
+
+    .tp-scroll .up2 {
+        position: absolute;
+        top: 50px;
+        left: 35%;
+        margin-left: 129px;
+        height: 28px;
+        width: 258px;
+        background-image: url(../../images/theme/scrollUp.svg);
+        background-position:top left;
+        background-repeat: no-repeat;
+
+    }
+
+    .tp-scroll .down2 {
+        position: absolute;
+        bottom: 50px;
+        left: 35%;
+        margin-left: 129px;
+        height: 28px;
+        width: 258px;
+        background-image: url(../../images/theme/scrollDown.svg);
+        background-position:top left;
+        background-repeat: no-repeat;
+
+    }
+
+    .tp-scroll .downPuls {
+        margin-top: 0;
+        top: -98px;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+    .tp-scroll .pageScroll {
+        left: 16%;
+    }
+}
+
+
+@media only screen and (max-width: 959px) {
+
+    .tp-scroll .pageScroll {
+        left: 13%;
+    }
+
+    .tp-scroll .controlsContainer {
+        width: 100px;
+    }
+
+    .tp-scroll .controls {
+        left: 24px!important;
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
+
+    .tp-scroll .pageScroll > div > div{
+        position:relative;
+        top: 10%;
+    }
+
+}

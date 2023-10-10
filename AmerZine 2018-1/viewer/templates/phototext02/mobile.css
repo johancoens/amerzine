@@ -1,0 +1,21 @@
+/*** MOBILE ***/
+#phototext02 .im-tp-caption {
+    width: auto;
+    margin: 20px 20px 20px 50px;
+    bottom: 0px;
+
+}
+
+#phototext02 .im-tp-nav-bar > div{
+    bottom: 20px;
+}
+
+#phototext02 .paragraph {
+    padding: 15px;
+}
+
+#phototext02 h2 {
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}

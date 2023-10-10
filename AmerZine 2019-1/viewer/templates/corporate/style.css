@@ -1,0 +1,174 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .tp-corporate h1, .tp-corporate h2, .tp-corporate h3, .tp-corporate h4, .tp-corporate h5, .tp-corporate h6, .tp-corporate p {
+        padding: 0;
+    }
+    .tp-corporate h2 {
+        padding: 0;
+    }
+
+    .tp-corporate .im-ts-button h4 {
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .tp-corporate div.paragraph {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tp-corporate .text-block {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        width: 400px;
+        left: 0px;
+        padding: 40px;
+
+        transform: translate3d(-800px,0,0);
+        -webkit-transform: translate3d(-800px,0,0);
+        -moz-transform: translate3d(-800px,0,0);
+        -webkit-transition: -webkit-transform 700ms ease-in-out, opacity 700ms;
+        -moz-transition: -moz-transform 700ms ease-in-out, opacity 700ms;
+        transition: transform 700ms ease-in-out, opacity 700ms;
+    }
+    .tp-corporate .text-block.active {
+        transform: translate3d(0px,0,0);
+        -webkit-transform: translate3d(0px,0,0);
+        -moz-transform: translate3d(0px,0,0);
+        opacity: 1;
+    }
+
+    .tp-corporate .buttonsContainer {
+        position: absolute;
+        bottom: 100px;
+        height: 0px;
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tp-corporate .im-tp-co-buttons {
+        display:inline-block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .tp-corporate .corporate-btn-container {
+        display: block;
+        float: left;
+        overflow: hidden;
+        height: 110px;
+        width: 200px;
+        margin: 0 9px;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button.last {
+        margin:0;
+    }
+    .tp-corporate .im-tp-co-buttons .im-ts-button {
+        display: table;
+        opacity: 1;
+        text-align: center;
+        height: 110px;
+        width: 200px;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button span {
+        display: table-cell;
+        opacity: 1;
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 10px;
+        padding: 20px;
+    }
+
+    .tp-corporate .corporate-btn-container:hover  {
+        opacity: 0.7;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-border-radius {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+
+    .tp-corporate .corporate-btn-container {
+        height: 100px;
+        width: 160px;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button {
+        height: 100px;
+        width: 160px;
+    }
+
+    .tp-corporate .text-block {
+        width: 300px;
+
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button span {
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 1020px){
+
+    .tp-corporate .corporate-btn-container {
+        height: 85px;
+        width: 135px;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button {
+        height: 85px;
+        width: 135px;
+    }
+
+    .tp-corporate .buttonsContainer {
+        bottom: 85px;
+    }
+
+    .tp-corporate .im-tp-co-buttons .im-ts-button span {
+        font-size: 0.85em;
+        line-height: normal;
+    }
+
+    .tp-corporate .text-block {
+        width: 300px;
+    }
+
+    .tp-corporate .im-ts-button {
+        margin: 0 7px 0 0;
+    }
+
+
+}
+
+@media screen and (max-height: 800px){
+    .tp-corporate .text-block {
+        width: 40%;
+        padding: 30px;
+        top: 70%;
+    }
+}
+
+@media screen and (max-height: 550px){
+    .tp-corporate .text-block {
+        width: 50%;
+
+    }
+}
+

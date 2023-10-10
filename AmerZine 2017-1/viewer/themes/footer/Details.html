@@ -1,0 +1,20 @@
+<div class="wrapper im-ts-mobile-view">
+	{{{header}}}
+	<div class="scroller" style="height:inherit;">
+		{{#image}}<div class="mobile-header-background im-media" im-object="im-media-directive" width="750" height="750" data-media="{{image}}" {{#imageHeight}}style="height:{{imageHeight}}px;"{{/imageHeight}}></div>{{/image}}
+	<div class="text">
+		{{#title}}<h2>{{{title}}}</h2>{{/title}}
+		{{#subtitle}}<h5>{{{subtitle}}}</h5>{{/subtitle}}
+		{{#video}}<div class="im-ts-videocontainer" data-video-id="{{video}}"></div>{{/video}}
+		<div class="paragraph">{{{description}}}
+			{{#button}}
+			<p><br />
+				{{#action}}<{{action.element}}{{#action.href}} href="{{action.href}}"{{/action.href}}{{#action.onclick}} onclick="{{action.onclick}}"{{/action.onclick}}{{#action.target}} target="{{action.target}}"{{/action.target}} class="button">{{{label}}}</{{action.element}}>{{/action}}
+			</p>
+			{{/button}}
+		</div>
+
+	</div>
+</div>
+<div class="clear"></div>
+</div>

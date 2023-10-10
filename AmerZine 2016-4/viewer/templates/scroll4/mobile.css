@@ -1,0 +1,85 @@
+.tp-m-scroll4 .top_header {
+    padding: 18px 20px 18px 20px;
+}
+
+.tp-m-scroll4 .subpage .top_header {
+    padding: 3px 20px 3px 2px;
+}
+
+.tp-m-scroll4  .im-sp-arrow-left {
+    padding-right: 0;
+    width: 40px;
+}
+
+.tp-m-scroll4  .mobile-header-background {
+    min-height: 160px;
+    position: relative;
+}
+.tp-m-scroll4  .no-image{
+    min-height: 53px;
+    position: relative;
+}
+
+.tp-m-scroll4 .im-ts-list.absolute {
+    position: absolute;
+    border: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.tp-m-scroll4 .detail-text {
+    height: 100%;
+}
+
+.tp-m-scroll4 .im-ts-list {
+    position: relative;
+    margin-top: 10px;
+    display: block;  
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.tp-m-scroll4 .im-ts-list > a{
+   border: 0; 
+}
+
+.tp-m-scroll4 .im-ts-list-row{
+    position: relative;     
+    height: auto;
+    border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.tp-m-scroll4 .im-ts-list-row .label{
+    padding: 12px 12px 12px 20px;
+    font-size: 16px;
+}
+
+.tp-m-scroll4  table.index_item td.title {
+    padding: 0 10px 0 10px;
+}
+
+.tp-m-scroll4  .back {
+    box-shadow: none;
+    display: inline-block;
+    float: none;
+    color: #FFF;
+    padding: 15px 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+/*.tp-m-scroll4  h2 {
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+}*/
+
+.tp-m-scroll4  h4 {
+    margin-bottom: 12px;  
+    display: block;
+    
+}
+.tp-m-scroll4 .mobile_list a {
+    display:block;
+    margin-bottom:3px;
+}

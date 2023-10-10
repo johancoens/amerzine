@@ -1,0 +1,14 @@
+<{{action.element}}{{#action.href}} href="{{action.href}}"{{/action.href}}{{#action.onclick}} onclick="{{action.onclick}}"{{/action.onclick}}{{#action.target}} target="{{action.target}}"{{/action.target}} class="im-pr-item im-ts-border-radius">
+	<div class="im-pr-image">
+		<div class="im-media" im-object="im-media-directive" width="600" height="600" data-media="{{image}}"></div>
+	</div>
+	{{#hasParagraph}}
+	<div class="im-pr-info text-block" style="{{background_style}}">
+		<div class="paragraph im-ts-paragraph">
+			{{#title}}<h4 class="im-ts-subtitle" style="{{title_style}}">{{{title}}}</h4>{{/title}}
+			{{#price}}<span class="price" style="{{price_style}}">{{{price}}}</span>{{/price}}
+			{{#button}}<div class="im-ts-button button im-ts-border-radius">{{{button}}}</div>{{/button}}
+		</div>
+	</div>
+	{{/hasParagraph}}
+</{{action.element}}>

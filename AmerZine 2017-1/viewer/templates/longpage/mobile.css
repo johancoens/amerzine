@@ -1,0 +1,9 @@
+.tp {}
+
+.tp-longpage.p-mobile .slider .im-ts-button {
+  display: none;
+}
+.p-mobile.tp-longpage .carousel .slide-container {
+	display: block;
+	float:none;
+}

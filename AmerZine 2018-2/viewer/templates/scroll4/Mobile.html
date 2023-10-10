@@ -1,0 +1,26 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller m_list">
+        <div class="top_header">
+            <h3>{{#title}}{{{title}}}{{/title}}{{^title}}{{{pagetitle}}}{{/title}}</h3>
+        </div>
+        {{#scrollitem}}
+        <{{action.element}} target="{{action.target}}" onclick="{{action.onclick}}" href="{{urlbase}}/item/{{index}}">
+            <div class="mobile-header-background {{^alt}}no-image{{/alt}}" style="{{#alt}}{{#settings.position}}background-position:{{settings.position}};{{/settings.position}} background-image: url('{{helper(getBackgroundImage, {uri})}}');{{/alt}}">
+                <div class='im-ts-list absolute'>
+                    <div class='im-ts-list-row' style="{{m_title_background}}">
+                        {{#title}}<div class='label'><h2 class="im-ts-title" style="{{m_title_style}}">{{{title}}}</h2></div>{{/title}}
+                        <div class="arrow">
+                            <div class="im-sp im-sp-arrow-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text" style="{{m_description_style}}">
+                {{#subtitle}}<h4 class="im-ts-subtitle" style="{{m_subtitle_style}}">{{{subtitle}}}</h4>{{/subtitle}}
+            <div class="paragraph" style="{{m_description_style}}">{{{intro}}}</div>
+            </div>
+        </{{action.element}}>
+        {{/scrollitem}}
+        <div class="clear"></div>
+    </div>
+</div>

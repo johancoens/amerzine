@@ -1,0 +1,27 @@
+<div id="textBoxIntro" class="text-block alignLeft" style="{{#no_intro}}display: none;{{/no_intro}}">
+    <div class="paragraph">{{#title}}<h2>{{{title}}}</h2>{{/title}}
+    {{#intro}}
+    {{{intro}}}
+    {{/intro}}
+    </div>
+</div>
+
+{{#corporate}}
+<div class="text-block alignLeft">
+	<div class="top-button-bar top-right">
+   		<a class="button im-ts-button square-small im-ts-close-button" href="{{urlbase}}"><span class="im-sp im-sp-times"></span></a>
+	</div>
+    <div class="paragraph">{{#title}}<h2>{{{title}}}</h2>{{/title}}
+    {{#description}}
+    {{{description}}}
+    {{/description}}
+    </div>
+</div>
+{{/corporate}}
+<div class="buttonsContainer">
+    <div class="im-tp-co-buttons">
+        {{#corporate}}
+        <div class="corporate-btn-container"><a class="im-ts-border-radius im-ts-button im-ts-button-background" href="{{urlbase}}/item/{{index}}"><span>{{{title}}}</span></a></div>
+        {{/corporate}}
+    </div>
+</div>

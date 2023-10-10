@@ -1,0 +1,831 @@
+@font-face {
+	font-family: 'FaktSlabPro-Medium';
+	src: url("../FaktSlabPro-Medium.eot");
+	src:
+		local("FaktSlabPro-Medium"),
+		url("../FaktSlabPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-medium.2ba88d3b9d7b.woff") format("woff"),
+		url("../faktslabpro-medium.589c75868a1f.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'FaktSlabPro-Bold';
+	src: url("../FaktSlabPro-Bold.eot");
+	src:
+		local("FaktSlabPro-Bold"),
+		url("../FaktSlabPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-bold.900f20dc1b97.svg") format("svg"),
+		url("../faktslabpro-bold.c0fc8c7925f8.woff") format("woff"),
+		url("../faktslabpro-bold.4ea2a2a92012.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'FaktSlabPro-Medium';
+	src: url("../FaktSlabPro-Medium.eot");
+	src:
+		local("FaktSlabPro-Medium"),
+		url("../FaktSlabPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-medium.d915a7f6af4f.svg") format("svg"),
+		url("../faktslabpro-medium.bbd45f27af94.woff") format("woff"),
+		url("../faktslabpro-medium.9477fdb4da36.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'Kievit-Regular';
+	src: url("../Kievit-Regular.eot");
+	src:
+		local("Kievit-Regular"),
+		url("../Kievit-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../kievit-regular.dabb995f1920.svg") format("svg"),
+		url("../kievit-regular.e6d5d0797afc.woff") format("woff"),
+		url("../kievit-regular.88a8303d5ee0.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'Kievit-ExtraBold';
+	src: url("../Kievit-ExtraBold.eot");
+	src:
+		local("Kievit-ExtraBold"),
+		url("../Kievit-ExtraBold.eot?#iefix") format("embedded-opentype"),
+		url("../kievit-extrabold.1db0af1a4ee6.svg") format("svg"),
+		url("../kievit-extrabold.62e0e69d3e35.woff") format("woff"),
+		url("../kievit-extrabold.41ff2b6bfb93.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'kievit-bold-webfont';
+	src: url("../kievit-bold-webfont.eot");
+	src:
+		local("kievit-bold-webfont"),
+		url("../kievit-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../kievit-bold-webfont.ac96396053a9.svg") format("svg"),
+		url("../kievit-bold-webfont.fea219a4dc7b.woff") format("woff"),
+		url("../kievit-bold-webfont.062d05825da2.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'FaktSlabPro-Medium';
+	src: url("../FaktSlabPro-Medium.eot");
+	src:
+		local("FaktSlabPro-Medium"),
+		url("../FaktSlabPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-medium.2ba88d3b9d7b.woff") format("woff"),
+		url("../faktslabpro-medium.589c75868a1f.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'FaktSlabPro-Bold';
+	src: url("../FaktSlabPro-Bold.eot");
+	src:
+		local("FaktSlabPro-Bold"),
+		url("../FaktSlabPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-bold.900f20dc1b97.svg") format("svg"),
+		url("../faktslabpro-bold.c0fc8c7925f8.woff") format("woff"),
+		url("../faktslabpro-bold.4ea2a2a92012.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'FaktSlabPro-Medium';
+	src: url("../FaktSlabPro-Medium.eot");
+	src:
+		local("FaktSlabPro-Medium"),
+		url("../FaktSlabPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../faktslabpro-medium.d915a7f6af4f.svg") format("svg"),
+		url("../faktslabpro-medium.bbd45f27af94.woff") format("woff"),
+		url("../faktslabpro-medium.9477fdb4da36.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'Kievit-Regular';
+	src: url("../Kievit-Regular.eot");
+	src:
+		local("Kievit-Regular"),
+		url("../Kievit-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../kievit-regular.dabb995f1920.svg") format("svg"),
+		url("../kievit-regular.e6d5d0797afc.woff") format("woff"),
+		url("../kievit-regular.88a8303d5ee0.ttf") format("ttf");
+}
+@font-face {
+	font-family: 'kievit-bold-webfont';
+	src: url("../kievit-bold-webfont.eot");
+	src:
+		local("kievit-bold-webfont"),
+		url("../kievit-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../kievit-bold-webfont.ac96396053a9.svg") format("svg"),
+		url("../kievit-bold-webfont.fea219a4dc7b.woff") format("woff"),
+		url("../kievit-bold-webfont.062d05825da2.ttf") format("ttf");
+}
+.im-ts-overlay, .mobilePopup .wrapper {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.93);
+}
+
+body, .paragraph, .im-ts-sidebar, .nav-page-bottom .icon-button, .im-ts-mobile-view .paragraph {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.page .im-ts-title-background, .im-ts-mobile-view .top_header h3, .top_header {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h3, h4, h5, h6, .im-ts-subtitle-background {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+}
+
+a {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(76,117,147);
+	color: rgba(76,117,147,1.00);
+	font-size: 17px;
+}
+
+.text-block, .im-ts-title-background, .im-ts-overlay, .im-ts-videocontainer iframe, .im-ts-border-radius, .im-ts-subtitle-background, .im-sp-arrow-up-s-2, .im-sp-arrow-down-s-2, .button.square, .button.square-small, .im-ts-label, .im-ts-border-radius, .button {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.im-ts-title-background {
+	border-top-left-radius: 5px;
+}
+
+a.button, .button, a.im-ts-button, .im-ts-button, .im-ts-button-background, .p-mobile .im-ts-mobile-view .im-ts-list a.button {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1);
+}
+
+a.button, .im-ts-mobile-view a.button, .button, a.im-ts-button, .im-ts-button {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.im-ts-title-background, .im-ts-mobile-view .top_header, .top_header {
+	background: transparent;
+	background: transparent;
+}
+
+.text-block, .im-ts-paragraph-background, .im-ts-mobile-view .im-ts-list a, .wrapper.im-ts-mobile-view .im-ts-list,
+.im-ts-mobile-view, .im-ts-mobile-view .im-ts-list {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.93);
+}
+
+h1, h2, h3, h4, h5, h6, .im-ts-title-padding {
+	padding-top: 12px;
+	padding-right: 15px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+}
+
+.paragraph h1, .im-ts-title, .paragraph h2, .p-mobile .im-ts-title, .im-ts-mobile-view h1, .im-ts-mobile-view h2, .im-ts-overlay h3, .im-ts-overlay .paragraph h3,
+.im-ts-sidebar h2 {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+}
+
+.paragraph h3, .im-ts-subtitle, .paragraph h4, .paragraph h5, .paragraph h6, .p-mobile .im-ts-subtitle, .im-ts-mobile-view h3, .im-ts-mobile-view h4, .im-ts-mobile-view h5, .im-ts-mobile-view h6, .p-mobile h4.im-ts-subtitle {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+	font-size: 26px;
+}
+
+.im-ts-overlay .paragraph, .im-ts-overlay, .im-ts-mobile-view.mobilePopup .wrapper .paragraph {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+	font-size: 16px;
+}
+
+.im-ts-subtitle-background {
+	background: transparent;
+	background: transparent;
+}
+
+.im-ts-overlay h3, .im-ts-overlay .paragraph h3 {
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+	font-size: 40px;
+	text-shadow: 2px 2px 2px transparent;
+}
+
+.p-mobile .im-ts-subtitle-background {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+}
+
+.p-mobile .im-ts-title-background {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.p-mobile .paragraph {
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+}
+
+.p-mobile .im-ts-title, .im-ts-mobile-view h1, .im-ts-mobile-view h2 {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+}
+
+.p-mobile .im-ts-subtitle, .im-ts-mobile-view h3, .im-ts-mobile-view h4, .im-ts-mobile-view h5, .im-ts-mobile-view h6 {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+	font-size: 26px;
+}
+
+.not-existing {
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+}
+
+.im-ts-overlay a.button.close-button, a.button.close-button {
+	background: rgb(227,0,106);
+	background: rgba(227,0,106,1.00);
+}
+
+.paragraph i, .paragraph em {
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+}
+
+.im-ts-subtitle-background {
+	padding-bottom: 10px;
+}
+
+.im-header-container h1.im-ts-title-background {
+	background: rgb(76,117,147);
+	background: rgba(76,117,147,1.00);
+}
+
+.im-header-container h1.im-ts-title-background {
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1.00);
+}
+
+.im-header-container h1.im-ts-title-background {
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(76,117,147);
+	background: rgba(76,117,147,1.00);
+}
+
+.im-ts-mobile-view .im-ts-list a, .wrapper.im-ts-mobile-view .im-ts-list {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,1);
+}
+
+.im-ts-mobile-view .top_header h3,.top_header h3, .im-ts-mobile-view .top_header {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 28px;
+}
+
+.im-ts-mobile-view .top_header,.top_header {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1.00);
+}
+
+.im-ts-nav-buttons, .nav-label-button,.nav-custom-button,.icon-button .icon, .floating-nav .share-bar a.shareButton {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1);
+}
+
+.im-ts-mobile-view, .im-ts-mobile-view .im-ts-list {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,1.00);
+}
+
+.im-ts-mobile-view h3, .im-ts-mobile-view h4, .im-ts-mobile-view h5, .im-ts-mobile-view h6 {
+	font-size: 20px;
+}
+
+.im-ts-mobile-view .paragraph {
+	line-height: 22px;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+	font-size: 16px;
+}
+
+.im-ts-mobile-view h1, .im-ts-mobile-view h2 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+	font-size: 28px;
+}
+
+.im-ts-mobile-view a {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(76,117,147);
+	color: rgba(76,117,147,1.00);
+}
+
+.im-ts-list .label h5,.im-ts-list .label h6,.im-ts-list h5.label,.im-ts-list h6.label, .im-ts-list .label {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(65,65,65);
+	color: rgba(65,65,65,1.00);
+}
+
+.icon-button .icon {
+	border-color: rgb(255,255,255);
+	border-color: rgba(255,255,255,1.00);
+}
+
+.nav-item.nav-page-number {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.93);
+}
+
+.nav-item.nav-page-number {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+}
+
+.im-ts-sidebar .paragraph a,.nav-page-bottom a {
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1.00);
+}
+
+.im-ts-nav-active-color {
+	background: rgb(235,217,235);
+	background: rgba(235,217,235,1.00);
+}
+
+.im-ts-sidebar h2 {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 28px;
+}
+
+.im-ts-sidebar .paragraph, .im-ts-sidebar, .nav-page-bottom .icon-button, .nav-page a,.nav-page-bottom a {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1.00);
+}
+
+.nav-page a.button, .nav-page-button a {
+	background: rgb(76,117,147);
+	background: rgba(76,117,147,1.00);
+}
+
+.nav-bar.bar-bottom .nav-buttons-bar {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,1);
+}
+
+#Page0 .im-ts-title-background {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,0.60);
+}
+
+#Page0 .im-ts-subtitle-background {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 22px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+}
+
+#Page0 .im-cover05-highlight img {
+	border-color: rgb(255,255,255);
+	border-color: rgba(255,255,255,1);
+}
+
+#Page0 a.im-cover05-highlight:hover .im-ts-title-background, #Page0 a.im-cover05-highlight:hover .im-ts-subtitle-background {
+	color: rgb(227,0,106);
+	color: rgba(227,0,106,1.00);
+}
+
+#Page0 .im-ts-subtitle-background {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,0.80);
+}
+
+#Page1 .im-ts-title-background {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 50px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 50px;
+}
+
+#Page1 .im-ts-title-background {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1.00);
+}
+
+#Page1 .im-ts-subtitle-background {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 30px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+}
+
+#Page1 .im-ts-subtitle-background {
+	background: rgb(227,0,106);
+	background: rgba(227,0,106,0.80);
+}
+
+#Page1 .paragraph {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 22px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 18px;
+}
+
+#Page1 .text-block {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,0.80);
+}
+
+#Page1 .article-corner {
+	border-color: rgb(255,204,0);
+	border-color: rgba(255,204,0,1.00);
+}
+
+#Page1.p-mobile-view .top_header {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1.00);
+}
+
+#Page1.p-mobile-view .top_header h3 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 30px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,0.92);
+	font-size: 30px;
+}
+
+#Page1 .im-ts-list h5 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 20px;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+	font-size: 20px;
+}
+
+#Page1 .im-ts-list .label > div {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 18px;
+	color: rgb(0,0,0);
+	color: rgba(0,0,0,1);
+	font-size: 16px;
+}
+
+#Page1 .im-ts-list a, #Page1 .im-ts-list .border-right {
+	border-color: rgb(119,0,119);
+	border-color: rgba(119,0,119,1.00);
+}
+
+#Page2 .im-ts-sidenotes .im-font-icon {
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+}
+
+#Page7 .im-ts-sidenotes .im-font-icon {
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+}
+
+#Page7 .im-tp-opa-author .paragraph {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 24px;
+	color: rgb(0,0,0);
+	color: rgba(0,0,0,1);
+	font-size: 20px;
+}
+
+#Page2 .im-ts-sidenotes {
+	border-color: rgb(227,0,106);
+	border-color: rgba(227,0,106,1.00);
+}
+
+#Page7 .im-ts-sidenotes {
+	border-color: rgb(227,0,106);
+	border-color: rgba(227,0,106,1.00);
+}
+
+#Page2 .im-ts-sidenotes {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 15px;
+	color: rgb(0,0,0);
+	color: rgba(0,0,0,1);
+	font-size: 15px;
+}
+
+#Page7 .im-ts-sidenotes {
+	font-family: 'Kievit-Regular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 24px;
+	color: rgb(0,0,0);
+	color: rgba(0,0,0,1);
+	font-size: 20px;
+}
+
+#Page3 h2 {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 58px;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+	font-size: 60px;
+}
+
+#Page11 h2 {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 58px;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1);
+	font-size: 60px;
+}
+
+#Page3 h4 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 58px;
+	color: rgb(227,0,106);
+	color: rgba(227,0,106,1.00);
+	font-size: 60px;
+}
+
+#Page11 h4 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 58px;
+	color: rgb(227,0,106);
+	color: rgba(227,0,106,1.00);
+	font-size: 60px;
+}
+
+#Page5.tp-slider .marker span {
+	background: transparent;
+	background: transparent;
+}
+
+#Page5.tp-slider .text-block {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,0.70);
+}
+
+#Page5.tp-slider .text-block h2 {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 60px;
+	color: rgb(255,204,0);
+	color: rgba(255,204,0,1.00);
+	font-size: 60px;
+}
+
+#Page5.tp-slider .paragraph {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 20px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 16px;
+}
+
+#Page5.tp-m-slider .top_header {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1);
+}
+
+#Page5.tp-slider .paragraph a {
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+}
+
+#Page5.tp-slider .im-sl-title h2 {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 60px;
+	color: rgb(255,204,0);
+	color: rgba(255,204,0,1);
+	font-size: 60px;
+}
+
+#Page5.tp-slider .im-sl-title > div {
+	font-family: 'Kievit-ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 28px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 26px;
+}
+
+#Page5.tp-m-slider .subpage h2 {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 30px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+}
+
+#Page8.tp-gallery02 .im-side-block {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.80);
+}
+
+#Page8.tp-gallery02 .im-side-block .im-ts-title {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+	font-size: 50px;
+}
+
+#Page8.tp-gallery02 .im-side-block .im-ts-subtitle {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 40px;
+	color: rgb(227,0,105);
+	color: rgba(227,0,105,1.00);
+	font-size: 40px;
+}
+
+#Page8 .im-g2-gallery .im-ts-paragraph {
+	background: transparent;
+	background: transparent;
+}
+
+#Page8 .im-ts-title {
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1.00);
+	font-size: 40px;
+}
+
+#Page8 .im-ts-subtitle {
+	font-family: 'FaktSlabPro-Medium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#Page8.tp-gallery02 .im-tp-g2-detail-list-container {
+	background: rgb(127,127,127);
+	background: rgba(127,127,127,1.00);
+}
+
+#Page8.tp-m-gallery02 .im-g2-details, #Page8.tp-gallery02 .im-g2-details {
+	background: rgb(76,76,76);
+	background: rgba(76,76,76,1.00);
+}
+
+#Page8.tp-gallery02 .im-g2-details li.active {
+	outline: 5px solid rgb(255,255,255);
+	outline: 5px solid rgba(255,255,255,1.00);
+}
+
+#Page8 .im-media-caption {
+	background: rgb(76,76,76);
+	background: rgba(76,76,76,1.00);
+}
+
+#Page8 .im-media-caption {
+	font-family: 'kievit-bold-webfont', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1.00);
+}
+
+#Page9 #video .text-block {
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.80);
+}
+
+#Page9 #video h1 {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 50px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 50px;
+}
+
+#Page9 #video h3 {
+	line-height: 42px;
+	color: rgb(255,255,255);
+	color: rgba(255,255,255,1);
+	font-size: 40px;
+}
+
+#Page9 #video a {
+	color: rgb(119,0,119);
+	color: rgba(119,0,119,1.00);
+}
+
+#Page10 .im-ts-title, #Page10 .im-ts-title-background {
+	font-family: 'FaktSlabPro-Bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 30px;
+	color: rgb(227,0,106);
+	color: rgba(227,0,106,1.00);
+	font-size: 30px;
+}
+
+#Page10 .im-ts-quote-background {
+	background: transparent;
+	background: transparent;
+}
+
+#Page10 .im-ts-button-background {
+	background: rgb(255,0,106);
+	background: rgba(255,0,106,1.00);
+}
+
+#Page10.tp-scrollblocks {
+	background: rgb(119,0,119);
+	background: rgba(119,0,119,1.00);
+}
+
+#Page10 .im-image-carousel .im-ts-title-background {
+	background: transparent;
+	background: transparent;
+}
+
+#Page10 .im-image-carousel h2.im-ts-title-background {
+	background: transparent;
+	background: transparent;
+}
+

@@ -1,0 +1,19 @@
+<div class="wrapper im-ts-mobile-view">
+    {{{header}}}
+    <div class="scroller" style="height:inherit;">
+        <div class="text">
+            <h5>{{datetext}}</h5>
+            <h2>{{title}}</h2>
+			<div class="paragraph">{{{intro}}}</div>
+            <div class="paragraph">{{{description}}}</div>
+            {{^social_disabled}}
+            {{#social}}
+            <div class="share"><h5>Share:</h5>
+                <div class="share-container">{{{social}}}</div>
+            </div>
+            {{/social}}
+            {{/social_disabled}}
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

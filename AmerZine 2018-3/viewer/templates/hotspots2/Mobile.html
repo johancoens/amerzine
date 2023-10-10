@@ -1,0 +1,27 @@
+<div class="wrapper im-ts-mobile-view">
+    {{{header}}}
+    <div class="scroller" style="height:inherit;">
+        <div class="top_header">
+            <h3>{{{title}}}</h3>
+        </div>
+        <div class="mobile-header-background" style="background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>
+        {{#intro}}
+        <div class="introtext paragraph">
+            <div class="text">
+                {{{intro}}}
+            </div>
+        </div>
+        {{/intro}}
+        <div class='im-ts-list'>
+        {{#hotspots}}
+        <a href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}" class="interviewButton">
+            <h5 class="label">{{{title}}}</h5>
+            <span class="arrow">
+                <span class="im-sp im-sp-read-more-b-20"></span>
+            </span>
+        </a>
+        {{/hotspots}}
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

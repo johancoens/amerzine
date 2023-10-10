@@ -1,0 +1,26 @@
+<div class="im-es-wrapper">
+       <div class="im-es-items im-ts-paragraph-background">
+           {{#scrollitem}}
+             <div class="item" name="es-p-{{index}}" style="{{block_style}}">
+                 <div class='paragraph'>
+                    <div class="im-es-title">
+                        {{#title}}
+                            <h2 class="im-ts-border-radius im-ts-title-padding" style="{{title_style}}">{{{title}}}</h2>
+                        {{/title}}
+                        <div class="clear"></div>
+                        {{#subtitle}}
+                            <h4 class="im-ts-border-radius im-ts-title-padding" style="{{subtitle_style}}">{{{subtitle}}}</h4>
+                        {{/subtitle}}
+                    </div>
+                    {{#description}}
+                        <div style="{{paragraph_style}}">{{{description}}}</div>
+                    {{/description}}
+                </div>
+                {{#image.uri}}
+                <img class="im-es-image" src="{{helper(getImageUrl, {image.uri}, null, null, 500, null)}}" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}}  />
+                {{/image.uri}}
+                {{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+             </div>
+           {{/scrollitem}}
+        </div>
+</div>

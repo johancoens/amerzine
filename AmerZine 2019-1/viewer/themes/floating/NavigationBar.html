@@ -1,0 +1,74 @@
+
+
+<div class="floating-nav buttons mobile">
+	<div class="wrapper wrapper-mobile-navigation">
+		<a data-action="prev" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-prev im-ts-nav-buttons" id="btnPrev">
+			<span class="im-sp im-sp-arrow-left inherit-font-size"></span>
+		</a>
+
+		<a data-action="toggle-floating-menu" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-index im-ts-nav-buttons">
+			<span class="im-sp im-sp-index inherit-font-size"></span>
+			<span class="page_number im-page-indicator">
+				{{{pageIndexNumbers}}}
+			</span>
+		</a>
+		
+		<a data-action="next" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-next im-ts-nav-buttons" id="btnNext">
+			<span class="im-sp im-sp-arrow-right inherit-font-size"></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="wrapper wrapper-menu">
+	<a data-action="toggle-floating-menu" aria-label="{{helper(translate, header_index)}}" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-index im-ts-nav-buttons">
+		<span class="im-sp im-sp-index inherit-font-size"></span>
+		<span class="page_number im-page-indicator">
+			{{{pageIndexNumbers}}}
+		</span>
+	</a>
+</div>
+	
+<div class="wrapper wrapper-sound">
+	<a href="javascript:void(0)" aria-label="mute" class="nav-item nav-custom-button nav-icon-button small im-ts-nav-buttons nav-mute-button hidden">
+		<span class="im-sp im-sp-sound inherit-font-size"></span>
+	</a>
+</div>
+
+<div class="wrapper wrapper-navigation">
+	<a data-action="prev" aria-label="{{helper(translate, previous)}}" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-prev im-ts-nav-buttons" id="btnPrev">
+		<span class="im-sp im-sp-arrow-left inherit-font-size"></span>
+	</a>
+	<a data-action="next" aria-label="{{helper(translate, next)}}" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-next im-ts-nav-buttons" id="btnNext">
+		<span class="im-sp im-sp-arrow-right inherit-font-size"></span>
+	</a>
+</div>
+
+<div class="wrapper wrapper-share">
+	<a data-action="share" aria-label="{{helper(translate, btn_share)}}" href="javascript:void(0)" class="nav-item nav-label-button im-ts-nav-buttons">
+		<span class="im-sp im-sp-social inherit-font-size"></span>
+	</a>
+</div>
+
+<div im-object="floating-menu" class="nav-bar floating-menu im-ts-nav-active-color" style="display:none;"></div>
+
+
+<div class="floating-nav nav-bar only-desktop bar-right">
+	<div class="nav-bar-options">
+		<div class="nav-page nav-page-right page-index"></div>
+		<div class="page_index_mobile"></div>
+		<div class="nav-page nav-page-right editions"></div>
+		<div class="nav-page nav-page-right favorites"></div>
+		<div class="nav-page nav-page-right nav-custom-page">
+			{{{searchButton}}}
+		</div>
+		<div class="nav-page nav-page-right share-bar"></div>
+		<div class="nav-page nav-page-right print-bar"></div>
+	</div>
+</div>
+
+
+
+<div class="mobile-share-buttons-wrapper">
+	<div im-object="im-share-directive" class="im-share-directive"></div>
+</div>

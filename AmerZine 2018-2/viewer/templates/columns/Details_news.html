@@ -1,0 +1,25 @@
+    <div class="wrapper im-ts-mobile-view">
+        {{{header}}}
+        <div class="scroller" style="height:inherit;">
+
+            <div class="text">
+
+                <h5>{{datetext}}</h5>
+                <h2>{{title}}</h2>
+
+                <div class="paragraph">{{{description}}}</div>
+                <hr>
+                <span class="share"><h5>Share:</h5>
+
+                    <span><a href="https://www.facebook.com/sharer.php?u={{documentUrl}}&t={{titleUrl}}" target="_blank" onClick="Magazine.tracker.trackEvent('ShareFacebook', 'Share', '{{titleUrl}}')"><img height="22" width="22" src="{{Config.viewer_url}}/images/theme/socialmedia/facebookIcon.svg"/></a></span>
+                    <span><a href="https://twitter.com/share?text={{titleUrl}}&url={{documentUrl}}" class="twitter-share-button" target="_blank" data-text="test" onClick="Magazine.tracker.trackEvent('ShareTwitter', 'Share', '{{titleUrl}}')"><img height="22" width="22" src="{{Config.viewer_url}}/images/theme/socialmedia/twitterIcon.svg"/></a></span>
+
+                    <span><a href="https://plus.google.com/share?text={{titleUrl}}&url={{documentUrl}}" target="_blank" onClick="Magazine.tracker.trackEvent('ShareGoogle', 'Share', '{{titleUrl}}')"><img height="22" width="22" src="{{Config.viewer_url}}/images/theme/socialmedia/googleIcon.svg"/></a></span>
+                    <span><a href="https://www.linkedin.com/shareArticle?mini=true&&title={{titleUrl}}&url={{documentUrl}}" target="_blank" onClick="Magazine.tracker.trackEvent('ShareLinkedin', 'Share', '{{titleUrl}}')"><img height="22" width="22" src="{{Config.viewer_url}}/images/theme/socialmedia/linkedinIcon.svg"/></a></span>
+
+
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>

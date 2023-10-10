@@ -1,0 +1,20 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="top_header">
+        <h3>{{{title}}}</h3>
+    </div>
+    <div class="scroller">
+        <div class="mobile_list">
+            {{#items}}
+            <a href="{{url}}" data-action="{{action}}" data-title="{{title}}">
+                <span class="thumb">
+                    {{#image}}<img src="{{helper(getImageUrl, {image.uri}, 157, 109, null, null, 1)}}"/>{{/image}}
+                </span>
+                <h5 class="label">{{{title}}}</h5>
+                <span class="arrow">
+                    <span class="im-sp im-sp-read-more-b-20"></span>
+                </span>
+            </a>
+            {{/items}}
+        </div>
+    </div>
+</div>

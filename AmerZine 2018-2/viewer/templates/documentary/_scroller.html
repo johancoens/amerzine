@@ -1,0 +1,19 @@
+<div class="im-tp-do-scroller flex-scroller im-cl-scroll-block scroller position-{{content_position}}" style="{{paragraph_style_bg}}">
+	{{#title}}
+		<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">
+		{{{title}}}
+		</h1><br />
+	{{/title}}
+
+	{{#subtitle}}
+		<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">
+		{{{subtitle}}}
+		</h3><br />
+	{{/subtitle}}
+	{{#description}}
+		<div class="paragraph" style="{{paragraph_style}}">
+		{{{description}}}
+		</div>
+	{{/description}}
+	{{#image}}<div im-object="im-media-directive" class="im-media im-ts-border-radius scroller-image" data-media="{{image}}" imagetag="imagetag" width="600"></div>{{/image}}
+</div>

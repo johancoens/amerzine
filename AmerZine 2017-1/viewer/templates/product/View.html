@@ -1,0 +1,27 @@
+{{#title}}
+<div class="header im-ts-title-background align-{{text_align}}">
+	<h1>{{{title}}}</h1>
+	{{#headeraction}}<a href="{{headeraction.href}}" target="{{headeraction.target}}" onclick="{{headeraction.onclick}}">Shop online</a>{{/headeraction}}
+</div>
+{{/title}}
+<div class="im-pr">
+	<div class="im-pr-overview im-align center-align im-stay-visible">
+	{{#item}}
+	<section class="im-pr-section">
+		{{#hasIntro}}
+		<div class="im-pr-section-header">
+			{{#title}}<h1 class="im-ts-title-background" style="{{title_style}}">{{{title}}}</h1>{{/title}}
+			{{#description}}<div class="text-block paragraph" style="{{paragraph_style}}">{{{description}}}</div>{{/description}}
+		</div>
+		{{/hasIntro}}
+		{{#hasProducts}}
+			<div class="im-pr-list"></div>
+		{{/hasProducts}}
+		<div class="im-pr-section-footer">
+		{{#intro}}<div class="text-block paragraph" style="{{intro_style}}">{{{intro}}}</div>{{/intro}}
+		</div>
+	</section>
+	{{/item}}
+	</div>
+</div>
+<div class="im-pr-details"></div>

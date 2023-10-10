@@ -1,0 +1,21 @@
+.im-tp-b-dialog .close {
+    right: 7px;
+    top: 5px;
+}
+.im-tp-b-dialog .close,.im-tp-b-dialog .next-overlay,.im-tp-b-dialog .previous-overlay {
+    font-size: 2em;
+}
+.im-tp-b-dialog .next-overlay {
+    right:5px;
+}
+.im-tp-b-dialog .previous-overlay {
+    left:5px;
+}
+.p-mobile.tp-blocks .effect2 .im-ts-title-padding::before {
+    border-top: 0px solid #fff;
+    border-bottom: 0px solid #fff;
+}
+.p-mobile.tp-blocks .effect2 .im-ts-title-padding::after {
+    border-right: 0px solid #fff;
+    border-left: 0px solid #fff;
+}

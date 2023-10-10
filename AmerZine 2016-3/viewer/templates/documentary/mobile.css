@@ -1,0 +1,78 @@
+
+.tp-m-documentary .im-tp-do-m-page .im-tp-do-m-background {
+    height:80vh;
+    width:100%;
+    z-index:0;
+    position: relative;
+    overflow:hidden;
+}
+.mobile.safari .tp-m-documentary .im-tp-do-m-page .im-tp-do-m-background {
+    height: calc(80vh - 90px);
+}
+.tp-m-documentary .im-tp-do-m-text-block {
+    min-height: 190px;
+    z-index:2;
+    position: relative;
+}
+.tp-m-documentary .im-tp-do-m-text-block .paragraph {
+    box-sizing: border-box;
+    width: 100%;
+}
+.tp-m-documentary .im-tp-do-m-text-block img {
+    max-width: 100%;
+}
+.tp-m-documentary .im-ts-m-slide-title {
+    position: absolute;
+    margin-top: 70px; 
+    padding-left: 10px;
+    left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.tp-m-documentary .marker-container{
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    padding: 2px;
+}
+.tp-m-documentary .im-m-marker-img .im-media-image{
+    width: 90px;
+    height: 90px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.tp-m-documentary .im-m-marker-label{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.tp-m-documentary .thumb {
+    display: table-cell;
+}
+.tp-m-documentary .arrow {
+    display:table-cell;
+    vertical-align: middle;
+}
+.tp-m-documentary .subpage .im-ts-mobile-view {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+}
+.tp-m-documentary .im-ts-title-background, 
+.tp-m-documentary .im-ts-subtitle-background {
+    margin-bottom: 8px;
+        padding-left: 10px;
+}
+.tp-m-documentary .im-tp-m-list a{
+    display: block;
+    text-align: left;
+    margin: 8px 0px;
+}
+
+.tp-m-documentary .im-tp-m-list a .arrow .im-sp {
+    display: block;
+}
+
+.tp-m-documentary .background-layer {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}

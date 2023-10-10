@@ -1,0 +1,38 @@
+<div id="article">
+    <div id="fivBackground">
+        <div class="backgroundImage" style="background-image:url('{{helper(getBackgroundImage, {background.uri})}}');"></div>
+
+    </div>
+    <div class="alignCenter" >
+        <div id="fivTextBlock">
+            <div class="item">
+                {{#title}}
+                <h2 class="im-ts-title-background">{{title}}</h2>
+                {{/title}}
+                <div class="clear"></div>
+                <table>
+                    <tr>
+                        <td>
+                            {{#intro}}
+                            <div class="text-block paragraph">{{{intro}}}</div>
+                            {{/intro}}
+                        </td>
+                        <td>
+                            {{#image}}
+                            <div class="image">
+                                <img src="{{Config.magazine_url}}{{image.uri}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />
+                            </div>
+                            {{/image}}
+                            <div class="clear"></div>
+                            <a href="{{urlbase}}/overlay" class="button im-ts-button">{{helper(translate,btn_more)}}</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div id="overlayContainerArticle" class="alignCenter" style="width:500px; height:auto; margin-left: -250px; ">
+        </div>
+    </div>
+
+</div>

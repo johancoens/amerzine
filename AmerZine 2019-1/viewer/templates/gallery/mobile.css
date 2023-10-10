@@ -1,0 +1,42 @@
+#gallery {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+#gallery_controls {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.tp-m-gallery .wrapper  {
+	min-width: 320px;
+	max-width: 767px;
+	position: relative;
+	padding: 0 0 10px 0;
+}
+
+.tp-m-gallery h1 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.tp-m-gallery .cell {
+        width:67px;
+        height:67px;
+        margin:8px 0px 0 8px;
+        background-size: cover;
+        float:left;
+        display:block;
+}
+
+.tp-m-gallery .gallery {
+	padding: 5px;
+}
+
+.tp-m-gallery .photos {
+	padding: 0px 10px;
+}
+
+

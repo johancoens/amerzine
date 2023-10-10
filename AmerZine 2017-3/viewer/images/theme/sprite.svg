@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px"
+	 height="768px" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+<g id="icons">
+	<g id="inhoudsopgave">
+		<g>
+			<rect y="12" fill="#FFFFFF" width="6" height="6"/>
+			<rect x="8" y="12" fill="#FFFFFF" width="29" height="6"/>
+		</g>
+		<g>
+			<rect y="23" fill="#FFFFFF" width="6" height="6"/>
+			<rect x="8" y="23" fill="#FFFFFF" width="29" height="6"/>
+		</g>
+		<g>
+			<rect fill="#FFFFFF" width="6" height="6"/>
+			<rect x="8" fill="#FFFFFF" width="29" height="6"/>
+		</g>
+	</g>
+	<g id="more">
+		<circle fill="#FFFFFF" cx="5.052" cy="55.052" r="5.052"/>
+		<circle fill="#FFFFFF" cx="22.787" cy="55.052" r="5.052"/>
+		<circle fill="#FFFFFF" cx="40.521" cy="55.052" r="5.052"/>
+	</g>
+	<polygon id="prev" fill="#FFFFFF" points="8.382,113.525 17.716,104.19 13.525,100 0,113.525 13.525,127.051 17.716,122.859 	"/>
+	<g id="arrow_down_big">
+		<polygon id="prev_1_" fill="#FFFFFF" points="74.154,66.67 57.483,50 50,57.484 74.154,81.638 98.308,57.484 90.823,50 		"/>
+	</g>
+	<g id="arrow_up_big_1_">
+		<polygon id="prev_4_" fill="#FFFFFF" points="74.154,166.968 57.483,183.638 50,176.154 74.154,152 98.308,176.154 
+			90.823,183.638 		"/>
+	</g>
+	<polygon id="next" fill="#FFFFFF" points="9.335,163.525 0,172.86 4.191,177.051 17.717,163.525 4.191,150 0,154.191 	"/>
+	<g id="close_White">
+		
+			<rect x="49.108" y="3.821" transform="matrix(0.7071 0.7071 -0.7071 0.7071 19.6447 -37.4264)" fill="#FFFFFF" width="11.785" height="2.357"/>
+		
+			<rect x="49.108" y="3.821" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 97.4264 -30.3553)" fill="#FFFFFF" width="11.785" height="2.357"/>
+	</g>
+	<g id="close_black">
+		<rect x="49.108" y="28.821" transform="matrix(0.7071 0.7071 -0.7071 0.7071 37.3223 -30.1041)" width="11.785" height="2.357"/>
+		
+			<rect x="49.108" y="28.821" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 115.1041 12.3223)" width="11.785" height="2.357"/>
+	</g>
+	<g id="plus">
+		<rect x="81" fill="#FFFFFF" width="3" height="15"/>
+		<rect x="75" y="6" fill="#FFFFFF" width="15" height="3"/>
+	</g>
+	<polygon id="small_right" fill="#FFFFFF" points="100,0 100,16 112,8 	"/>
+	<polygon id="small_left" fill="#FFFFFF" points="112,25 112,41 100,33 	"/>
+</g>
+<g id="overlays">
+	<g>
+		
+			<linearGradient id="button_x5F_square_2_" gradientUnits="userSpaceOnUse" x1="40.2383" y1="195.2808" x2="26.7604" y2="271.7178">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<rect id="button_x5F_square_1_" y="200" fill="url(#button_x5F_square_2_)" width="67" height="67"/>
+		<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="66.5" y1="200" x2="66.5" y2="267"/>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M130,0l50.027,12.491L230,0v9.509L180.015,22L130,9.509V0z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M130,52.491L180.015,40L230,52.491V62l-49.973-12.491L130,62
+		V52.491z"/>
+</g>
+</svg>

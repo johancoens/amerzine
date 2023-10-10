@@ -1,0 +1,49 @@
+<div id="cover">
+    <div class="alignCenter">
+        <article style="display: block;">
+            <table id="head">
+                <tr>
+                    <td class="logotable">
+                        {{#image}}
+                        <div class="logo"><img src="{{image.src}}" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} /></div>
+                        {{/image}}
+                    </td>
+                    <td class="date">
+                        {{#datetext}}
+                        <div class="datetext"><h6 class="im-ts-subtitle-background">{{{datetext}}}</h6></div>
+                        {{/datetext}}
+                    </td>
+                </tr>
+            </table>
+            <div class="clear"></div>
+            {{#title}}
+            <div class="title">
+                <h1 class="im-ts-title-background">{{{title}}}</h1>
+            </div>
+            {{/title}}
+            <div class="clear"></div>
+            {{#intro}}
+            <div class="text-block paragraph textBlockCover">{{{intro}}}</div>
+            {{/intro}}
+        </article>
+        <div class="clear"></div>
+        <article style="display: block; vertical-align: bottom;">
+            {{#subtitle}}
+            <div class="subtitle">
+                <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br />
+            </div>
+            {{/subtitle}}
+            <div class="shortcutsContainer">
+                <div class="im-ts-border-radius shortcuts">
+                    {{#shortcuts}}
+                    <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="polaroid" {{{helper(trackEvent,Highlights,Click,{shortcut.title})}}}>
+					{{#shortcut.thumb}}<img src="{{helper(getImageUrl, {shortcut.thumb}, 157, 109, null, null, 1, 1)}}" title="{{thumb.alt}}" />{{/shortcut.thumb}}
+                        {{label}}
+                    </{{action.element}}>
+                    {{/shortcuts}}
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

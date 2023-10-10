@@ -1,0 +1,18 @@
+<div class="im-content im-absolute-view align-{{text_align}} im-ts-border-radius">
+	{{#title}}
+	<h1 class="im-ts-title-background">{{{title}}}</h1><br />
+	{{/title}}
+	{{#subtitle}}
+	<h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br />
+	{{/subtitle}}
+	{{#description}}
+	<div class="paragraph text-block">{{{description}}}</div>
+	{{/description}}
+	{{#image}}<div im-object="im-media-directive" class="im-media" data-media="{{image}}"></div>{{/image}}
+	<!-- <a class="close-button button my-close-button square-small" href="javascript:void(0);"><span class="im-sp im-sp-times"></span></a> -->
+</div>
+{{#url}}<div style="overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   height:100%;
+   width:100%;
+   position:absolute;"><iframe src="" style="border-width: 0; display: block;" scrolling="no"></iframe></div>{{/url}}

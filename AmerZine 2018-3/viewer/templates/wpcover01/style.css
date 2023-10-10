@@ -1,0 +1,133 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .tp-wpcover01 .logo {
+        margin: 0 0 0px 0px;
+    }
+
+    .tp-wpcover01 .morespace .logo img {
+        max-height: 120px;
+    }
+
+    .tp-wpcover01 .logo img {
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .tp-wpcover01 .float-left {
+        float:left;
+        width: 325px;
+        padding-right: 20px;
+    }
+
+    .tp-wpcover01 .im-wpcover-custom-data img{
+        max-width: 340px;
+    }
+
+    .tp-wpcover01 .im-wpcover-custom-data {
+        float:right;
+        max-width:340px;
+    }
+
+    .tp-wpcover01 .title {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .tp-wpcover01 .title h1 {
+        margin: 0;
+        max-width: 685px;
+    }
+
+    .tp-wpcover01 #head {
+        margin: 0 0 20px 0;
+    }
+
+    .tp-wpcover01 #head.morespace {
+        margin:0;
+    }
+
+    .tp-wpcover01 h4 {
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,0.8);
+        /* box-shadow: 0px 0px 4px rgba(0,0,0,.4); */
+    }
+
+    .tp-wpcover01 h6 {
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,0.8);
+        margin: 0 0 0 10px;
+
+        /*-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);   */
+    }
+
+    .tp-wpcover01 div.textBlock {
+        margin: 20px 0 0 0;
+        max-width: 685px;
+        display:inline-block;
+        padding: 15px 15px;
+    }
+
+    .tp-wpcover01 table#head {
+        position: relative;
+        max-width: 710px;
+    }
+
+    .tp-wpcover01 table#head td {
+        padding: 0 20px 0 0;
+        vertical-align: bottom;
+    }
+
+    .tp-wpcover01 .alignCenter {
+        width: 900px;
+        height: auto;
+
+    }
+
+    .tp-wpcover01 .shortcuts {
+        /*box-shadow: 0px 0px 5px rgba(0,0,0,.7);*/
+        padding:8px 10px 8px 10px;
+        margin: 10px 0 0 0;
+        display: inline-block;
+    }
+
+    .tp-wpcover01 .shortcutsContainer {
+        height: 180px;
+        overflow: hidden;
+
+    }
+
+
+
+    .tp-wpcover01 .polaroid {
+        text-decoration: none;
+    }
+
+    .tp-wpcover01 article {
+        margin: 10px 0 0 0;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .tp-wpcover01 .logo img {
+        max-width: 150px;
+        max-height: 75px;
+    }
+
+    .tp-wpcover01 .morespace .logo img {
+        max-height: 100px;
+    }
+
+    .tp-wpcover01 div.textBlock {
+        display: none;
+
+    }
+
+    .tp-wpcover01 article {
+        margin: 20px 0 0 0;
+    }
+}

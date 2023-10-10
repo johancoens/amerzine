@@ -1,0 +1,77 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    #interview{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    #interview #interviewTextBlock{
+        width: 100%;
+        height:100%;
+    }
+    #interview #interviewTextBlock .block {
+        display:block;
+        position:absolute;
+        transform: translate3d(-350px,0,0);
+        -moz-transform: translate3d(-350px,0,0);
+        -webkit-transform: translate3d(-350px,0,0);
+        -o-transform: translate3d(-350px,0,0);
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -webkit-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+
+    }
+    #interview #interviewTextBlock .block.active {
+        transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        opacity: 1;
+
+    }
+
+
+    #interview #interviewBackground > div{
+        position:absolute;
+    }
+
+    #interview #interviewTextBlock .itemNumber {
+        width: 30px;
+        text-align:center;
+    }
+
+    #interview .ico_plus {
+        background-image: url(../../images/theme/buttonplus.png);
+        background-repeat: no-repeat;
+     	background-size:cover;
+        width: 25px;
+        height: 25px;
+		left: 12px;
+
+	}
+
+
+    #interview .block {
+        width: 300px;
+
+    }
+
+    #interview .block h2 {
+        padding: 20px;
+        display: block;
+		background-color: rgb(255,255,255);
+		background-color: rgba(255,255,255,0.9);
+    }
+
+    #interview .block div.paragraph {
+        padding: 20px;
+        margin: 5px 0 0 0;
+    }
+
+}

@@ -1,0 +1,16 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller">
+        <div class="top_header">
+            <h3>{{{title}}}</h3>
+        </div>
+        <div class="text">
+            <div class="paragraph">{{{intromobile}}}</div>
+        </div>
+        <div class="photos clearfix">
+        {{#images}}
+            <a href="javascript:void(0)" class="cell photo" style="background-image: url('{{helper(getImageUrl, {image.uri}, 67, 67, null, null, 1)}}')"></a>
+        {{/images}}
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

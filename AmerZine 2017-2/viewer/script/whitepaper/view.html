@@ -1,0 +1,18 @@
+<div class='im-whitepaper'>
+	<ul class="screen im-absolute-view">
+		<ul class='container text-block im-ts-paragraph'>
+			<div class="login"><span>&#128274;</span> Log in / Sign up</div>
+			<h1 class='im-ts-title'>{{{title}}}</h1>
+			<div class="description">{{{description}}}</div>
+			<ul class='options choose-platform'>
+				{{#platforms.facebook}}<li><a onclick="Magazine.whitepaper.login('facebook')" class='facebook login-button button'><span></span>Log in with Facebook</a></li>{{/platforms.facebook}}
+				{{#platforms.linkedin}}<li><a onclick="Magazine.whitepaper.login('linkedin')" class='linkedin login-button button'><span></span>Log in with LinkedIn</a></li>{{/platforms.linkedin}}
+				{{#platforms.email}}<li>or</li>
+				<li><a onclick="Magazine.whitepaper.login('email')"  class='email login-button button'><span></span>Log in with e-mail address</a></li>
+				{{/platforms.email}}
+			</ul>
+			{{#optional}}<a onclick="Magazine.whitepaper.skip()" class="skip-whitepaper">Skip <span>&rarr;</span></a>{{/optional}}
+			<div class='form'></div>
+		</ul>
+	</div>
+</div>

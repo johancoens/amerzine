@@ -1,0 +1,27 @@
+<div class="im-es-wrapper">
+    <div class="im-es-items im-ts-paragraph-background">
+        {{#scrollitem}}
+            <a name="cs-p-{{index}}" class="cs-anchor"></a>
+        <div class="item">
+            <div class='paragraph'>
+                <div class="im-cs-title">
+                    {{#title}}
+                    <h2 class="im-ts-title-background">{{{title}}}</h2>
+                    {{/title}}
+                    <div class="clear"></div>
+                    {{#subtitle}}
+                    <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4>
+                    {{/subtitle}}
+                </div>
+                {{#description}}
+                <div class="paragraph">{{{description}}}</div>
+                {{/description}}
+            </div>
+            {{#image.uri}}
+            <img class="im-cs-image" src="{{helper(getImageUrl, {image.uri}, null, null, 500, null)}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}}  />
+            {{/image.uri}}
+            <hr>
+        </div>
+        {{/scrollitem}}
+    </div>
+</div>

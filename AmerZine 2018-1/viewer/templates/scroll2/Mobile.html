@@ -1,0 +1,35 @@
+<div id="scroll_mobile" class="mobilePage">
+    <div class="wrapper im-ts-mobile-view">
+        <div class="scroller">
+            <div id="mInterview" class="mobile_list">
+
+                <div class="top_header">
+                    <h3>{{title}}</h3>
+                </div>
+
+                {{#scrollitem}}
+                <a href="{{urlbase}}/item/{{index}}">
+                    <table class="index_item">
+                        <tr>
+                            <td class="thumb">
+                                <div class="crop">
+                                    <img src="{{helper(getImageUrl, {image.uri}, 124, 124, null, null, 1)}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />
+                                </div>
+                            </td>
+                            <td class="title">
+                                <h5>{{title}}</h5>
+                                <h6>{{subtitle}}</h6>
+                            </td>
+                            <td class="arrow">
+                                <span class="im-sp im-sp-read-more-b-20"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+                {{/scrollitem}}
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="wrapper im-ts-mobile-view">
+
+        <!-- header -->
+        <div class="top_header">
+           
+            <span class="im-sp im-sp-arrow-left"></span>
+          
+            <a href="javascript:window.history.go(-1);" class="back">
+                <span>Terug</span></a>
+            <div class="clear"></div>                
+        </div>
+        <!-- end header -->
+        <div class="scroller" style="height:inherit;">
+            {{#alt}}
+                <div class="mobile-header-background header" style="{{#settings.position}}background-position:{{settings.position}};{{/settings.position}} background-image: url('{{helper(getBackgroundImage, {uri})}}'); "></div>
+                {{/alt}}
+                {{^alt}}
+                <div class="mobile-header-background header {{^image}}no-image{{/image}}" style="{{#image.settings.position}}background-position:{{image.settings.position}};{{/image.settings.position}} {{#image}}background-image: url('{{helper(getBackgroundImage, {image.uri})}}');{{/image}}">
+                    <div class='im-ts-list absolute'>
+                        <div class='im-ts-list-row'>
+                            <h5 class='label'>{{{title}}}</h5>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            {{/alt}}
+            <div class="text">
+                {{#subtitle}}<h4>{{{subtitle}}}</h4>{{/subtitle}}
+                <div class="paragraph">{{{intro}}}</div>
+                <div class="paragraph">{{{description}}}</div>
+            </div>
+<!--            
+            <div class="related">
+                <div class='im-ts-list'>
+            {{#related}}
+                <a href="{{url}}/item/{{index}}">               
+                    <div class='im-ts-list-row'>
+                        <h5 class='label'>{{{title}}}</h5>
+                            <span class="arrow">
+                            <span class="im-sp im-sp-arrow-right"></span>
+                        </span>
+                    </div>       
+                </a>
+           {{/related}}
+                </div>       
+            </div>-->
+        </div>
+        <div class="clear"></div>
+   
+</div>

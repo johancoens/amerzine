@@ -1,0 +1,16 @@
+<div class="wrapper im-ts-mobile-view">
+    {{{header}}}
+    <div class="scroller" style="height:inherit;">
+        {{^video.id}}
+        <div class="mobile-header-background" style="{{#background.settings.position}}background-position:{{background.settings.position}};{{/background.settings.position}} background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>
+        {{/video.id}}
+        {{#video.id}}
+        <div class="im-ts-videocontainer" data-video-id="{{video}}"></div>
+        {{/video.id}}
+        <div class="text">
+            {{#title}}<h2>{{{title}}}</h2>{{/title}}
+            <div class="paragraph">{{{description}}}</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

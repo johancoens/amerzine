@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="scroller  im-ts-overlay" style="height:inherit;">
+        {{#mobile_image}}<img src="{{helper(getImageUrl, {mobile_image.uri}, null, null, 640, null, 1, 1)}}" title="{{mobile_image.title}}" style="width: 100%;" />{{/mobile_image}}
+        {{^mobile_image}}{{#image}}<img src="{{helper(getImageUrl, {image.uri}, null, null, 640, null, 1, 1)}}" title="{{image.title}}" style="width: 100%;" />{{/image}}{{/mobile_image}}
+        {{#description}}
+		<div class="im-ts-overlay-padding">
+            <h3>{{{title}}}</h3>
+            <div class="paragraph">
+               {{{description}}}
+            </div>
+        {{/description}}
+		</div>
+    </div>
+</div>

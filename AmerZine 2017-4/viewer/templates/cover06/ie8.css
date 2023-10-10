@@ -1,0 +1,105 @@
+
+/** MOBILE CSS **/
+
+    .theme-2 .tp-cover06 .block-alignment-1{
+        margin-right: 62px;
+    }
+    .theme-1 .tp-cover06 .block-alignment-1{
+        margin-right: 67px;
+    }
+
+    .tp-cover06 .im-tp-m1-container {
+        position: relative;
+    	width: 300px;
+    	height: 100%;
+        overflow: auto;
+	}
+
+    .tp-cover06 .im-pg-text .im-media img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .tp-cover06 .im-n-buttons-bars {
+        display: none;
+    }
+
+    .tp-cover06 .im-pg-text .im-media {
+        margin-bottom: 20px;
+    }
+    .tp-cover06 .im-pg-text {
+        max-width: 60%;
+    }
+
+
+	.tp-cover06 .group-of-highlights {
+    	min-height: 150px;
+        width: 100%;
+    	display: table;
+	}
+
+    .tp-cover06 .im-tp-m1-intro {
+        position: absolute;
+        height: 100%;
+    }
+
+    .tp-cover06 .start-button {
+        display:inline-block;
+        padding: 10px 16px;
+        margin: 20px 0;
+        margin-bottom:0;
+    }
+
+	.tp-cover06 .im-media {
+		display:table-cell;
+	}
+
+	.tp-cover06 .highlights-text {
+		display:table-cell;
+		vertical-align: middle;
+		width: 260px;
+    	box-sizing: border-box;
+	}
+
+	.tp-cover06 .group-of-highlights .im-media-image {
+    	height: 130px;
+    	width: 130px;
+    	display: block;
+    	background-size: contain;
+    	background-repeat: no-repeat;
+    }
+
+    .tp-cover06 .block-alignment-1  {
+        position: relative;
+        float: right;
+        direction: rtl;
+    }
+
+    .tp-cover06 .im-tp-m1-scrollable .block-alignment-1{
+        width: 300px;
+        overflow: auto;
+        direction: ltr;
+    }
+
+    .tp-cover06 .block-alignment-1 .im-tp-m1-scrollable {
+        direction: ltr;
+    }
+
+    .tp-cover06 .im-ts-title, .tp-cover06 .im-ts-subtitle {
+    	display:block;
+    	position: relative;
+    }
+
+    .tp-cover06 .im-pg-text .im-media,
+    .tp-cover06 .im-pg-text .im-ts-paragraph,
+    .tp-cover06 .im-pg-text .im-ts-title-background,
+    .tp-cover06 .im-pg-text .im-ts-subtitle-background,
+    .tp-cover06 .im-pg-text .im-ts-button {
+        margin-bottom: 15px;
+    }
+
+    .tp-cover06 .im-tp-m1-fill-div {
+        width: 100%;
+        height: 0px;
+        display: block;
+    }

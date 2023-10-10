@@ -1,0 +1,21 @@
+<div class="im-ta-wrapper">
+    
+    <h1 class='im-ts-title-background'>{{{title}}}</h1>
+    <h3 class='im-ts-subtitle-background'>{{{subtitle}}}</h3>
+    <div class='text-block'>
+        <div class='paragraph'>
+            {{{description}}}
+        </div>
+    </div>
+    <table class='im-ta-table im-ts-paragraph-background im-ts-border-radius'>
+        {{#row}}    
+        <tr class='{{row_layout}}'>
+            {{#column}}
+            <td>
+                <span>{{label}}</span>
+            </td>
+            {{/column}}
+        </tr>
+        {{/row}}
+    </table>
+</div>

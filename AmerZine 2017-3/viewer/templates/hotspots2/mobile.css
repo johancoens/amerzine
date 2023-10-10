@@ -1,0 +1,65 @@
+
+.tp-hotspots2 .wrapper  {   
+    min-width: 320px;
+    max-width: 767px;	
+    position: relative;
+}
+
+.tp-hotspots2 .background {
+    position: relative;
+    padding: 20px;
+}
+
+.tp-m-hotspots2 .introtext {
+    padding: 20px;	
+}
+
+
+.tp-hotspots2 table.index_item {
+    opacity: 0.9;
+    width: 100%;
+    margin: 0px 0 0 0px;
+    height: 51px;
+    border-bottom: 1pt solid #ababab;	
+}
+
+
+.tp-hotspots2 table.index_item td {	
+    vertical-align: middle;	
+    text-align: left;
+
+}
+
+.tp-hotspots2 table.index_item td.thumb {
+    width: 75px;
+    overflow: hidden;
+}
+
+.tp-hotspots2 .crop {
+    width: 62px;
+    height: 62px;
+    overflow: hidden;	
+}
+
+.tp-hotspots2 .crop img {
+    margin-left: -20%; 	
+}
+
+.tp-hotspots2 table.index_item td.thumb img {
+    display: block;	
+    height: 62px;
+}
+
+.tp-hotspots2 table.index_item td.title {
+    padding: 0 0 0 20px;	
+}
+
+.tp-hotspots2 table.index_item td.arrow {
+    padding: 6px 0px 0 0;	
+    width: 25px;
+}
+
+.tp-hotspots2 table.index_item tr {
+    border-bottom: 1pt solid #c2c2c2;
+    border-top: 1pt solid #FFFFFF;
+}

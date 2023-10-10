@@ -1,0 +1,19 @@
+<{{action.element}} onclick="{{action.onclick}}" target="{{action.target}}" href="{{action.href}}" class="timeline-unit">
+    {{#title}}<h3 class="im-ts-title-background im-ts-title-padding" im-object="im-style-directive" data-style="{{style.title}}" data-mobile-style="{{style.m_title}}">{{{title}}}</h3>{{/title}}
+    <div class="text-block" im-object="im-style-directive" data-style="{{style.block}}" data-mobile-style="{{style.m_block}}">
+		<div class="paragraph{{#media_first}} media-first{{/media_first}}" im-object="im-style-directive" data-style="{{style.paragraph}}" data-mobile-style="{{style.m_paragraph}}">
+			{{#media_first}}
+			{{#image}}<div class="im-media" width="420" im-object="im-media-directive" imagetag="imagetag" data-media="{{image}}"></div>{{/image}}
+			{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  imagetag="imagetag" data-media="{{youtube}}"></div>{{/youtube.id}}
+			{{#subtitle}}<h6 im-object="im-style-directive" data-style="{{style.subtitle}}" data-mobile-style="{{style.m_subtitle}}">{{{subtitle}}}</h6>{{/subtitle}}
+			{{{description}}}
+			{{/media_first}}
+			{{^media_first}}
+			{{#subtitle}}<h6 im-object="im-style-directive" data-style="{{style.subtitle}}" data-mobile-style="{{style.m_subtitle}}">{{{subtitle}}}</h6>{{/subtitle}}
+			{{{description}}}
+			{{#image}}<div class="im-media" width="420" im-object="im-media-directive" imagetag="imagetag" data-media="{{image}}"></div>{{/image}}
+			{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  imagetag="imagetag" data-media="{{youtube}}"></div>{{/youtube.id}}
+			{{/media_first}}
+		</div>
+    </div>
+</{{action.element}}>

@@ -1,0 +1,17 @@
+
+<div class="webshop-detail text-block">
+    <div class="im-media detail-image" autoplay="autoplay" width="575" height="550" im-object="im-media-directive"></div>
+    <div class="detail-text-wrapper{{#mobile}} paragraph{{/mobile}}">
+        <div class="detail-text paragraph">
+            {{#subtitle}}<h3 class="im-ts-subtitle">{{{subtitle}}}</h3>{{/subtitle}}
+            {{#title}}<h2 class="im-ts-title">{{{title}}}</h2>{{/title}}
+        </div>
+        <div class="detail-price clearfix">
+            {{#prev_price}}<div class="price old">{{prev_price}}</div>{{/prev_price}}
+            {{#price}}<div class="price">{{price}}</div>{{/price}}
+            {{#order_label}}<a href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="buttonlink im-ts-button im-ts-border-radius">{{{order_label}}}</a>{{/order_label}}
+        </div>
+        <div class="im-webshop-p paragraph">{{{description}}}</div>
+        <a href="{{urlbase}}" class="im-ts-button-close im-sp-size-50-0_55 im-ts-button"><span class="im-sp im-sp-times"></span></a>
+    </div>
+</div>

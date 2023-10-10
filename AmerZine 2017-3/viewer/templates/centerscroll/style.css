@@ -1,0 +1,116 @@
+
+/** MOBILE CSS **/
+    .tp-centerscroll .im-cs-wrapper {
+        width: 100%;
+        height: 100%;
+
+        overflow:hidden;
+        -webkit-overflow-scrolling:touch;
+        position:relative;
+        top:0px;
+    }
+
+    .tp-centerscroll .im-media img {
+        max-width: 100%;
+    }
+
+    .tp-centerscroll .im-media .im-ts-videocontainer {
+        width: 100%;
+    }
+
+    .tp-centerscroll .imprType {
+        opacity: 50%;
+    }
+
+    .tp-centerscroll .imprType:hover {
+        opacity: 100%;
+    }
+
+    .tp-centerscroll .cs-anchor {
+        position:relative;
+        top: -20px;
+    }
+
+    .tp-centerscroll .im-cs-content {
+        min-height: 100%;
+    }
+
+    .tp-centerscroll .im-cs-items {
+        margin: 0;
+        width: 100%;
+    }
+
+    .tp-centerscroll .im-cs-startanimation,
+    .tp-centerscroll .im-cs-items {
+        display:none;
+    }
+
+    .tp-centerscroll.didappear .im-cs-startanimation,
+    .tp-centerscroll.didappear .im-cs-items {
+        display:block;
+    }
+
+    .tp-centerscroll .im-cs-items-spacing {
+        width: 100%;
+    }
+
+    .tp-centerscroll .im-favorite-button {
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+    .tp-centerscroll .item {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .tp-centerscroll h2 {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    .tp-centerscroll h4 {
+        display: inline-block;
+        margin: 0 0 10px 0;
+    }
+
+    .tp-centerscroll .paragraph {
+        position:relative;
+        display: block;
+        background-color: transparent;
+    }
+
+    .tp-centerscroll .im-cs-image, .tp-centerscroll .im-ts-videocontainer {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0px 0px 0px;
+    }
+    .tp-centerscroll .im-cs-startanimation {
+        position: relative;
+    }
+
+    .tp-centerscroll hr {
+        opacity: 0.5;
+        margin:10px 0 0 0;
+    }
+    .tp-centerscroll .item-space-0 .item {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+
+
+@media only screen and (min-width: 960px) {
+
+    .theme-2 .tp-centerscroll .im-cs-wrapper {
+        margin-left: -420px
+    }
+}
+@media only screen and (min-width: 768px) {
+    .tp-centerscroll .im-cs-wrapper {
+        width: 768px;
+        left:50%;
+        margin-left: -384px;
+    }
+
+}

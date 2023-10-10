@@ -1,0 +1,14 @@
+<{{action.element}} target="{{action.target}}" onclick="{{action.onclick}}" href="{{action.href}}" class="im-tp-sc-item {{#image.uri}}image{{/image.uri}} {{^image}}no-image{{/image}}">
+        {{#image}}<div im-object="im-media-directive" class="im-media im-ts-border-radius" data-media="{{image}}"></div>{{/image}}
+        {{#title}}<h2 class="im-ts-title-background" style="{{title_style}}">{{{title}}}</h2>{{/title}}
+        {{#has_paragraph}}<div class="text-block paragraph" style="{{description_style}}">
+            {{#subtitle}}<h4 class="im-ts-subtitle" style="{{subtitle_style}}">{{{subtitle}}}</h4>{{/subtitle}}
+            {{{intro}}}
+            {{#description}}
+                {{#more_link}}
+                    <span class="readmore">{{helper(translate, btn_more)}}</span>
+                {{/more_link}}
+            {{/description}}
+        </div>
+        {{/has_paragraph}}
+</{{action.element}}>

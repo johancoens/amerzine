@@ -1,0 +1,25 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+    #phototext02 .im-tp-caption {
+        position:absolute;
+        bottom: 40px;
+        left: 50px;
+        max-width:500px;
+        height:auto;
+    }
+
+
+    #phototext02 h2 {
+        margin: 0 0 20px 0;
+        display: inline-block;
+    }
+
+}
+    #phototext02 .im-tp-nav-bar {
+        position:absolute;
+        width: 50px;
+        height: 100%;
+    }

@@ -1,0 +1,161 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+    .tp-phototext03 #fivView {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .tp-phototext03 #fivTextBlock {
+        position: absolute;
+        width: 550px;
+        z-index: 5;
+        padding-bottom: 0px;
+    }
+
+    .tp-phototext03 #fivTextBlock h2{
+        display: block;
+        position: relative;
+        margin-right: 39px;
+        transition:height 0.5s ease-out;
+        -moz-transition:height 0.5s ease-out;
+        -webkit-transition:height 0.5s ease-out;
+    }
+    .tp-phototext03 .im-pt3-up {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .tp-phototext03 .im-pt3-down {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .tp-phototext03.multiple .text-block {
+        border-top-right-radius: 0;
+    }
+
+    .tp-phototext03 .im-pt3-h2-wrapper {
+        overflow: hidden;
+    }
+
+    .tp-phototext03 .im-pt3-h2-text {
+        position:relative;
+        display:block;
+    }
+
+    .tp-phototext03 .im-pt3-paragraph-wrapper {
+        overflow: hidden;
+        float: left;
+
+    }
+
+    .tp-phototext03 #fivTextBlock div.paragraph {
+        padding:16px 20px;
+        margin-right: 39px;
+        transition:height 0.5s ease-out;
+        -moz-transition:height 0.5s ease-out;
+        -webkit-transition:height 0.5s ease-out;
+        height: 100%;
+        display:block;
+        position:relative;
+    }
+
+    .tp-phototext03 .im-pt3-paragraph {
+        position: relative;
+        top: 0;
+        width:471px;
+    }
+
+    .tp-phototext03 .mobile #fivTextBlock {
+        position: relative;
+        top: 40px;
+        left: auto;
+        margin: 0 auto 79px;
+        width: 70%;
+    }
+
+    .tp-phototext03 #fivTextBlock.text-block .items > div{
+        display:none;
+    }
+
+    .tp-phototext03 #fivBackground > div{
+        position:absolute;
+    }
+
+    .tp-phototext03 .navigationBlock {
+        position: relative;
+        width:40px;
+    }
+
+    .tp-phototext03 .im-pt3-navigation-wrapper {
+        overflow: hidden;
+        position:absolute;
+        right: 0;
+    }
+
+    .tp-phototext03 .item-indicator {
+        width: auto;
+        text-align:center;
+        padding: 10px 0;
+        white-space: nowrap;
+        display: block;
+        line-height: 16px;
+        background: rgba(0,0,0,0.35);
+        color: rgb(255,255,255);
+        border-radius: 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .tp-phototext03 .item-indicator .indicator-text {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .tp-phototext03 .im-pt3-up .im-sp-arrow-up-s-2 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .tp-phototext03 .im-pt3-down .im-sp-arrow-down-s-2 {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .tp-phototext03 .im-sp-arrow-up-s-2, .tp-phototext03 .im-sp-arrow-down-s-2 {
+        display:block;
+        box-shadow: none;
+        margin:0;
+        float: none;
+        color: rgb(255,255,255);
+        line-height: 0px;
+    }
+
+    .tp-phototext03 .im-pt3-down {
+        padding: 7px;
+        padding-left: 5px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        line-height: 0;
+    }
+
+    .tp-phototext03 .im-pt3-up {
+        padding: 7px;
+        padding-left: 5px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        line-height: 0;
+    }
+
+    .tp-phototext03 h2 {
+        margin: 0 0 5px 0;
+    }
+
+    .tp-phototext03 .hide {
+        display: none;
+    }
+}

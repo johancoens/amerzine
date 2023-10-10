@@ -1,0 +1,21 @@
+<div id="slider">
+{{#slider}}
+    <div class="bg clickable" style="{{#background.settings.position}}background-position: {{background.settings.position}};{{/background.settings.position}} background-image:url('{{helper(getBackgroundImage, {background.uri})}}');">
+        {{#details}}
+        <div class="text-block paragraph content_position_{{content_position}} {{last}}">
+			<div class="top-button-bar top-right">
+            	<a class="close-button button im-ts-button square-small" title="Close" href="#"><span class="im-sp im-sp-times"></span></a>
+			</div>
+            <h2>{{{title}}}</h2>
+            {{#description}}{{{description}}}{{/description}}
+        </div>
+        {{/details}}
+        {{#hasVideo}}
+        <div class="im-sl-video">
+            <a class="close-button button im-ts-button square-small" href="#"><span class="im-sp im-sp-times"></span></a>
+            <div class="im-ts-videocontainer auto" data-video-id="{{youtube}}"></div>
+        </div>
+        {{/hasVideo}}
+    </div>
+{{/slider}}
+</div>

@@ -1,0 +1,53 @@
+<div class="wrapper">
+    <div class="scroller">
+        <div style="padding: 20px;">
+            <header>
+                {{#logo}}
+                <div class="logo"><img src="{{logo.src}}"  {{#logo.alt}} alt="{{logo.alt}}"{{/logo.alt}}/></div>
+                {{/logo}}
+                {{#datetext}}
+                <div class="datetext"><h6 class="im-ts-subtitle-background">{{{datetext}}}</h6></div>
+                {{/datetext}}
+            </header>
+            {{#title}}
+                <h1 class="im-ts-title-background">{{{title}}}</h1>
+            {{/title}}
+
+            {{#intromobile}}
+            <div class="text-block paragraph im-ts-paragraph">
+                {{{intromobile}}}
+            </div>
+            {{/intromobile}}
+
+            {{#subtitle}}
+            <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4>
+            {{/subtitle}}
+            
+            <div class='im-ts-mobile-view'>
+                <div class='im-ts-list list-style-2'>
+                {{#shortcuts2}}
+                <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class='im-ts-border-radius' href="#!/{{shortcut.alias}}/"  {{{helper(trackEvent,HighlightsMobile,Click,{shortcut.title})}}}>
+                    <span class="thumb">
+                        {{#image}}
+                        <img src="{{helper(getImageUrl, {image.uri}, 157, 109, null, null, 1)}}" title="{{shortcut.thumb.alt}}" />
+                        {{/image}}
+                        {{^image}}
+                            {{#shortcut.thumb}}
+                            <img src="{{helper(getImageUrl, {shortcut.thumb}, 157, 109, null, null, 1, 1)}}" title="{{shortcut.thumb.alt}}" align="left" />
+                            {{/shortcut.thumb}}
+                        {{/image}}
+                    </span>
+                    <div class="label">
+                        <h5>{{{label}}}</h5>
+                        <h6>{{{sublabel}}}</h6>
+                    </div>
+                    <span class="arrow">
+                        <span class="im-sp im-sp-arrow-right"></span>
+                    </span>
+                </{{action.element}}>
+                {{/shortcuts2}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

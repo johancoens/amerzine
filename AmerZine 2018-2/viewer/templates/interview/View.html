@@ -1,0 +1,26 @@
+<div class="im-interview-markers-container">
+</div>
+<div class="im-interview-container">
+    <div class="block small transparent style-{{block_size}} im-absolute-view">
+        {{#title}}
+        <h2 class="im-ts-title-background">{{{title}}}</h2>
+        {{/title}}
+        {{#intro}}
+        <div class="text-block im-ts-paragraph-background paragraph">{{{intro}}}</div>
+        {{/intro}}
+    </div>
+
+    {{#markers}}
+    <div class="block small transparent style-{{block_size}} im-absolute-view">
+		<div class="top-button-bar top-right">
+        	<a class="close-button button square-small im-ts-button-background" href="{{urlbase}}"><span class="im-sp im-sp-times"></span></a>
+		</div>
+        {{#title}}
+        <h2 class="im-ts-title-background">{{{title}}}</h2>
+        {{/title}}
+        {{#description}}
+        <div class="text-block paragraph">{{{description}}}</div>
+        {{/description}}
+    </div>
+    {{/markers}}
+</div>

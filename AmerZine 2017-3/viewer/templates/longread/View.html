@@ -1,0 +1,103 @@
+<div class="im-tp-lr-navigation">
+    <a href="#" class="im-tp-lr-scroller up">
+        <div>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="12px" height="15px" viewBox="8.834 9.391 9.999 12.754" enable-background="new 8.834 9.391 9.999 12.754"
+                        xml:space="preserve">
+               <g>
+                       <path fill="#FFFFFF" d="M9.032,14.868c0.264,0.264,0.691,0.264,0.956,0l3.171-3.171v9.772c0,0.373,0.303,0.674,0.676,0.674
+                               s0.676-0.301,0.676-0.674v-9.772l3.171,3.171c0.264,0.264,0.691,0.264,0.955,0c0.264-0.263,0.264-0.692,0-0.956l-4.325-4.324
+                               c-0.13-0.132-0.303-0.197-0.477-0.197s-0.347,0.065-0.479,0.197l-4.324,4.324C8.768,14.176,8.768,14.605,9.032,14.868z"/>
+               </g>
+                <span class="im-sp im-sp-arrow-up"></span>
+             </svg>
+        </div>
+    </a>
+
+    <a href="#" class="im-tp-lr-scroller down">
+        <div>
+           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="25px" height="32px" viewBox="122.583 122.416 25 32" enable-background="new 122.583 122.416 25 32" xml:space="preserve">
+           <g>
+                   <path fill="#FFFFFF" d="M147.088,140.665c-0.659-0.66-1.729-0.66-2.39,0l-7.927,7.927v-24.429c0-0.933-0.757-1.689-1.689-1.689
+                           s-1.689,0.756-1.689,1.689v24.429l-7.927-7.927c-0.659-0.66-1.729-0.66-2.388,0c-0.66,0.659-0.66,1.729,0,2.389l10.81,10.811
+                           c0.33,0.33,0.762,0.494,1.194,0.494c0.433,0,0.865-0.164,1.195-0.494l10.811-10.811
+                           C147.748,142.394,147.748,141.324,147.088,140.665z"/>
+           </g>
+               <span class="im-sp im-sp-arrow-down"></span>
+           </svg>
+        </div>
+    </a>
+</div>
+
+<div class="im-tp-lr-container scroller {{animation}}">
+
+    <div class="im-tp-lr-header">
+        {{^isAnm1}}<div class="im-tp-lr-header-intro {{text_align}}">{{/isAnm1}}
+        {{#isAnm1}}<div class="im-tp-lr-header-intro {{text_align}} pos-{{position_height}}">{{/isAnm1}}
+            {{#title}}
+                 <h1 class="im-ts-title-background">{{{title}}}</h1><br/>
+            {{/title}}
+            {{#subtitle}}
+                <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br/>
+            {{/subtitle}}
+             {{#description}}
+                <div class="paragraph text-block">{{{description}}}</div>
+            {{/description}}
+        </div>
+    </div>
+
+    {{#isAnm1}}<div class="im-tp-lr-content">{{/isAnm1}}
+    {{^isAnm1}}<div class="im-tp-lr-content" style="top:{{position_height}}">{{/isAnm1}}
+        <div class="im-tp-lr-intro {{text_align}}">
+            {{#title}}
+            <h1 class="im-ts-title-background">{{{title}}}</h1><br/>
+            {{/title}}
+            {{#subtitle}}
+            <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br/>
+            {{/subtitle}}
+             {{#description}}
+             <div class="paragraph text-block">{{{description}}}</div>
+            {{/description}}
+        </div>
+
+        <div class="im-tp-lr-article slide">
+            <div class="im-tp-lr-article-inner">
+                {{#paragraphs}}
+                <div class="im-tp-lr-paragraph {{#noauthor}}no-author{{/noauthor}}" style="{{paragraph_background_style}}">
+                    <div class="article-text" style="{{paragraph_padding}}">
+                        <a name="lr-p-{{index}}"></a>
+
+                        {{#title}}
+                        <h1 class="im-ts-title-background" im-object="im-style-directive" data-mobile-style="{{title_style_mobile}}" data-style="{{title_style}}">{{{title}}}</h1>
+                        {{/title}}
+
+                        {{#subtitle}}
+                        <h4 class="im-ts-subtitle-background" im-object="im-style-directive" data-mobile-style="{{subtitle_style_mobile}}" data-style="{{subtitle_style}}">{{{subtitle}}}</h4>
+                        {{/subtitle}}
+
+                        {{#sidenote_icon}}
+                        <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="im-ts-sidenotes"><span class="im-font-icon">{{{sidenote_icon}}}</span><span class="im-tp-sidenote-label animate fadeInUp" >{{{sidenotes}}}</span></{{action.element}}>
+                        {{/sidenote_icon}}
+
+                        {{#quote}}
+                        <blockquote class="im-ts-quote{{^invisible_quotes}} add-quotes{{/invisible_quotes}}" im-object="im-style-directive" data-mobile-style="{{quote_style_mobile}}" data-style="{{quote_style}}">{{{quote}}}</blockquote>
+                        {{/quote}}
+
+                        {{#description}}
+                        <div class="paragraph" style="{{paragraph_style}}">{{{description}}}</div>
+                        {{/description}}
+                    </div>
+
+                    {{#image}}
+                    <img src="{{helper(getBackgroundImage, {image.uri})}}" class="im-tp-lr-image"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />
+                    {{/image}}
+
+                    {{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+
+                </div>
+                {{/paragraphs}}
+            </div>
+        </div>
+    </div>
+</div>

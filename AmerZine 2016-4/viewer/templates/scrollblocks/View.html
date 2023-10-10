@@ -1,0 +1,137 @@
+<div class="im-sb-wrapper scroller">
+    <div class="im-sb-items im-sb-paragraph-background">
+        <div class="blocks-wrapper">
+            <div class="blocks im-ts-border-radius">
+                {{#rows}}
+                <div class="row im-sb-block-row" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear">
+                    {{#text_image_quote}}
+                    <div class="block-row block-row-text-image-quote pos-{{content_position}} clearfix">
+                        <div class="block-column">
+                            <div class="block-column-text text-block no-border-radius" style="{{style_background}}">
+                                <div class="paragraph" im-object="im-style-directive" data-style="{{style_paragraph}}" data-mobile-style="{{m_style_paragraph}}">
+                                    {{#title}}
+                                    <h2 class="im-ts-title" im-object="im-style-directive" data-style="{{style_title}}" data-mobile-style="{{m_style_title}}">{{{title}}}</h2> {{/title}} {{#subtitle}}
+                                    <h4 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{style_subtitle}}" data-mobile-style="{{m_style_subtitle}}">{{{subtitle}}}</h4> {{/subtitle}} {{{description}}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-column">
+                            <div class="block-column-image-quote text-block im-ts-quote-background no-border-radius" style="{{style_background_quote}}">
+                                <table>
+                                    {{#image.uri}}
+                                    <tr>
+                                        <td{{^quote}} class='one-row' {{/quote}}>
+                                            <div class="im-media im-media-image" im-object="im-media-directive" width="500" data-media="{{image}}"></div>
+                                        </td>
+                                    </tr>
+                                    {{/image.uri}} {{#quote}}
+                                    <tr>
+                                        <td{{^image}} class='one-row' {{/image}}>
+                                            <div class="block-column-quote im-ts-quote" im-object="im-style-directive" data-mobile-style="{{style_quote_mobile}}" data-style="{{style_quote}}">
+                                                {{{quote}}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {{/quote}}
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    {{/text_image_quote}} 
+                    {{#text_image}}
+                    <div class="block-row block-row-image-text no-border-radius clearfix">
+                        <div class="im-media im-media-image cover-image" im-object="im-media-directive" data-media="{{image}}"></div>
+                        <div class="block-column-image-text-content pos-{{content_position}}">
+                            <div class="column-padding">
+                                {{#title}}
+                                <h2 class="im-ts-title-background" im-object="im-style-directive" data-style="{{style_title}}" data-mobile-style="{{m_style_title}}">{{{title}}}</h2> {{/title}}
+                                <div class="text-block paragraph" im-object="im-style-directive" data-style="{{style_paragraph}}" data-mobile-style="{{m_style_paragraph}}">
+                                    {{#subtitle}}
+                                    <h4 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{style_subtitle}}" data-mobile-style="{{m_style_subtitle}}">{{{subtitle}}}</h4> {{/subtitle}} {{#description}} {{{description}}} {{/description}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/text_image}} 
+                    {{#text}}
+                    <div class="block-row block-row-text text-block no-border-radius clearfix" style="{{style_background}} {{^description}}text-align:center;{{/description}}">
+                        {{#title}}
+                        <h2 class="im-ts-title" im-object="im-style-directive" data-style="{{style_title}}" data-mobile-style="{{m_style_title}}">{{{title}}}</h2>{{/title}} {{#description}}
+                        <div class="paragraph im-columns-{{columns}}" im-object="im-style-directive" data-style="{{style_paragraph}}" data-mobile-style="{{m_style_paragraph}}">
+                            {{{description}}}
+                        </div>
+                        {{/description}}
+                    </div>
+                    {{/text}} 
+                    {{#videos}}
+                    <div class="block-row block-row-video no-border-radius clearfix">
+                        <div class="im-ts-videocontainer no-border-radius" data-video-id="{{youtube}}"></div>
+                    </div>
+                    {{/videos}} 
+                    {{#image_quote}}
+                    <div class="block-row block-row-image-quote  pos-{{content_position}} clearfix">
+                        <div class="block-column">
+                            <div class="block-column-quote text-block im-ts-quote-background no-border-radius" style="{{style_background_quote}}">
+                                <table>
+                                    {{#quote}}
+                                    <tr>
+                                        <td>
+                                            <div class="im-ts-quote" im-object="im-style-directive" data-mobile-style="{{style_quote_mobile}}" data-style="{{style_quote}}">
+                                                {{{quote}}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {{/quote}}
+                                </table>
+                            </div>
+                        </div>
+                        <div class="block-column">
+                            <div class="block-column-image no-border-radius im-media im-media-image" width="500" im-object="im-media-directive" data-media="{{image}}">
+                            </div>
+                        </div>
+                    </div>
+                    {{/image_quote}} 
+                    {{#cover.is_slider}}
+                    <div class="block-row block-row-slider no-border-radius clearfix">
+                        <div class="im-sb-slider im-media im-media-image" fullscreen="fullscreen" im-object="im-media-directive"></div>
+                    </div>
+                    {{/cover.is_slider}} 
+                    {{#custom_advanced.is_custom_advanced}}
+                    <div class="block-row block-row-custom clearfix {{custom_advanced.pattern}}">
+                        {{#custom_advanced}}
+                        <div class="block-column-custom columns-{{columns}} text-block no-border-radius width-{{columns_width}}" style="{{style_background}}">
+                            {{#block_type_text}}
+                            <div class="block-column-custom-content paragraph">
+                                {{#title}}
+                                <h4 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{style_title}}" data-mobile-style="{{m_style_title}}">{{{title}}}</h4>{{/title}} {{#description}}
+                                <div im-object="im-style-directive" data-style="{{style_paragraph}}" data-mobile-style="{{m_style_paragraph}}">{{{description}}}</div>{{/description}}
+                            </div>
+                            {{/block_type_text}} {{#block_type_image}} {{#image}}
+                            <div class="block-custom-image im-media im-media-image" width="500" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}} {{/block_type_image}} {{#block_type_video}} {{#youtube}}
+                            <div class="im-ts-videocontainer no-border-radius small" data-video-id="{{youtube}}"></div>{{/youtube}} {{/block_type_video}}
+                        </div>
+                        {{/custom_advanced}}
+                    </div>
+                    {{/custom_advanced.is_custom_advanced}} 
+                    {{#gmaps}}
+                    <div class="block-row-maps">
+                        <div class="im-sb-maps"></div>
+                    </div>
+                    {{/gmaps}} 
+                    {{#item}}
+                    <div class="block-row" style="{{style_background}}">
+                        <div class="block-column-custom-content paragraph">
+                            {{#title}}
+                            <h4 class='im-ts-subtitle' style="{{style_title}}">{{{title}}}</h4>{{/title}} {{#description}}
+                            <div style="{{style_paragraph}}">{{{description}}}</div>{{/description}}
+                        </div>
+                        <div class="im-rss-directive" im-object="im-rss-directive" data-url="{{url}}" data-style="{{style}}" data-label="{{label}}"></div>
+                    </div>
+                    {{/item}}
+                </div>
+                {{/rows}}
+            </div>
+        </div>
+    </div>
+</div>

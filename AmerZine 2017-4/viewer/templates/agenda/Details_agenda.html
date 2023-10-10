@@ -1,0 +1,23 @@
+<div class="wrapper im-ts-mobile-view">
+    {{{header}}}
+    <div class="scroller">
+        {{#image}}
+        <div class='im-center-image' style='margin-top: 10px; margin-bottom: 10px;'>
+            <img src="{{helper(getImageUrl, {image.uri}, null, null, 180, null, 0)}}" />
+        </div>
+        {{/image}}
+        <div class='im-ts-list'>
+            <div class='im-ts-list-row'>
+                <span class="label">
+                    <h5>{{{title}}}</h5>
+                    <h6>{{{datestr}}}</h6>
+                </span>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="paragraph">{{{description}}}</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

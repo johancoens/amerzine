@@ -1,0 +1,33 @@
+<div id="newsItems" class="alignCenter">
+    {{#title}}
+            <h1 id="title" class="im-ts-title-background">{{{title}}}</h1><br>
+    {{/title}}
+    <div class="clear"></div>
+    {{#news}}
+    <div class="newsItem">
+        <h5 class="im-ts-subtitle-background im-ts-title-padding" im-object="im-style-directive" data-style="{{title_style}}">{{title}}</h5>
+        {{#image}}
+        <div class="newsContent text-block with-image" im-object="im-style-directive" data-style="{{paragraph_style_bg}}">
+                <div class="paragraph newsIntro" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{intro}}}
+                </div>
+                <img src="{{Config.magazine_url}}{{image.uri}}" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}}  />
+                {{#has_button}}
+                <a href="{{action.href}}" class="button im-ts-button im-sp-after im-sp-read-more-w-after"  {{#action.target}}target="{{action.target}}"{{/action.target}} onclick="{{action.onclick}}"><span>{{label}}</span></a>
+                {{/has_button}}
+        </div>
+        {{/image}}
+        {{^image}}
+        <div class="newsContent text-block without-image" im-object="im-style-directive" data-style="{{paragraph_style_bg}}">
+                <div class="paragraph newsIntro" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{intro}}}</div>
+                {{#has_button}}
+                <div class="im-tp-news-more">
+                    <a href="{{action.href}}" class="button im-ts-button im-sp-after im-sp-read-more-w-after" {{#action.target}}target="{{action.target}}"{{/action.target}} onclick="{{action.onclick}}"><span>{{label}}</span></a>
+                </div>
+                {{/has_button}}
+        </div>
+        {{/image}}
+    </div>
+    {{/news}}
+</div>
+<div class="alignCenter im-news-overlay-container" style="width:600px; margin-left: -300px; ">
+</div>

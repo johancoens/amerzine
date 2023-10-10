@@ -1,0 +1,118 @@
+
+
+    .tp-scroll3 .im-absolute-view {
+        width: 700px;
+    }
+
+    .tp-scroll3 .im-sc-next-button-wrapper {
+        height: 90px;
+    }
+
+    .tp-scroll3 .im-sc-prev-button-wrapper .im-previous {
+        top: 20px;
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    .tp-scroll3 .im-sc-next-button-wrapper .im-next {
+        bottom: 30px;
+        left: 50%;
+        margin-left: -70px;
+    }
+
+    .tp-m-scroll3 .im-sc-next-button-text h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .tp-m-scroll3 .im-sc-next-button-title h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    .tp-scroll3 .im-sc-next-button-text {
+        position:absolute;
+        top: 8px;
+        right: 50%;
+        text-align: right;
+        margin-right: 70px;
+    }
+
+    .tp-scroll3 .im-sc-next-button-title {
+        position:absolute;
+        top: 8px;
+        left: 50%;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .tp-scroll3 .im-previous span {
+        position: relative;
+    }
+
+    .tp-scroll3 .im-next span {
+        position: relative;
+    }
+
+
+
+
+.tp-scroll3 h1 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    position:relative;
+}
+
+.tp-scroll3 .paragraph {
+    position:relative;
+}
+
+
+.tp-scroll3 .im-sc-prev-button-wrapper {
+    background-color: none;
+    width: 100%;
+    position: absolute;
+    top:0;
+    height: 90px;
+    z-index: 10;
+}
+
+.tp-scroll3 .im-sc-next-button-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    opacity: 1;
+    z-index: 10;
+}
+
+.tp-scroll3 .im-sc-next-button-wrapper.hide {
+    bottom: -120px;
+}
+
+.tp-scroll3 .im-sc-prev-button-wrapper .im-previous {
+    position:absolute;
+    display: inline-block;
+    border: 3px solid white;
+}
+
+
+.tp-scroll3 .im-sc-next-button-wrapper .im-next {
+    position:absolute;
+    display: inline-block;
+    border: 3px solid white;
+}
+
+.tp-scroll3 .im-sc-prev-button-wrapper .im-previous.disabled {
+    top: -80px;
+    opacity: 0;
+}
+
+
+.tp-scroll3 .im-sc-next-button-wrapper .im-next.disabled {
+    opacity: 1;
+
+}
+
+
+

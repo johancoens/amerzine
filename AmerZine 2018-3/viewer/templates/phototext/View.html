@@ -1,0 +1,23 @@
+
+<div class="im-tp-pt-view">
+    <div class="canScroll im-tp-pt-content im-ts-textblock">
+        <div class="items">
+            {{#phototext}}
+            <div class="item">
+                {{#title}}
+                <h2 class="im-ts-title-background">{{{title}}}</h2>
+                {{/title}}
+                {{#description}}
+                <div class="text-block paragraph">{{{description}}}</div>
+                {{/description}}
+            </div>
+            {{/phototext}}
+        </div>
+        <div class='label navigationBlock' style="margin-top:10px; float:right;">
+            <a href='javascript:void(0)' class='button im-ts-button square primary-bg prev'><span class='im-sp im-sp-arrow-left-2'></span></a>
+            <span class="item-indicator">1 / 4</span>
+            <a href='javascript:void(0)' class='button im-ts-button square primary-bg next'><span class='im-sp im-sp-arrow-right-2'></span></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

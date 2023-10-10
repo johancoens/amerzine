@@ -1,0 +1,50 @@
+<div class="im-tp-m1-intro">
+    <div class="im-pg-text im-absolute-view">
+
+        {{#image}}
+            <div im-object="im-media-directive" imagetag="imagetag"  data-media="{{image}}" style="height: {{image_height}}px; width: {{image_width}}px;" width="600" class="im-media im-media-image"></div>
+        {{/image}}
+        {{#title}}
+            <h2 class="im-ts-title-background">{{{title}}}</h2><br />
+        {{/title}}
+        {{#subtitle}}
+            <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br />
+        {{/subtitle}}
+        {{#description}}
+            <div class="im-ts-paragraph paragraph text-block">{{{description}}}</div><br />
+        {{/description}}
+        {{#label}}
+        	<a class="im-ts-button start-button im-ts-border-radius" href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}">{{{label}}}</a>
+        {{/label}}
+
+        <div class="gps_ring"></div>
+    </div>
+</div>
+
+<div class="im-tp-m1-container image-style-{{image_style}} block-alignment-{{alignment}}" >
+    <div class="im-tp-m1-scrollable">
+        {{#item}}
+        <div class="im-tp-m1-animation im-tp-m1-list-item{{#no_text}} no-text{{/no_text}}">
+            <{{action.element}} target="{{action.target}}" onclick="{{action.onclick}}" href="{{action.href}}" class="group-of-highlights im-tp-m1-highlight text-block" style="{{background_style}}">
+                {{#image}}
+                <div class="group-of-highlights-image">
+                        <div im-object="im-media-directive" data-media="{{image}}" width="300" {{#no_text}}imagetag="imagetag" {{/no_text}}class="im-media im-media-image"></div>
+                </div>
+                {{/image}}
+                {{^no_text}}
+                <div class="highlights-text paragraph">
+                    <h1 class="im-ts-title" style="{{title_style}}">{{{title}}}</h1>
+                    <h4 class="im-ts-subtitle" style="{{subtitle_style}}">{{{subtitle}}}</h4>
+                </div>
+                {{/no_text}}
+            </{{action.element}}>
+        </div>
+        {{/item}}
+
+        <div class="im-tp-m1-fill-div im-tp-m1-animation text-block">
+        </div>
+    </div>
+
+
+
+</div>

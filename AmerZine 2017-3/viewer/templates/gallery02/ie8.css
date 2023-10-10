@@ -1,0 +1,145 @@
+.theme-2 .tp-gallery .table {
+    padding-right:75px;
+}
+
+#galleryContainer {
+    display: none;
+}
+
+.tp-gallery #gallery {
+    position:absolute;
+    top:0;
+    z-index:2;
+}
+.tp-gallery #gallery > div {
+    position:relative;
+    width:400px;
+    margin:auto;
+}
+
+.tp-gallery #gallery > div > div{
+    width: 500px;
+    height: 400px;
+    position:absolute;
+    top:0px;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+
+    border: 4px solid white;
+}
+.tp-gallery #gallery > div > div .im-ts-button-close{
+    opacity: 0;
+}
+
+.tp-gallery #gallery > div > div.active .im-ts-button-close{
+    opacity: 1;
+}
+
+
+.tp-gallery.style-2 #gallery > div {
+    width:auto;
+}
+
+.tp-gallery #gallery > div > div .label{
+    bottom:0px;
+    height:0px;
+    background:#fff;
+    padding-top: 4px;
+    width: 100%;
+    overflow: hidden;
+    position:absolute;
+}
+
+.tp-gallery #gallery > div > div.active .label{
+    height: 32px;
+}
+
+.tp-gallery  #galleryControls > a {
+    float:left;
+}
+.tp-gallery #galleryControls {
+    position:absolute;
+    bottom:30px;
+    left: 200px;
+}
+.tp-gallery .table {
+    padding:25px;
+    position:relative;
+    transition:all 400ms linear;
+    -webkit-transition:all 400ms linear;
+    -moz-transition:all 400ms linear;
+    -o-transition:all 400ms linear;
+}
+.tp-gallery .cell {
+    width:150px;
+    height:150px;
+    margin:10px 0px 0 10px;
+    background-size: cover;
+    float:left;
+    display:block;
+}
+.tp-gallery .cell.im-pg-text {
+    width:310px;
+    height:600px;
+    overflow:hidden;
+    background:none;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+}
+
+.tp-gallery .cell.im-pg-text h2 {
+    margin: 10px 0 10px 0;
+}
+
+.tp-gallery .portrait .table {
+    height:800px;
+}
+.tp-gallery .portrait .table .cell{
+    margin:20px 0px 0 20px;
+}
+
+.tp-gallery .portrait .cell.im-pg-text {
+    width:320px;
+}
+
+.tp-gallery .portrait #gallery > div{
+    margin-top: 150px;
+}
+.tp-gallery .portrait #galleryControls {
+    bottom:60px;
+}
+
+.tp-gallery #gallery .button.round {
+    padding: 2px;
+}
+
+.tp-gallery #gallery .button.round > span {
+    top: 3px;
+}
+
+.tp-gallery #gallery .next, #gallery .prev {
+    float: none;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.tp-gallery .photos {
+    overflow-y: scroll;
+    position: relative;
+    height: 500px;
+    -webkit-overflow-scrolling: touch;
+}
+
+ .tp-gallery #gallery span.description {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+}

@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <div class="scroller" style="height:inherit;">
+        {{#image}}
+        <div class="logo"><img src="{{image.src}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} /></div>
+        {{/image}}
+        {{#highlights}}
+        {{#highlight}}
+        <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="im-cover05-highlight view-type-{{view_style}}">
+            {{#image}}<img src='{{helper(getImageUrl, {image.uri}, 200, 200, null, null, 1)}}'  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />{{/image}}
+            <div class='im-cover05-highlight-text'>
+            <h3 class='im-ts-title-background' style="{{mobile-title-style}}">{{{title}}}</h3>
+            {{#subtitle}}<br />
+            <h3 class='im-ts-subtitle-background' style="{{mobile-subtitle-style}}">{{{subtitle}}}</h3>{{/subtitle}}
+            </div>
+        </{{action.element}}><br />
+        {{/highlight}}
+        {{/highlights}}
+    </div>
+    <div class="clear"></div>
+</div>

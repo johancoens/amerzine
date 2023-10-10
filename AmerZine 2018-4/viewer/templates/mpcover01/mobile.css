@@ -1,0 +1,12 @@
+.tp-m-mpcover01 .im-mp-mobile-container img{
+    max-width: 100%;
+}
+.tp-m-mpcover01 .im-mp-mobile-container {
+    width: 80%;
+    margin: 30px 10%;
+    text-align: center;
+}
+.tp-m-mpcover01 .im-mp-mobile-marker {
+    margin: 8px 0px;
+    display:block;
+}

@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 24, 2014, 11:49:45 AM
+    Author     : jgalama
+*/
+
+.im-header-container .im-header-image.im-footer {
+    overflow:hidden;
+    width: 100%;
+    max-height: 40px;
+    position: absolute;
+    bottom:0;
+    top:auto;
+}
+.im-header-image {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

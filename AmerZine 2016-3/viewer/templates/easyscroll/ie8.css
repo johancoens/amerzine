@@ -1,0 +1,46 @@
+.tp-easyscroll .im-es-items {
+        padding: 0px 30px;
+        width: 30%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow-y:scroll;
+    }
+
+    .tp-easyscroll .item {
+        margin: 0 0 0px 0;
+        padding: 10px 0 0 0;
+    }
+
+    .tp-easyscroll .im-es-title {
+        margin: 10px 0;
+    }
+
+    .tp-easyscroll .paragraph {
+        padding-left:0;
+        padding-right:0;
+    }
+    .tp-easyscroll .im-ts-paragraph-background {
+        display: block;
+    }
+
+    .tp-easyscroll .im-es-image {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .tp-easyscroll .im-es-startanimation {
+        position: relative;
+    }
+
+    .tp-easyscroll hr {
+        opacity: 0.5;
+        margin:10px 0 0 0;
+    }
+    
+    .tp-easyscroll h4,
+    .tp-easyscroll h2 {
+        display:inline-block;
+        margin: 0 0 10px 0;
+    }

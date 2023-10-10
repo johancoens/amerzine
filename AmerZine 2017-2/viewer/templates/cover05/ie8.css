@@ -1,0 +1,67 @@
+ .tp-cover05 .im-ts-title-background {
+    position: relative;
+}
+
+.tp-cover05 .im-cover05-highlight {
+    display:block;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.tp-cover05 .im-cover05-highlight img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin-right: 20px;
+    border: 2px solid #FFF;
+    vertical-align: middle;
+    position: relative;
+}
+
+.tp-cover05 .im-cover05-highlight-text {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.tp-cover05 .im-cover05-highlight .paragraph{
+    font-size: 20px;
+    display: inline-block;
+    line-height: normal;
+    padding:8px 15px;
+    background: rgba(255,255,255,1);
+}
+
+.tp-cover05 .im-ts-label{
+    padding: 10px 10px;
+    display:block;
+}
+
+.tp-cover05 .im-cover05-highlight .im-ts-label{
+    padding:8px 15px;
+    margin-bottom: 0px;
+    display:inline-block;
+    background: rgba(255,255,255,1);
+}
+
+.tp-cover05 .im-cover05-highlight:hover .im-ts-label {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+.tp-cover05 .im-cover05-highlight:hover .im-ts-label.nobackground {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+.tp-cover05 .im-cover05-right {
+    text-align:right;
+}
+
+.tp-cover05 .im-cover05-right img {
+    margin-right: 0px;
+    margin-left: 20px;
+}

@@ -1,0 +1,32 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px); 
+
+@media only screen and (min-width: 768px) {
+
+
+
+
+#columns .columnContent {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	
+    -webkit-column-gap: 50px;
+    -webkit-column-rule: 1px solid #9e9e9e;
+	background: rgba(255,255,255,0.8);
+	padding: 20px;
+	overflow-y: scroll;
+	max-height: 450px;
+	width: 100%;
+	
+}
+#columns h1#title {
+	margin: 0 0 10px 0;	
+}
+
+
+
+	
+}
+		

@@ -1,0 +1,53 @@
+<div class="im-tp-do-m-page scroller">
+{{#item}}
+    <div class="im-tp-do-m-container" im-object="im-style-directive" data-mobile-style="{{m_paragraph_style_bg}}">
+
+		{{#background}}
+		<div im-object="im-media-directive" class="im-tp-do-m-background im-media" data-media="{{background}}"> 
+			{{#slide_title}}
+			<h3 class="im-ts-m-slide-title im-ts-subtitle im-ts-subtitle-background" im-object="im-style-directive" data-mobile-style="{{m_slide_title_style}}">{{{slide_title}}}</h3>
+			{{/slide_title}}
+
+		</div>
+		{{/background}}
+		<div class='im-tp-do-m-text-block text-block paragraph' im-object="im-style-directive" data-mobile-style="{{m_paragraph_style}}{{m_paragraph_style_bg}}">
+	        {{#title}}
+	            <h2 class="im-ts-title" im-object="im-style-directive" data-mobile-style="{{m_title_style}}">{{{title}}}</h2>
+	        {{/title}}
+	        {{#subtitle}}
+	            <h4 class="im-ts-subtitle" im-object="im-style-directive" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h4>
+	        {{/subtitle}}
+	        {{#description}}
+				<div style="margin-bottom: 5px; ">
+				{{{description}}}
+				</div>
+			{{/description}}
+
+		    {{#image}}<div im-object="im-media-directive" imagetag="imagetag" class="im-tp-do-image im-media" data-media="{{image}}"></div>{{/image}}
+			{{#youtube.id}}<div class="im-tp-do-video im-media im-media-video" im-object="im-media-directive" data-media="{{youtube}}"></div>{{/youtube.id}}
+			{{#type_5}}
+	   		<div class="im-tp-m-list">
+		        {{#marker}}
+		        <a href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}" class="im-ts-button im-ts-title-padding" style="{{label_style}}">
+					{{#button_image}}
+		            <span class="thumb">
+		                <div im-object="im-media-directive" data-media="{{button_image}}" {{#no_text}}imagetag="imagetag" {{/no_text}}width="300" class="im-m-marker-img im-media im-media-image"></div>
+		            </span>
+		            {{/button_image}}
+		            {{#label}}
+		            <span class="label im-m-marker-label">{{{label}}}</span>
+		            {{/label}}
+		            {{^label}}
+		            <span class="label im-m-marker-label">{{{title}}}</span>
+		            {{/label}}
+		            <span class='arrow'>
+		                <span class="im-sp im-sp-arrow-right"></span>
+		            </span>
+		        </a>
+		        {{/marker}}
+	        </div>
+			{{/type_5}}
+		</div>
+	</div>
+{{/item}}
+</div>

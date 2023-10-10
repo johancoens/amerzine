@@ -1,0 +1,13 @@
+.tp-m-indexpage01 .interviewButton .image {
+    width:80px;
+}
+.tp-m-indexpage01.p-mobile .interviewButton img {
+    height: 56px;
+    background: transparent;
+}
+.tp-m-indexpage01.p-mobile .im-ts-list > a + div {
+	padding: 10px;
+}
+.tp-m-indexpage01.p-mobile .im-ts-list > a + div p {
+	margin-bottom: 10px;
+}

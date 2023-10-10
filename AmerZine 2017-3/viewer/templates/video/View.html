@@ -1,0 +1,16 @@
+    <div id="video">
+        <div class="videoscreen im-align center-left tp-video-size-{{video_size}}">
+            {{#title}}
+            <div class="videoTitle">
+                <h1 class="im-ts-title-background">{{{title}}}</h1>
+            </div>
+            {{/title}}
+            {{#subtitle}}
+            <div class="videoLongtitle">
+                <h3 class="im-ts-subtitle-background">{{{subtitle}}}</h3>
+            </div>
+            {{/subtitle}}
+            <div id="simplevideoMovieContainer" class="im-ts-videocontainer video_size_{{video_size}}" data-video-id="{{youtube}}" ></div>
+            {{#description}}<div class="text-block paragraph overflowscroll">{{{description}}}</div>{{/description}}
+        </div>
+    </div>

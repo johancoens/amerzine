@@ -1,0 +1,41 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller">
+        <div style="padding:20px;">
+            <header>
+                {{#image}}
+                    <div class="logo"><img src="{{image.src}}"/></div>
+                {{/image}}
+                {{#datetext}}
+                    <div id="edition" class="datetext"><h5 class="im-ts-subtitle-background">{{datetext}}</h5></div>
+                {{/datetext}}
+                <div class="clearfix"></div>
+            </header>
+            {{#title}}
+                <h1 class="im-ts-title-background">{{{title}}}</h1>
+            {{/title}}
+            <div class="text-block paragraph im-ts-paragraph">
+                <div class="im-wpcover-custom-data"></div>
+                {{{intromobile}}}
+            </div>
+            {{#shortcuts}}
+            <a href="#!/{{shortcut.alias}}/"  {{{helper(trackEvent,HighlightsMobile,Click,{shortcut.title})}}}>
+                <table class="item im-ts-label">
+                    <tr>
+                        <td class="thumb">
+                            <div class="crop">
+                                <img src="{{helper(getImageUrl, {shortcut.thumb}, 157, 109, null, null, 1)}}" alt="{{shortcut.thumb.alt}}" />
+                            </div>
+                        </td>
+                        <td class="title">
+                            <span><h5>{{label}}</h5></span>
+                        </td>
+                        <td class="arrow">
+                            <span class="im-sp im-sp-read-more-b-20"></span>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            {{/shortcuts}}
+        </div>
+    </div>
+</div>

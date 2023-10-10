@@ -1,0 +1,215 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .theme-1 .tp-documentary .im-cl-scroll-block {
+        margin-right: 0px;
+    }
+
+    .theme-2 .tp-documentary .im-cl-scroll-block {
+        margin-right: 62px;
+    }
+
+    /*start button circle styles*/
+    .tp-documentary .im-n-buttons-circle .im-ts-button-background {
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+        border: 3px;
+    }
+
+    .tp-documentary .im-n-buttons-circle .im-sp-arrow-down-3 {
+        margin-top: 13px;
+    }
+
+    .tp-documentary .im-n-buttons-circle .im-n-button-up {
+        margin-left: -25px;
+    }
+
+    .tp-documentary .im-n-buttons-circle .im-n-button-down{
+        margin-left: -35px;
+    }
+    /*end button circle styles*/
+
+    .tp-documentary .im-n-buttons-arrows .im-ts-label {
+        display: none;
+    }
+
+    .tp-documentary .im-tp-do-slide {
+        position: relative;
+    }
+
+    .tp-documentary .text-block {
+        width: 700px;
+        /*height: auto;*/
+        overflow: auto;
+    }
+
+    .tp-documentary .text-block img {
+        float: right;
+    }
+
+    .tp-documentary .text-scroller {
+        width: 95%;
+        height: auto;
+        position: relative;
+        margin: auto;
+    }
+
+    .tp-documentary .position-0 {
+        float: left;
+    }
+
+    .tp-documentary .position-1 {
+        float: right;
+    }
+
+    .tp-documentary .tp-do-text-container {
+        width: 100%;
+        height: 100%;
+        position:absolute;
+    }
+
+    .tp-documentary .im-cl-scroll-block {
+        width: 33%;
+        height: 100%;
+        overflow: auto;
+        background-color: white;
+        opacity: 1;
+        position: relative;
+        padding: 25px 30px 0;
+    }
+
+    .tp-documentary .im-tp-do-scroller .im-ts-title, 
+    .tp-documentary .im-tp-do-scroller .im-ts-subtitle, 
+    .tp-documentary .im-tp-do-video .im-ts-title-background, 
+    .tp-documentary .im-tp-do-video .im-ts-subtitle-background {
+        margin-bottom: 8px;
+    }
+    .tp-documentary .tp-do-title {
+        width: 90%;
+        max-width: 700px;
+    }
+    .tp-documentary .paragraph {
+        margin-bottom: 0px;
+    }
+
+    .tp-documentary .im-tp-do-video {
+        text-align: center;
+    }
+
+    .tp-documentary .scroller-image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tp-documentary .tp-do-type-text .im-tp-do-image {
+        height: 100%;
+        width: 332px;
+        float:right;
+    }
+
+    .tp-documentary .im-tp-do-ballon .im-tp-do-button-image img{
+        max-width: 100%;
+    }
+
+    .tp-documentary .tp-do-type-text .text-block {
+        max-height: 400px;
+        height: auto !important;
+    }
+
+    .tp-documentary .tp-do-type-text .im-tp-do-video {
+        position: relative;
+        float: right;
+        height: 200px;
+        width: auto;
+    }
+
+    .tp-documentary .im-ts-videocontainer {
+        width: 350px;
+    }
+
+    .tp-documentary .im-ts-slide-title {
+        position: absolute;
+        margin-top: 50px;
+        padding-left: 50px;
+        left: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .tp-documentary .background .backround-layer {
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    /*HOTSPOTS*/
+
+    .tp-documentary .im-cl-text-block.paragraph {
+        background-color: white;
+    }
+    .tp-documentary .im-tp-do-marker {
+        height: 100%;
+    }
+
+    .tp-documentary .im-tp-do-sub-container {
+    }
+
+    .tp-documentary .im-ts-label {
+        padding: 8px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+    }
+
+    .tp-documentary .marker:hover .im-ts-label {
+        opacity: 1;
+        visibility: visible;   
+    }
+
+    .tp-documentary .im-tp-do-sub-container .im-tp-do-ballon {
+        z-index: 155;
+        max-width: 400px;
+        margin: 40px;
+    }
+
+    .tp-documentary .transparent-overlay {
+        z-index: 153;
+    }
+
+    .tp-documentary .sub-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        background-color: black;
+        top: 0;
+        z-index: 1;
+        visibility: hidden;
+        transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+    }  
+    /*VIDEO*/
+
+    .tp-documentary .im-tp-do-video .im-ts-videocontainer{ 
+        width:100%;
+    }
+
+}
+@media screen and (max-width: 960px){
+
+    .theme-2 .tp-documentary .im-cl-scroll-block {
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .theme-1 .tp-documentary .im-cl-scroll-block {
+        margin-right: 0;
+        width: 40%;
+    }
+}

@@ -1,0 +1,92 @@
+<div class="outside-nav-bar">
+
+    <div class="im-nav-next-prev-buttons">
+        {{{helpButton}}}
+        <a data-action="prev" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-prev" id="btnPrev">
+            <span class="im-sp im-sp-arrow-left"></span>
+        </a>
+        <a data-action="next" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-next" id="btnNext">
+            <span class="im-sp im-sp-arrow-right"></span>
+        </a>
+    </div>
+
+    <a data-action="up" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-up">
+        <span class="im-sp im-sp-arrow-up"></span>
+    </a>
+
+    <a data-action="down" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-down">
+        <span class="im-sp im-sp-arrow-down"></span>
+    </a>
+    <div class="nav-bar-paginator only-desktop-tablet">
+
+    </div>
+    <div class="nav-handle">
+        <span class="im-sp im-sp-nav-handle"></span>
+    </div>
+</div>
+<div class="nav-bar bar-bottom">
+    <div class="nav-bar-options">
+        <div class="nav-page nav-page-bottom horizontal page-index im-ts-nav-active-color">
+        </div>
+        <div class="page-index-mobile im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-bottom horizontal editions im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-bottom horizontal nav-custom-page im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-bottom horizontal nav-custom-page im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-bottom share-bar im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-bottom print-bar im-ts-nav-active-color">
+        </div>
+    </div>
+    <div class="nav-buttons-bar  only-desktop-tablet im-ts-nav-bar-background">
+        <div class="buttons-left">
+            <a target="_blank" class="nav-item im-btn-index" href="{{website}}" style="width:auto;">
+                <img src="{{Config.magazine_url}}{{logo.uri}}" />
+            </a>
+            {{#social}}
+            <div class="nav-item">
+                {{{view}}}
+            </div>
+            {{/social}}
+        </div>
+        <div class="buttons-center">
+            <div class="page_number nav-item nav-page-number">
+                {{{pageIndexNumbers}}}
+            </div>
+            <a data-action="pageindex" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-index">
+                <span class="im-sp im-sp-index"></span>
+            </a>
+        </div>
+        <div class="buttons-right">
+            {{{editionsButton}}}
+            {{{infoButtons}}}
+
+        </div>
+    </div>
+</div>
+<div class="nav-bar bar-bottom">
+    <div class="nav-buttons-bar only-mobile im-ts-nav-bar-background">
+        <div class="buttons-left">
+
+            <a target="_blank" class="nav-item im-btn-index" href="{{website}}">
+                <img src="{{Config.magazine_url}}{{logo.uri}}" />
+            </a>
+            {{{shareButton}}}
+        </div>
+        <div class="buttons-center">
+            <div class="page_number nav-item nav-page-number">
+                {{{pageIndexNumbers}}}
+            </div>
+            <a data-action="pageindex" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-index">
+                <span class="im-sp im-sp-index"></span>
+            </a>
+        </div>
+        <div class="buttons-right">
+            {{{editionsButton}}}
+            {{{infoButtons}}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.tp-timeline .im-tp-timelines {
+    position:relative;
+}
+.tp-timeline h1 {
+    display:block;
+    position:relative;
+    z-index:2;
+}
+.tp-timeline .im-tp-timeline-line {
+    position:absolute;
+    left: 50%;
+    margin-left: -3px;
+    height: 100%;
+    width:6px;
+    top:0;
+    z-index:0;
+}
+
+.tp-timeline .im-tp-timeline-container {
+    position:relative;
+    z-index:1;
+}
+.tp-timeline .im-scroll-handler-sticky {
+    position:relative;
+    z-index:1;
+}

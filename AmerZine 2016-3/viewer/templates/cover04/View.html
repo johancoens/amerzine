@@ -1,0 +1,22 @@
+<div class="im-tp-cover04-container im-absolute-view">
+    {{#image}}
+    <div class="logo"><img src="{{image.src}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} /></div>
+    {{/image}}
+    <div class="clear"></div>
+    {{#title}}
+    <div class="title">
+        <h1 class="im-ts-title-background">{{{title}}}</h1>
+    </div>
+    {{/title}}
+    <div class="clear"></div>
+    {{#intro}}
+    <div class="text-block paragraph textBlockCover">{{{intro}}}</div>
+    {{/intro}}
+    <div class="clear"></div>
+    {{#label}}
+    <{{action.element}} class="im-ts-button start-button button" href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}">{{{label}}}</{{action.element}}>
+    {{/label}}
+    {{#button_image}}
+    <{{action.element}} class="start-button custom-image" href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}"><img src="{{Config.magazine_url}}{{button_image.uri}}" /></{{action.element}}>
+    {{/button_image}}
+</div>

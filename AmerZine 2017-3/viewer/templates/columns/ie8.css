@@ -1,0 +1,184 @@
+#news .newsItem {
+    position: relative;
+    float: left;
+    margin: 0 20px 20px 0;
+
+
+}
+
+#news .newsContent  {
+    margin: 3px 0 0 0;
+    -webkit-box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 280px;
+   height: 160px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+
+}
+
+#news .newsContent table td#newsImage img {
+    width: 100px;
+}
+
+#newsItems {
+    width: 900px;
+    margin-left: -450px;
+}
+
+#news .newsHeader {
+    -webkit-box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 11px 15px;
+    width: 250px;
+    height: 21px;
+    overflow: hidden;
+}
+
+#news .newsTitle {
+    width: 250px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#news h1 {
+    float: left;
+    font-weight: bold;
+    text-transform:uppercase;
+    margin: 0 0 10px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .50);
+}
+
+#news h6 {
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+#news div.paragraph {
+    padding: 0;
+    margin: 0;
+
+}
+
+#news div.newsIntro {
+    width: 135px;
+    height: 180px;
+    overflow: hidden;
+}
+
+
+#news table td {
+    vertical-align: top;
+}
+
+#news .newsBtn {
+    bottom:20px;
+    float: left;
+    height: 33px;
+    min-width: 85px;
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+#news .newsBtn span {
+    position: relative;
+    top: 7px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .35);
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+
+
+}
+
+#news .newsBtn img {
+    position: relative;
+    top: 9px;
+    right: 0;
+    margin-left: 5px;
+}
+
+#news .newsBtn:hover {
+    opacity: 0.8;
+}
+
+#news #overlayContainerNews {
+    opacity:  1;
+    display: none;
+    z-index: 100;
+
+
+}
+
+#news .overlayContent  {
+    padding: 15px;
+    margin: 3px 0 0 0;
+    -webkit-box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    min-height: 150px;
+}
+
+
+#news .overlayHeader {
+    -webkit-box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 11px 15px;
+    display:block;
+}
+
+#news .overlayHeader h5 {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+#news .topBar {
+    width: 100%;
+    padding: 0 0 5px 0;
+    border-bottom: 1pt solid #a2bcb7;
+    margin: 0 0 10px 0;
+}
+
+#news .topBar span.date {
+    float: left;
+    padding: 8px 0 0 0;
+}
+#news .topBar span.share {
+    float: right;
+    font-size: 14px;
+}
+
+#news .topBar span.share span {
+    margin: 0 5px 0 0;
+}
+
+#news a.button-close {
+    float: right;
+}
+
+.clear_landscape {
+    clear: both;
+
+}
+
+.clear_portrait {
+    clear: none;
+}
+
+#news .newsContent table td#newsImage {
+	padding: 15px 0 15px 15px;
+}
+
+#news .newsContent table td#newsBtn {
+	padding: 15px 0 15px 15px;
+}

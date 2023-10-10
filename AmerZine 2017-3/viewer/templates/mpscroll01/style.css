@@ -1,0 +1,28 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+    .tp-mpscroll01 .in-page-navigation {
+        position:absolute;
+        z-index: 5;
+    }
+    .tp-mpscroll01 .in-page-navigation.im-next,
+    .tp-mpscroll01 .in-page-navigation.im-previous {
+        left: 50%;
+        margin-left: -25px;
+    }
+    .tp-mpscroll01 .in-page-navigation.im-previous{
+        top:40px;
+    }
+    .tp-mpscroll01 .im-absolute-view {
+        max-width: 700px;
+    }
+    .tp-mpscroll01 .in-page-navigation.im-next{
+        bottom:100px;
+    }
+
+    .tp-mpscroll01 .disabled {
+        display:none;
+    }
+}

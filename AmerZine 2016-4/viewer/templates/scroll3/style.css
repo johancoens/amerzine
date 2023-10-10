@@ -1,0 +1,172 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (max-width: 867px) {
+    .tp-scroll3 .im-sc-scoll-block {
+        padding: 40px 20px 100px 20px;
+    }
+}
+
+@media only screen and (min-width: 868px) {
+    .tp-scroll3 .im-absolute-view {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .tp-scroll3 .im-sc-next-button-wrapper {
+        height: 90px;
+    }
+
+    .tp-scroll3 .im-sc-prev-button-wrapper .im-previous {
+        top: 20px;
+        left: 50%;
+        margin-left: -62px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .tp-scroll3 .im-sc-next-button-wrapper .im-next {
+        width: 80px;
+        height: 80px;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -70px;
+    }
+
+    .tp-m-scroll3 .im-sc-next-button-text h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .tp-m-scroll3 .im-sc-next-button-title h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    .tp-scroll3 .im-sc-next-button-text {
+        position:absolute;
+        top: 8px;
+        right: 50%;
+        text-align: right;
+        margin-right: 70px;
+    }
+
+    .tp-scroll3 .im-sc-next-button-title {
+        position:absolute;
+        top: 8px;
+        left: 50%;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .tp-scroll3 .im-previous span {
+        position: relative;
+        top: 4px;
+        left: 6px;
+    }
+
+    .tp-scroll3 .im-next span {
+        position: relative;
+        top: 17px;
+        left: 15px;
+    }
+}
+
+.tp-scroll3 h1 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    position:relative;
+}
+
+.tp-scroll3 .paragraph {
+    position:relative;
+}
+
+
+.tp-scroll3 .im-sc-prev-button-wrapper {
+    background-color: none;
+    width: 100%;
+    position: absolute;
+    top:0;
+    height: 0px;
+    z-index: 10;
+}
+
+.tp-scroll3 .im-sc-next-button-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    opacity: 1;
+    z-index: 10;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.tp-scroll3 .im-sc-next-button-wrapper.hide {
+    bottom: -120px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.tp-scroll3 .im-sc-prev-button-wrapper .im-previous {
+    position:absolute;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: all 500ms ease-in-out 500ms;
+    -moz-transition: all 500ms ease-in-out 500ms;
+    transition: all 500ms ease-in-out 500ms;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    border: 3px solid white;
+}
+
+.tp-scroll3 .im-sc-prev-button-wrapper .im-previous.disabled {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.tp-scroll3 .im-sc-next-button-wrapper .im-next {
+    position:absolute;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    border: 3px solid white;
+}
+
+.tp-scroll3 .im-sc-prev-button-wrapper .im-previous.disabled {
+    top: -80px;
+    opacity: 0;
+}
+
+
+.tp-scroll3 .im-sc-next-button-wrapper .im-next.disabled {
+    opacity: 1;
+
+}
+
+.tp-m-scroll3 .im-sc-next-button-text h3 {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.tp-m-scroll3 .im-sc-next-button-title h3 {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+
+
+

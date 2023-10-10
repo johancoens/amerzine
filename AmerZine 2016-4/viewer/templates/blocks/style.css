@@ -1,0 +1,434 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+    .im-tp-b-dialog .close {
+        right: 35px;
+        top: 35px;
+    }
+    .im-tp-b-dialog .close,.im-tp-b-dialog .next-overlay,.im-tp-b-dialog .previous-overlay {
+        font-size: 3em;
+    }
+    .im-tp-b-dialog .next-overlay {
+        right:35px;
+    }
+    .im-tp-b-dialog .previous-overlay {
+        left:35px;
+    }
+}
+
+.tp-blocks .im-tp-blocks-container {
+    overflow-y: auto;
+    height:100%;
+    position:relative;
+}
+
+.tp-blocks .im-ts-paragraph-background {
+    padding:0;
+}
+
+.tp-blocks .im-db-grid {
+    width:100%;
+    height:100%;
+    position:relative;
+    margin:auto;
+}
+.tp-blocks .im-db-grid .paragraph p{
+    margin-bottom: 0;
+}
+.tp-blocks .im-tp-b-block {
+    background: #484848;
+    position: absolute;
+    /*-webkit-transition: all 200ms ease-in-out;*/
+    display:block;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.tp-blocks .block-content > span{
+    box-sizing: border-box;
+    width: 100%;
+}
+.tp-blocks .im-tp-b-block .im-media {
+    display:block;
+    width:100%;
+    height:100%;
+
+    background-position:center center;
+    background-size: cover;
+    position:absolute;
+}
+.tp-blocks .im-tp-b-block .im-ts-title-padding {
+    display:block;
+}
+.tp-blocks .im-tp-b-block .block-content {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.tp-blocks .im-tp-b-block h2,
+.tp-blocks .im-tp-b-block .desc{
+    display:block;
+    padding:0;
+}
+
+.tp-blocks .im-ts-title-padding {
+    position:absolute;
+}
+
+.tp-blocks .desc {
+    margin: 5px 0 10px;
+}
+.tp-blocks .desc p{
+    padding:0;
+}
+
+/*---------------*/
+/***** effect1 *****/
+/*---------------*/
+
+.tp-blocks .effect1 .im-media {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-size:cover;
+    background-position: center center;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+
+.tp-blocks .effect1 h2 {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+.tp-blocks .effect1 .desc {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0) scale(1.1);
+    transform: translate3d(0,20px,0) scale(1.1);
+}
+
+.tp-blocks .effect1 .button-1 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0) scale(1.1);
+    transform: translate3d(0,20px,0) scale(1.1);
+    opacity: 0;
+    margin: 0;
+}
+
+html:not(.touch-support) .tp-blocks .effect1:hover h2,
+.tp-blocks .effect1.hover h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+html:not(.touch-support) .tp-blocks .effect1:hover .desc,
+.tp-blocks .effect1.hover .desc {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
+}
+
+html:not(.touch-support) .tp-blocks .effect1:hover .button-1,
+.tp-blocks .effect1.hover .button-1 {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
+}
+
+html:not(.touch-support) .tp-blocks .effect1:hover .im-media,
+.tp-blocks .effect1.hover .im-media {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*---------------*/
+/***** effect2 *****/
+/*---------------*/
+
+/*.tp-blocks .effect2 {
+        background: #9e5406;
+}*/
+
+html:not(.touch-support) .tp-blocks .effect2:hover .im-media,
+.tp-blocks .effect2.hover .im-media{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 0.8;
+}
+
+html:not(.touch-support) .tp-blocks .effect2:hover .im-media,
+.tp-blocks .effect2.hover .im-media {
+
+}
+
+html:not(.touch-support) .tp-blocks .effect2:hover .im-ts-title-padding::before,
+html:not(.touch-support) .tp-blocks .effect2:hover .im-ts-title-padding::after,
+.tp-blocks .effect2.hover .im-ts-title-padding::before,
+.tp-blocks .effect2.hover .im-ts-title-padding::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.tp-blocks .effect2.hover h2,
+.tp-blocks .effect2.hover .desc,
+.tp-blocks .effect2.hover .button-1,
+html:not(.touch-support) .tp-blocks .effect2:hover h2,
+html:not(.touch-support) .tp-blocks .effect2:hover .desc,
+html:not(.touch-support) .tp-blocks .effect2:hover .button-1
+{
+    opacity:1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+.tp-blocks .effect2 .im-ts-title-padding::before,
+.tp-blocks .effect2 .im-ts-title-padding::after {
+    position: absolute;
+    top: 0px;
+    pointer-events: none;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.tp-blocks .effect2 .im-ts-title-padding::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.tp-blocks .effect2 .im-ts-title-padding::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+.tp-blocks .effect2 .im-ts-title-padding{
+    width: 97%;
+    margin: auto;
+}
+
+.tp-blocks .effect2 h2 {
+    padding:10px 10px 0 10px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+}
+
+.tp-blocks .effect2 .desc {
+    margin: .5em;
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+.tp-blocks .effect2 .button-1 {
+    opacity: 0;
+    margin-bottom: 20px;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+.tp-blocks .effect2 .im-media {
+    opacity: 1;
+    height:111%;
+    transform: translate3d(0,-30px,0);
+    -webkit-transform: translate3d(0,-30px,0);
+    -moz-transform: translate3d(0,-30px,0);
+    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.tp-blocks .effect2.hover .im-media,
+html:not(.touch-support) .tp-blocks .effect2:hover .im-media {
+    opacity: 0.25;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+/*EFFECT 0*/
+.tp-blocks .effect0 .block-content .im-ts-title-padding{
+    position:relative;
+    text-align:left;
+}
+
+.tp-blocks .effect0 .im-media {
+    opacity: 1;
+    height:111%;
+    -moz-transform: translate3d(0,-30px,0);
+    -webkit-transform: translate3d(0,-30px,0);
+    transform: translate3d(0,-30px,0);
+    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.tp-blocks .effect0 .block-content.im-ts-title-background {
+    border-radius:0;
+    -webkit-border-radius:0;
+}
+
+.tp-blocks .effect0 .block-content {
+    bottom:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:auto;
+    padding-bottom:20px;
+    -moz-transform: translate3d(0,20px,0);
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    transition: transform 350ms ease-in;
+    -moz-transition: -moz-transform 350ms;
+    -webkit-transition: -webkit-transform 350ms;
+}
+html:not(.touch-support) .tp-blocks a.effect0:hover .block-content {
+    -moz-transform: translate3d(0,0px,0);
+    -webkit-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);
+}
+
+html:not(.touch-support) .tp-blocks a.effect0:hover .im-media{
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+html:not(.touch-support) .tp-blocks a.effect0:hover .im-media{
+    opacity: 0.8;
+}
+
+
+.tp-blocks .im-tp-b-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.tp-blocks .im-tp-b-dialog .dialog-page {
+    position:relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.im-tp-b-dialog h1 {
+    padding: 10px 0px;
+}
+
+.im-tp-b-dialog .im-media {
+    margin:0 0 10px 0;
+    padding:0;
+    background-position: center center;
+    background-size: cover;
+}
+.im-tp-b-dialog .im-media img{
+    width:100%;
+}
+.im-tp-b-dialog .content-container {
+    max-width: 800px;
+    position: relative;
+    height:100%;
+    overflow: auto;
+    margin: 0 auto;
+}
+.im-tp-b-dialog .dialog-page {
+    margin: 5% auto;
+}
+
+.im-tp-b-dialog .dialog-pages {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+@media only screen and (max-width: 960px) {
+    .tp-blocks .im-tp-b-dialog .dialog-page{
+        width:80%;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .theme-2 .im-tp-b-dialog .next-overlay, .theme-2 .im-tp-b-dialog .close{
+        right: 97px;
+    }
+
+    .theme-2 .im-tp-b-dialog .dialog-page {
+        margin-right: 62px;
+    }
+}
+
+
+.im-tp-b-dialog .close {
+    color: #363636;
+    font-family: 'entypo';
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    z-index:2;
+}
+
+.im-tp-b-dialog .previous-overlay,.im-tp-b-dialog .next-overlay{
+    z-index:2;
+    font-family: 'entypo';
+    color: #363636;
+    position: absolute;
+    text-align: right;
+    top: 48%;
+}
+
+.im-tp-b-dialog .previous-overlay{
+    right: auto;
+    text-align: left;
+}
+
+/* Dummy content */
+
+.im-tp-b-dialog .paragraph {
+    color: #363636;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0;
+    line-height: 1.4em;
+}
+
+@media only screen and (min-width: 1040px) {
+    .tp-blocks .im-tp-b-dialog .dialog-page {
+        margin: 5% 10%;
+    }
+}

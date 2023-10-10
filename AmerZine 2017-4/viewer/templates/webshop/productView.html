@@ -1,0 +1,23 @@
+<{{overview_action.element}} href="{{overview_action.href}}" onclick="{{overview_action.onclick}}" target="{{overview_action.target}}" class="webshop-block">
+    {{#image_css}}<div class="webshop-image fill-{{image_style}}" style="{{image_css}}"></div>{{/image_css}}
+    {{#has_description}}<div class="content paragraph">
+        {{#subtitle}}
+            <h4 class="im-ts-subtitle">{{{subtitle}}}</h4>
+        {{/subtitle}}
+        {{#title}}
+            <h2 class="im-ts-title">{{{title}}}</h2>
+        {{/title}}
+        {{{intro}}}
+        <div class="prices clearfix">
+            {{#prev_price}}
+               <div class="price old">{{{prev_price}}}</div>
+            {{/prev_price}}
+            {{#price}}
+               <div class="im-ts-button price">{{{price}}}</div>
+            {{/price}}
+            {{#label}}<div class="im-ts-button button im-ts-border-radius">{{{label}}}</div>{{/label}}
+        </div>
+
+    </div>
+    {{/has_description}}
+</{{overview_action.element}}>

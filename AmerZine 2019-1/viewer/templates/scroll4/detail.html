@@ -1,0 +1,33 @@
+{{#scrollitem}}
+    {{#description}}
+    <div class="im-tp-sc-detailpage-item">
+        {{#image}}<div class="im-tp-sc-detailpage-header-image" style="background-image:url({{helper(getBackgroundImage, {image.uri})}})">{{/image}}
+        {{^image}}<div class="im-tp-sc-detailpage-header-image im-ts-title-background">{{/image}}
+        {{#title}}<h2 class="im-ts-title-background" style="{{title_style}}"><div class="im-ts-detailpage-title">{{title}}</div></h2>{{/title}}</div>
+            <div class="im-tp-sc-detailpage-mytext paragraph">
+                <div>
+                    {{#subtitle}}<h4 class="im-ts-subtitle" style="{{subtitle_style}}">{{subtitle}}</h4>{{/subtitle}}
+                    {{{description}}}{{#more_link}}<span class="readmore">{{helper(translate, btn_more)}}</span>{{/more_link}}
+                </div>
+            </div>
+        <div class="im-tp-sc-navigation">
+            <div class="im-sc-button-wrapper">
+            {{#hasPrevButton}}
+                <div class="im-sc-prev-button im-ts-button circle sc-back">
+                    <a href="{{urlbase}}/item/{{prevItem}}" class="im-sp im-sp-arrow-up-3">
+                        <span></span>
+                    </a>
+                </div>
+            {{/hasPrevButton}}
+            {{#nextItem}}
+                <div class="im-sc-next-button im-ts-button circle sc-next">
+                    <a href="{{urlbase}}/item/{{nextItem}}" class="im-sp im-sp-arrow-down-3">
+                    <span></span>
+                    </a>
+                </div>
+            {{/nextItem}}
+            </div>
+        </div>
+    </div>
+    {{/description}}
+{{/scrollitem}}

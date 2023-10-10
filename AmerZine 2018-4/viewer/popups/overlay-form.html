@@ -1,0 +1,10 @@
+<div class="im-ts-overlay-padding">
+        <h3>{{{title}}}</h3>
+        <div class="clear"></div>
+        {{#image}}<img src="{{helper(getImageUrl, {image.uri}, null, null, 300, null, 1, 1)}}" title="{{image.title}}" align="right" />{{/image}}
+        <div class="paragraph">
+            {{{description}}}
+        </div>
+        <div class="dynamicForm"></div>
+        <div class="clear"></div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row row-center im-tp-fop-text-img text-block" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear"  style="{{background_style}}">
+{{#ti_item}}
+    <div class="block-column position-{{image_right}}">
+        <div class="block-column-text no-border-radius">
+            <div class="paragraph" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{mobile_paragraph_style}}">
+				{{{description}}}
+            </div>
+        </div>
+    </div>
+    <div class="block-column">
+        <div class="block-column-image">
+            {{#image.uri}}
+                <div class="im-media im-media-image" im-object="im-media-directive" width="500" data-media="{{image}}"></div>
+            {{/image.uri}}
+        </div>
+    </div>
+    <div class="clear"></div>
+{{/ti_item}}
+</div>
+
+

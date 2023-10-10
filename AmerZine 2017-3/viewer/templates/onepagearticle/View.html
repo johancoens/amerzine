@@ -1,0 +1,62 @@
+
+<div class="im-tp-opa-container scroller">
+
+    <div class="im-tp-opa-header style-0">
+        {{#title}}
+        <h1 class="im-ts-title-background animate fadeInLeft im-absolute-view">{{{title}}}</h1>
+        {{/title}}
+        {{#background}}
+        <div im-object="im-media-directive" data-media="{{background}}" class="im-tp-opa-image im-media im-media-image"></div>
+        {{/background}}
+        {{^background}}
+        <div class="im-tp-opa-image"></div>
+        {{/background}}
+    </div>
+
+    <div class="im-tp-opa-article slide text-block">
+        <a href="#" class="im-tp-opa-scroller"><span class="animate fadeInDown">&darr;</span><span class="im-tp-scroll-label"> {{helper(translate,btn_more)}} </span><span class=" animate fadeInDown">&darr;</span></a>
+        {{^noauthor}}
+        <div class="im-tp-opa-author {{^author_image}}no-image{{/author_image}}">
+            {{#author_image}}
+            <img src="{{helper(getImageUrl, {author_image.uri}, 300, 300, null, null, 1)}}" class="im-tp-opa-author-image im-ts-border-radius" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}}  />
+            {{/author_image}}
+            {{#author}}
+            <div class="im-tp-opa-author-desc paragraph im-ts-border-radius">{{{author}}}</div>
+            {{/author}}
+        </div>
+        {{/noauthor}}
+        {{#paragraphs}}
+        <div class="im-tp-opa-paragraph paragraph {{#noauthor}}no-author{{/noauthor}}" style="{{paragraph_style}}">
+            <div class="im-tp-opa-maxwidth {{sidenote_conflict}}">
+                <a name="opa-p-{{index}}"></a>
+                {{#title}}
+                <h2 im-object="im-style-directive" data-mobile-style="{{title_style_mobile}}" data-style="{{title_style}}">{{{title}}}</h2>
+                {{/title}}
+
+                {{#subtitle}}
+                <h4 class="subtitles" im-object="im-style-directive" data-mobile-style="{{subtitle_style_mobile}}" data-style="{{subtitle_style}}">{{{subtitle}}}</h4>
+                {{/subtitle}}
+
+                {{#sidenote_icon}}
+                <!--                    <div class="im-tp-opa-arrow"></div>-->
+                <{{action.element}} href="{{action.href}}" onclick="{{action.onclick}}" target="{{action.target}}" class="im-ts-sidenotes"><span class="im-font-icon">{{{sidenote_icon}}}</span><span class="im-tp-sidenote-label animate fadeInUp" >{{{sidenotes}}}</span></{{action.element}}>
+                {{/sidenote_icon}}
+
+                {{#quote}}
+                <blockquote class="im-ts-quote{{^invisible_quotes}} add-quotes{{/invisible_quotes}}">{{{quote}}}</blockquote>
+                {{/quote}}
+
+                {{#description}}
+                {{{description}}}
+                {{/description}}
+
+                {{#image}}
+                <img src="{{helper(getBackgroundImage, {image.uri})}}" class="im-tp-opa-image" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}}  />
+                {{/image}}
+
+                {{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+            </div>
+        </div>
+        {{/paragraphs}}
+    </div>
+</div>

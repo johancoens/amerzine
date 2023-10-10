@@ -1,0 +1,52 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller">
+
+        <div class="mobile_page_index" style="display:none;">
+            <div class="top_header">
+                <h3>{{helper(translate,header_index)}}</h3>
+            </div>
+            <div class="im-ts-list">
+            {{#pages}}
+            <a href="#!/{{alias}}/" {{#stat}}{{{helper(trackEvent,{stat.cat},{stat.action},{stat.label})}}}{{/stat}}>
+                <span class="thumb">
+                    <img src="{{helper(getImageUrl, {thumb}, 157, 109, null, null, 1)}}"/>
+                </span>
+                <h5 class="label">{{title}}</h5>
+                <span class="arrow">
+                    <img src="{{Config.viewer_url}}/images/mobile/arrow.png"/>
+                </span>
+            </a>
+            {{/pages}}
+            </div>
+        </div>
+        <div class="mobile_page_editions" style="display:none;">
+            <div class="top_header">
+                <h3>{{helper(translate,header_index)}}</h3>
+            </div>
+            <div class="im-ts-list">
+            {{#pages}}
+            <a href="#!/{{alias}}/" {{{helper(trackEvent,HighlightsMobile,Click,{shortcut.title})}}}>
+                <span class="thumb">
+                    <img src="{{helper(getImageUrl, {thumb}, 157, 109, null, null, 1)}}"/>
+                </span>
+                <h5 class="label">{{title}}</h5>
+                <span class="arrow">
+                    <img src="{{Config.viewer_url}}/images/mobile/arrow.png"/>
+                </span>
+            </a>
+            {{/pages}}
+        </div>
+
+        <div class="extra" style="display:none;">
+            <div class="top_header">
+                <h3>{{helper(translate,header_more_options)}}</h3>
+            </div>
+            <div id="mobile_info_buttons">
+				{{{searchButton}}}
+                {{{infoButtons}}}
+                {{{editionsButton}}}
+                {{{shareButton}}}
+            </div>
+        </div>
+    </div>
+</div>

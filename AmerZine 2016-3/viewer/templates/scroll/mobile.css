@@ -1,0 +1,19 @@
+#scroll_mobile h3 {
+
+}
+
+#scroll_mobile h5 {
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+#scroll_mobile h6 {
+
+	font-size: 12px;
+	margin: 5px 0 0 0;
+}
+
+#scroll_mobile table.index_item td.title {
+	padding: 0 10px 0 10px;
+}

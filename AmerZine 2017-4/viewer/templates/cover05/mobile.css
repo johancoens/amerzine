@@ -1,0 +1,86 @@
+
+.tp-m-cover05 .logo {
+    margin:20px 20px 0px 20px;
+}
+.tp-m-cover05 .logo.im-cover05-right {
+    float:right;
+}
+
+.tp-m-cover05 .logo img {
+    max-width: 100%;
+}
+
+.tp-m-cover05 .im-cover05-highlight {
+    display:inline-block;
+    margin: 8px 20px;
+    position: relative;
+}
+.tp-m-cover05 .im-cover05-highlight:nth-of-type(1) {
+    margin-top:20px;
+}
+
+.tp-m-cover05 .im-cover05-highlight .im-cover05-highlight-img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    border: 2px solid #FFF;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.tp-m-cover05 .im-cover05-highlight.view-type-1 .im-cover05-highlight-img {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.tp-m-cover05 .im-cover05-highlight-text {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.tp-m-cover05 .im-cover05-highlight.im-cover05-right {
+    float:right;
+}
+
+.tp-m-cover05 .im-cover05-highlight.im-cover05-right:after {
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
+
+.tp-m-cover05 .im-cover05-highlight.im-cover05-right .im-cover05-highlight-img {
+    float:right;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.tp-m-cover05 .im-cover05-highlight.im-cover05-right .im-cover05-highlight-text{
+    float:right;
+    text-align:right;
+}
+
+.tp-m-cover05 .im-cover05-highlight .im-ts-subtitle-background,
+.tp-m-cover05 .im-cover05-highlight .im-ts-title-background{
+    margin-bottom: 0px;
+    display:inline-block;
+     transition: background-color .4s ease-in-out, color .4s ease-in-out;
+    -webkit-transition: background-color .4s ease-in-out, color .4s ease-in-out;
+    box-shadow: none;
+}
+
+.tp-m-cover05 .im-cover05-highlight:hover .im-ts-subtitle-background,
+.tp-m-cover05 .im-cover05-highlight:hover .im-ts-title-background {
+    transition: background-color .4s ease-in-out, color .4s ease-in-out;
+    -webkit-transition: background-color .4s ease-in-out, color .4s ease-in-out;
+    box-shadow: none;
+}
+
+.tp-m-cover05 .im-cover05-highlight .im-cover05-highlight-img {
+    max-width: 80px;
+    max-height: 80px;
+}

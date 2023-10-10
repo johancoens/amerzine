@@ -1,0 +1,39 @@
+<div id="interview">
+
+    <div id="interviewBackground">
+        {{#background}}
+        <div class="fullscreen" style="background-image: url('{{helper(getBackgroundImage, {background.uri})}}');"></div>
+        {{/background}}
+        {{#markers}}
+        {{#marker}}
+        <a href="javascript:void(0);" style="left: {{left}}%; top: {{top}}%; width: {{marker.width}}px; height: {{marker.height}}px; background-image: url('{{helper(getImageUrl, {marker})}}');"></a>
+        {{/marker}}
+        {{^marker}}
+        <a href="javascript:void(0);" class="btn_square_rounded marker hotspot im-ts-button" style="left: {{left}}%; top: {{top}}%;">
+            <span class="im-sp im-sp-plus"></span>
+        </a>
+        {{/marker}}
+        {{/markers}}
+    </div>
+    <div id="interviewTextBlock">
+     <div class="block small transparent alignLeft alignMiddle" >
+
+            <h2>{{{title}}}</h2>
+            {{#intro}}
+            <div class="paragraph">{{{intro}}}</div>
+           {{/intro}}
+        </div>
+
+        {{#markers}}
+        <div class="block small transparent alignLeft alignMiddle" >
+            <a class="closeButton button square-small im-ts-button" href="{{urlbase}}"><span class="im-sp im-sp-times"></span></a>
+            <h2>{{title}}</h2>
+                {{#description}}
+                <div class="paragraph">{{{description}}}</div>
+                        {{/description}}
+        </div>
+         {{/markers}}
+
+    </div>
+
+</div>

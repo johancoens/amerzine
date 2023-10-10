@@ -1,0 +1,22 @@
+.tp-mpcover01 .im-ts-title-background {
+        max-width: 500px;
+        text-align: center;
+}
+
+.tp-mpcover01 .im-mp-cover01-highlight {
+    width: 200px;
+    display:block;
+    margin-bottom: 10px;
+}
+
+.tp-mpcover01 .im-mp-cover01-highlight .paragraph{
+    font-size: 20px;
+    display: inline-block;
+    line-height: normal;
+    padding:8px;
+}
+
+.tp-mpcover01 .im-mp-cover01-highlight .im-ts-label{
+    padding:0px 15px;
+    margin-bottom: 4px;
+}

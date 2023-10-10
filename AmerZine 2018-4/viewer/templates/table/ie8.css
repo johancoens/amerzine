@@ -1,0 +1,50 @@
+.tp-centerscroll .im-cs-items {
+        padding: 0px 30px;
+        width: 30%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow-y:scroll;
+    }
+
+    .tp-centerscroll .item {
+        margin: 0 0 0px 0;
+        padding: 10px 0 0 0;
+
+     }
+
+    .tp-centerscroll .im-ts-title-background {
+        display: inline-block;
+        margin: 0 0 10px 0;
+        background-color: transparent;
+    }
+
+    .tp-centerscroll .im-ts-subtitle-background {
+        display: inline-block;
+        margin: 0 0 10px 0;
+        background-color: transparent;
+    }
+
+    .tp-centerscroll .im-cs-title {
+        margin: 10px 0;
+    }
+
+    .tp-centerscroll .im-ts-paragraph-background {
+        display: block;
+        background-color: transparent;
+    }
+
+    .tp-centerscroll .im-cs-image {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .tp-centerscroll .im-cs-startanimation {
+        position: relative;
+    }
+
+    .tp-centerscroll hr {
+        opacity: 0.5;
+        margin:10px 0 0 0;
+    }

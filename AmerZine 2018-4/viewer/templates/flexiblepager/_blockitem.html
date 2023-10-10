@@ -1,0 +1,7 @@
+<{{action.element}} {{#action.href}}href="{{action.href}}"{{/action.href}} {{#action.onclick}}onclick="{{action.onclick}}"{{/action.onclick}} {{#action.target}}target="{{action.target}}"{{/action.target}} style="{{background_style}}" class="im-tp-fop-block im-block {{className}} effect{{rollover_effect}}" >
+	{{#image}}<div im-object="im-media-directive" data-media="{{image}}" width="1000" class="im-media im-media-image"></div>{{/image}}
+	<div class="{{#hasContentOnAppear}}animated-content {{/hasContentOnAppear}}block-content {{#effect0}}text-block{{/effect0}}" style="{{background_style}}">
+		{{#title}}<h2 class="im-ts-title{{^effect0}}-background{{/effect0}}" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{mobile_title_style}}">{{{title}}}</h2><br>{{/title}}
+		{{#subtitle}}<h5 class="im-ts-subtitle{{^effect0}}-background{{/effect0}}" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{mobile_subtitle_style}}">{{{subtitle}}}</h5>{{/subtitle}}
+	</div>
+</{{action.element}}>

@@ -1,0 +1,192 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .tp-cover02 .logo {
+        margin: 0 0 0px 0px;
+    }
+
+    .tp-cover02 .logo img {
+        max-width: 300px;
+        max-height: 150px;
+    }
+
+    .tp-cover02 .title {
+        overflow: hidden;
+        float: left;
+        position: relative;
+    }
+
+    .tp-cover02 .title h1 {
+        margin: 0;
+    }
+
+    .tp-cover02 #head {
+        margin: 0 0 20px 0;
+    }
+
+    .tp-cover02 div.text-block {
+        margin: 15px 0 0 0;
+    }
+
+    .tp-cover02 table#head {
+        position: relative;
+        max-width: 710px;
+    }
+
+    .tp-cover02 table#head td {
+        padding: 0 20px 0 0;
+        vertical-align: bottom;
+    }
+
+    .tp-cover02 .alignCenter {
+        width: 900px;
+        height: auto;
+        min-height:400px;
+
+    }
+
+    .tp-cover02 .shortcuts {
+        padding: 6px 10px;
+        width: 259px;
+        max-height: 336px;
+        overflow:hidden;
+    }
+    .tp-cover02 .shortcuts a{
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    .tp-cover02 .shortcutsContainer {
+        width: 271px;
+        overflow: hidden;
+        position:relative;
+    }
+
+    .tp-cover02 .polaroid {
+        text-decoration: none;
+        height: 76px;
+        width: 251px;
+        text-align: left;
+        display: talbe-row;
+        position:relative;
+    }
+
+    .tp-cover02 .polaroid img {
+        position: absolute;
+        width: 93px;
+        height: 67px;
+        padding: 0;
+        margin: 5px;
+        top:0;
+        left:0;
+    }
+
+    .tp-cover02 .im-tp-shortcut-label{
+        height: 76px;
+        display: table-cell;
+        vertical-align:middle;
+        width:148px;
+        padding: 0 0 0 98px;
+    }
+
+    .tp-cover02 .polaroid .label {
+        font-size: 14px;
+        margin: 0 0 0 10px;
+        display:inline-block;
+    }
+
+    .tp-cover02 .polaroid .sublabel {
+        margin: 0 0 0 10px;
+        display:inline-block;
+    }
+
+    .tp-cover02 .article {
+        margin: 0px 0 0 0;
+        float: left;
+        max-width: 500px;
+    }
+
+    .tp-cover02 .coverIndex {
+        float: right;
+        margin: 0 100px 0 0;
+        max-width: 271px;
+    }
+    .tp-cover02 .coverIndex h4{
+        margin-bottom: 10px;
+    }
+
+    .tp-cover02 .tp-cover02-sc-nav {
+        display:block;
+        width:100%;
+        position:absolute;
+        height:30px;
+
+    }
+
+    .tp-cover02 .tp-cover02-sc-nav span {
+        position: absolute;
+        display: block;
+        top: -0.20em;
+        left: 50%;
+        margin-left: -.5em;
+    }
+
+    .tp-cover02 .tp-cover02-up {
+        box-shadow: -1px 0px 2px black;
+        top:-32px;
+        -webkit-transition: top 200ms ease-out;
+        -moz-transition: top 200ms ease-out;
+        transition: top 200ms ease-out;
+    }
+
+    html:not(.touch-support) .tp-cover02 .shortcutsContainer:hover .tp-cover02-up.show {
+        top: 0px;
+    }
+
+    .touch-support .tp-cover02 .shortcutsContainer .tp-cover02-up.show {
+        top: 0px;
+    }
+
+    .tp-cover02 .tp-cover02-down {
+        bottom:-32px;
+        box-shadow: 1px 0px 2px black;
+        -webkit-transition: bottom 200ms ease-out;
+        -moz-transition: bottom 200ms ease-out;
+        transition: bottom 200ms ease-out;
+    }
+
+    html:not(.touch-support) .tp-cover02 .shortcutsContainer:hover .tp-cover02-down.show {
+        bottom: 0px;
+    }
+    .touch-support .tp-cover02 .shortcutsContainer .tp-cover02-down.show {
+        bottom: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .tp-cover02 .coverIndex {
+        margin: 0 150px 0 0;
+    }
+
+    .tp-cover02 .article {
+        margin: 0px 0 0 0;
+        float: left;
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .tp-cover02 .logo img {
+        max-width: 150px;
+        max-height: 75px;
+    }
+
+
+    .tp-cover02 .article {
+        margin: 0px 0 0 0;
+    }
+}

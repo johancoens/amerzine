@@ -1,0 +1,18 @@
+<div class="wrapper im-ts-mobile-view">
+    {{{header}}}
+    <div class="scroller">
+        {{^alt}}
+        <div class="mobile-header-background" style="{{#background.settings.position}}background-position:{{background.settings.position}};{{/background.settings.position}}; background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>
+        {{/alt}}
+        {{#alt}}
+        <div class="mobile-header-background" style="{{#settings.position}}background-position:{{settings.position}};{{/settings.position}}; background-image: url('{{helper(getBackgroundImage, {uri})}}'); "></div>
+        {{/alt}}
+        <div class="text">
+            <div class="paragraph">
+                <h2>{{{title}}}</h2>
+                {{{description}}}
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,23 @@
+<div class="im-tp-do-ballon im-absolute-view">
+	<div style="max-height:100%;overflow:auto;" class="im-ts-border-radius">
+		{{#image}}<div im-object="im-media-directive" imagetag="imagetag" width="400" class="im-tp-do-button-image im-media" data-media="{{image}}" style="height: {{imageHeight}}px;"></div>{{/image}}
+		<div class="im-cl-text-block paragraph" style="{{text_block_style}}">
+			{{#title}}
+			<h2 class="im-ts-title" style="{{title_style}}">
+			{{{title}}}
+			</h2>
+			{{/title}}
+			{{#subtitle}}
+			<h3 class="im-ts-subtitle" style="{{subtitle_style}}">
+			{{{subtitle}}}
+			</h3>
+			{{/subtitle}}
+			{{{description}}}
+			<div class="top-button-bar top-right">
+				<a href="{{_baseurl}}" class="close-button button square-small im-ts-button-background">
+					<span class="im-sp im-sp-times"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

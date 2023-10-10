@@ -1,0 +1,22 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller">
+        {{#sidebar}}
+        {{#image}}<div class="im-media" im-object="im-media-directive" style="width: {{image_width}}px; height: {{image_height}}px;" imagetag="imagetag" data-media="content.image" width="500"></div><br />{{/image}}
+        <div class="im-g2-intro">
+            {{#title}}<h1 class="im-ts-title-background">{{{title}}}</h1><br>{{/title}}
+            {{#subtitle}}<h3 class="im-ts-subtitle-background">{{{subtitle}}}</h3><br>{{/subtitle}}
+            {{#description}}<div class="text-block im-ts-paragraph">{{{description}}}</div><br>{{/description}}
+        </div>
+        {{/sidebar}}
+        {{#item}}
+            <div class="im-g2-intro">
+            {{#title}}<h1 class="im-ts-title-background" style="{{m_title_style}}">{{{title}}}</h1><br>{{/title}}
+            {{#subtitle}}<h3 class="im-ts-subtitle-background" style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br>{{/subtitle}}
+            {{#description}}<div class="text-block im-ts-paragraph" style="{{m_paragraph_style}}">{{{description}}}</div><br>{{/description}}
+            </div>
+            <div class="im-tp-g2-gallery im-ts-paragraph-padding clearfix">{{#item}}<a href="{{urlbase}}/item/{{i}}/image/{{j}}" class='im-media {{#isLast}}im-last{{/isLast}}' im-object='im-media-directive' data-media='content.item.{{i}}.item.{{j}}.image'></a>{{/item}}</div>
+        {{/item}}
+    </div>
+</div>
+<div class="im-g2-details">
+</div>

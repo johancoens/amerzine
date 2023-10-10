@@ -1,0 +1,304 @@
+
+    .tp-scrollblocks .im-sb-wrapper {
+        overflow-y: scroll;
+        height: 100%;
+        width: 101%;
+    }
+
+    .tp-scrollblocks .blocks-nav-top {
+        position: absolute;
+        z-index: 40;
+        top: -25px;
+        width: 100%;
+        height: 12px;
+        text-align: center;
+        transition: top .5s ease-out;
+        -webkit-transition: top .5s ease-out;
+    }
+
+    .tp-scrollblocks .blocks-nav-top.show {
+        top: 0;
+    }
+
+    .tp-scrollblocks .blocks-nav-bottom.hide {
+        bottom: -25px;
+    }
+
+     .tp-scrollblocks .blocks-nav-bottom {
+        position: absolute;
+        z-index: 40;
+        bottom: 0;
+        width: 100%;
+        height: 12px;
+        text-align: center;
+        transition: bottom .5s ease-out;
+        -webkit-transition: bottom .5s ease-out;
+    }
+
+    .tp-scrollblocks .blocks-nav-top a, .tp-scrollblocks .blocks-nav-bottom a  {
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+         transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+    }
+    .theme-2 .tp-scrollblocks .blocks-wrapper {
+        width:945px;
+    }
+    .theme-2 .tp-scrollblocks .blocks-nav-top a, .theme-2 .tp-scrollblocks .blocks-nav-bottom a  {
+        margin-left: -62px;
+    }
+
+    .tp-scrollblocks .blocks-nav-bottom a {
+        margin-top: -12px;
+    }
+
+    .tp-scrollblocks .im-previous.pulse {
+        padding: 30px;
+        margin-top: -30px;
+    }
+
+    .tp-scrollblocks .im-next{
+        padding: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .tp-scrollblocks .blocks-wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    .tp-scrollblocks .blocks {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-right: 0px;
+        transition: margin 1s ease-out;
+        -webkit-transition: margin 1s ease-out;
+        overflow: hidden;
+        width: 900px;
+    }
+
+    .theme-2 .tp-scrollblocks .blocks {
+        padding-right: 66px;
+    }
+
+    .tp-scrollblocks h2, .tp-scrollblocks h4 {
+        margin-bottom: 5px;
+    }
+
+    .tp-scrollblocks .block-column {
+        width: 50%;
+        height: 100%;
+        display: block;
+        float: left;
+        position: relative;
+
+    }
+
+    .tp-scrollblocks .block-row {
+        position: relative;
+    }
+
+    .tp-scrollblocks .no-border-radius {
+        border-radius: 0px;
+    }
+
+    /* TEXT + IMAGE + QUOTE */
+
+    .tp-scrollblocks .block-row-text-image-quote .block-column-text {
+        padding: 30px;
+    }
+
+    .tp-scrollblocks .block-column-image-quote table {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tp-scrollblocks .block-column-image-quote table td {
+        height: 50%;
+        position:relative;
+    }
+
+    .tp-scrollblocks .block-column-image-quote table td.one-row {
+        height: 100%;
+    }
+
+    .tp-scrollblocks .block-column-image-quote table td .im-media{
+        width: 100%;
+        height:100%;
+    }
+
+    .tp-scrollblocks .block-column-quote {
+        text-align: center;
+        display: block;
+        padding: 30px;
+    }
+
+    .tp-scrollblocks .block-column-quote table{
+        width: 100%;
+    }
+
+    .tp-scrollblocks .block-row-text-image-quote.pos-1 .block-column {
+        float: right;
+    }
+
+    .tp-scrollblocks .block-row-text-image-quote.pos-0 .block-column {
+        float: left;
+    }
+
+    /* IMAGE + TEXT */
+
+
+    .tp-scrollblocks .block-row-image-text {
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+
+    .tp-scrollblocks .block-row-image-text .im-media-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .tp-scrollblocks .block-column-image-text-content {
+        position: relative;
+        display: block;
+        width: 50%;
+        padding: 200px 0 0 0;
+    }
+
+    .tp-scrollblocks .block-column-image-text-content.pos-1 {
+        float: right;
+    }
+
+    .tp-scrollblocks .block-column-image-text-content.pos-0 {
+        float: left;
+    }
+
+    .tp-scrollblocks .block-column-image-text-content.pos-1 .column-padding {
+        padding: 0 20px 20px 0;
+    }
+
+    .tp-scrollblocks .block-column-image-text-content.pos-0 .column-padding {
+        padding: 0 0 20px 20px;
+    }
+
+    /* VIDEO */
+
+    .tp-scrollblocks .block-row-video .im-ts-videocontainer {
+        width: 100%;
+        height: 400px;
+    }
+
+    .tp-scrollblocks .im-ts-videocontainer iframe {
+        border-radius: 0px;
+    }
+
+    /* IMAGE | QUOTE */
+
+
+    .tp-scrollblocks .block-row-image-quote.pos-1 .block-column {
+        float: right;
+    }
+
+    .tp-scrollblocks .block-row-image-quote.pos-0 .block-column {
+        float: left;
+    }
+
+    /* CUSTOM */
+
+
+    .tp-scrollblocks .block-column-custom {
+        width: 25%;
+        float: left;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .tp-scrollblocks .block-column-custom.columns-1 {
+         width: 25%;
+    }
+
+    .tp-scrollblocks .block-column-custom.columns-2 {
+         width: 50%;
+    }
+
+    .tp-scrollblocks .block-custom-image {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .tp-scrollblocks .im-ts-videocontainer.small {
+        width: 100%;
+        position:absolute;
+        top: 0;
+    }
+
+    .tp-scrollblocks .block-column-custom-content {
+       padding: 30px;
+    }
+
+    .tp-scrollblocks .block-column-custom-content h4{
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+
+
+    /* SLIDER */
+
+
+    .tp-scrollblocks .block-row-slider {
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+
+    .tp-scrollblocks .im-sb-slider {
+        height: 500px;
+        width: 100%;
+    }
+
+     /* STYLES MOGEN WEG BIJ LIVE */
+
+
+    .tp-scrollblocks .block-row-text-image-quote h2, .tp-scrollblocks .block-row-text-image-quote h4, .tp-scrollblocks .block-row-text-image-quote .paragraph {
+        padding: 0;
+        display: block
+    }
+
+
+    .tp-scrollblocks .block-row-text {
+        padding: 30px;
+    }
+
+    .tp-scrollblocks .block-row-text .paragraph, .tp-scrollblocks .block-row-text .im-ts-title {
+        padding: 0;
+    }
+
+    .tp-scrollblocks .im-columns-2 {
+        -moz-column-gap:60px; /* Firefox */
+        -webkit-column-gap:60px; /* Safari and Chrome */
+        column-gap:60px;
+        
+    }
+    .theme-2 .tp-scrollblocks .blocks {
+        padding-right: 0;
+    }
+
+    .im-sb-slider {
+        height: 540px;
+        width: 100%;
+    }
+
+    .theme-2 .tp-scrollblocks .blocks-nav-top a, .theme-2 .tp-scrollblocks .blocks-nav-bottom a  {
+        margin-left: 0;
+    }

@@ -1,0 +1,72 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    .tp-flickrcover .im-ts-title-background {
+        position: relative;
+        transition: font-size .3s ease-out;
+        -webkit-transition: font-size .3s ease-out;
+    }
+
+    .tp-flickrcover .im-cover05-highlight {
+        display:block;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .tp-flickrcover .im-cover05-highlight img {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        margin-right: 20px;
+        border: 2px solid #FFF;
+        vertical-align: middle;
+        position: relative;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+
+    .tp-flickrcover .im-cover05-highlight.view-type-1 img {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+    }
+
+    .tp-flickrcover .im-cover05-right {
+        text-align:right;
+    }
+
+    .tp-flickrcover .im-cover05-right img {
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+
+    .tp-flickrcover .im-cover05-highlight-text {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .tp-flickrcover .im-cover05-highlight .paragraph {
+        font-size: 20px;
+        display: inline-block;
+        line-height: normal;
+        padding:8px 15px;
+    }
+
+    .tp-flickrcover .im-cover05-highlight .im-ts-subtitle-background,
+    .tp-flickrcover .im-cover05-highlight .im-ts-title-background {
+        margin-bottom: 0px;
+        display:inline-block;
+         transition: box-shadow .4s ease-in-out, color .4s ease-in-out;
+        -webkit-transition: box-shadow .4s ease-in-out, color .4s ease-in-out;
+    }
+
+
+    .tp-flickrcover .im-cover05-highlight:hover .im-ts-subtitle-background,
+    .tp-flickrcover .im-cover05-highlight:hover .im-ts-title-background {
+        transition: box-shadow .4s ease-in-out, color .4s ease-in-out;
+        -webkit-transition: box-shadow .4s ease-in-out, color .4s ease-in-out;
+    }
+}

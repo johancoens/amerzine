@@ -1,0 +1,46 @@
+<div class="im-tp-m1-container image-style-{{image_style}} scroller">
+    <div class="im-tp-m1-header">
+
+            <div class="im-pg-text im-absolute-view">
+                {{#image}}
+                    <div im-object="im-media-directive" imagetag="imagetag"  data-media="{{image}}" width="600" class="im-media im-media-image"></div>
+                {{/image}}
+
+                {{#title}}
+                    <h2 class="im-ts-title-background">{{{title}}}</h2><br />
+                {{/title}}
+                {{#subtitle}}
+                    <h4 class="im-ts-subtitle-background">{{{subtitle}}}</h4><br />
+                {{/subtitle}}
+                {{#description}}
+                    <div class="im-ts-paragraph text-block">{{{description}}}</div><br />
+                {{/description}}
+
+
+        {{#label}}
+        <a class="im-ts-button start-button im-ts-border-radius" href="{{action.href}}" target="{{action.target}}" onclick="{{action.onclick}}">{{{label}}}</a>
+        {{/label}}
+
+            </div>
+    </div>
+    <div class="im-tp-m1-list">
+    {{#item}}
+
+    <{{action.element}} target="{{action.target}}" onclick="{{action.onclick}}" href="{{action.href}}"  class="group-of-highlights text-block{{#no_text}} no-text{{/no_text}}" style="{{mobile_background_style}}">
+
+        <div class="group-of-highlights-image">
+            {{#image}}
+                <div im-object="im-media-directive" data-media="{{image}}" {{#no_text}}imagetag="imagetag" {{/no_text}}width="300" class="im-media im-media-image"></div>
+            {{/image}}
+        </div>
+        {{^no_text}}
+        <div class="highlights-text paragraph">
+            <h1 class="im-ts-title" style="{{mobile_title_style}}">{{{title}}}</h1>
+            <h4 class="im-ts-subtitle" style="{{mobile_subtitle_style}}">{{{subtitle}}}</h4>
+        </div>
+        {{/no_text}}
+    </{{action.element}}>
+
+    {{/item}}
+    </div>
+</div>

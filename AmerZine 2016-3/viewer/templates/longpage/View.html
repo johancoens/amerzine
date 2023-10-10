@@ -1,0 +1,196 @@
+
+<div class="im-tp-lp-container scroller">
+	<div class="grid_container im-ts-paragraph-background">
+
+	{{#row}}
+	<div class="clearfix clearfix-before row {{has_margin}} {{align_height}} {{#isCarousel}}carousel{{/isCarousel}} row-{{row_type}}" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear" style="{{background_style}}">
+		{{#type.0}}
+			<div class="im-lp-column block-row block-row-slider no-border-radius">
+				 <div class="im-tp-lp-slider im-media im-media-image" fullscreen="fullscreen" im-object="im-media-directive"></div>
+			</div>
+		{{/type.0}}
+
+		{{#type.1}}
+			{{#cover_item}}
+				<div class="im-lp-column im-tp-lp-over">
+				</div>
+			{{/cover_item}}
+		{{/type.1}}
+
+		{{#type.2}}
+		{{#text_item}}
+		<div class="im-lp-column grid_2" style="height:1px;">  </div>
+		<div class="im-lp-column grid_8">
+			<div class="paragraph">
+
+			{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+
+			{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+
+			{{#description}}<div class="im-columns-{{columns}}" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+
+			</div>
+
+		</div>
+		<div class="im-lp-column grid_2" style="height:1px;">  </div>
+		{{/text_item}}
+		{{/type.2}}
+
+		{{#type.3}}
+			{{#item}}
+			<div class="im-lp-column grid_{{text_size}} im-lp-container" style="float: {{float}};">
+				<div class="paragraph">
+
+				{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+				{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+				{{#description}}<div class="im-columns-{{columns}}" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+
+				</div>
+			</div>
+			<div class="im-lp-column grid_{{image_size}} im-lp-img" data-style="{{background_style}} float: {{float}};">
+				{{#image}}<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}}
+			</div>
+			{{/item}}
+		{{/type.3}}
+
+		{{#type.4}}
+			{{#video_item}}
+			<div class="im-lp-column grid_{{text_size}} im-lp-container" style="float: {{float}};">
+				<div class="paragraph">
+
+				{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+				{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+				{{#description}}<div class="im-columns-{{columns}}" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+
+				</div>
+			</div>
+			<div class="im-lp-column grid_{{video_size}} im-lp-vid" style="{{background_style}} float: {{float}};">
+				{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+			</div>
+			{{/video_item}}
+		{{/type.4}}
+
+		{{#type.5}}
+		<div class="im-lp-column slider">
+			{{#slider}}
+			<{{action.element}} {{#action.target}}target="{{action.target}}"{{/action.target}} {{#action.onclick}}onclick="{{action.onclick}}"{{/action.onclick}} {{#action.href}}href="{{action.href}}"{{/action.href}} class="slide" style="width: {{width}}%;height: {{height}};">
+				{{#background}}<div class="im-media" im-object="im-media-directive" data-media="{{background}}"></div>{{/background}}
+				<div><a class='button im-ts-button square-small close-button'><span class='im-sp im-sp-times'></span></a></div>
+				<div class="absoluteview">
+					{{#title}}<h1 class="im-ts-title-background" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+					{{#subtitle}}<h3 class="im-ts-subtitle-background animated" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+					 {{#description}}<div class="paragraph text-block" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+
+				</div>
+			</{{action.element}}>
+
+			{{/slider}}
+		</div>
+		{{/type.5}}
+
+		{{#type.6}}
+		<div class="im-lp-column grid_8" >
+			<div class="paragraph">
+
+				{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />
+				{{/title}}
+
+				{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />
+				{{/subtitle}}
+
+				{{#description}}<div class="carousel-paragraph im-columns-{{columns}}" im-object="im-style-directive" style="{{paragraph_style}}" style="{{m_paragraph_style}}">{{{description}}}</div>
+				{{/description}}
+
+				{{#image}}<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}}
+
+				<ul class="c-buttons">
+					{{#row_column_1}}
+					<li class="c-button"><a class="button">{{label}}</a></li>
+					{{/row_column_1}}
+				</ul>
+			</div>
+
+		</div>
+		<div class="im-lp-column grid_4">
+			<div class="im-scroll-handler-sticky nav-dots" data-sh-start="311" data-sh-end="770">
+				{{#row_column_1}}
+				<label class="nav-dot im-ts-button" id="img-dot-1" style="{{navigation_style}}"></label>
+				{{/row_column_1}}
+			</div>
+			<ul class="im-tp-lp-carousel clearfix">
+			{{#row_column_1}}
+
+				<li class="slide-container">
+					<div class="slide-content" style="{{background_style}}" >
+						{{#image}}<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}}
+						<div class="paragraph">
+						{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+						{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3>{{/subtitle}}
+						{{#description}}<div im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+						</div>
+					</div>
+				</li>
+			{{/row_column_1}}
+			</ul>
+		</div>
+		{{/type.6}}
+
+		{{#type.7}}
+			<div class="row-title absoluteview" data-position="{{title_position}}">{{#title}}<h1 class="im-ts-title-background" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+				{{#subtitle}}<h3 class="im-ts-subtitle-background" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+			</div>
+			{{#column}}
+			{{#layout0}}
+			<!-- Text over image -->
+			<div class="im-lp-column im-lp-type-0 grid_{{columncount}} {{className}}" style="{{background_style}}">
+
+				<div class="wrap">
+				{{#image}}
+					<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}">
+						<div class="absoluteview">
+							{{#title}}<h1 class="im-ts-title-background" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+							{{#subtitle}}<h3 class="im-ts-subtitle-background" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+						</div>
+					</div>
+				{{/image}}
+				{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+				</div>
+				{{#description}}<div class="paragraph im-columns-{{columns}}" style="{{paragraph_style}}">{{{description}}}</div>{{/description}}
+			</div>
+			{{/layout0}}
+			{{#layout1}}
+			<!-- Text under image -->
+			<div class="im-lp-column  im-lp-type-1 grid_{{columncount}} {{className}}" style="{{background_style}}">
+
+				{{#image}}<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}}
+				{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+
+				<div class="paragraph im-columns-{{columns}}">
+
+					{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+					{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+					{{#description}}<div class="im-columns-{{columns}}" style="{{paragraph_style}}">{{{description}}}</div>{{/description}}
+
+				</div>
+
+			</div>
+			{{/layout1}}
+			{{#layout2}}
+			<!-- Nog te verzinnen (Text above image) -->
+			<div class="im-lp-column grid_{{columncount}} {{className}}" style="{{background_style}}">
+				<div class="paragraph">
+					{{#title}}<h1 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{{title}}}</h1><br />{{/title}}
+					{{#subtitle}}<h3 class="im-ts-subtitle" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{{subtitle}}}</h3><br />{{/subtitle}}
+					{{#description}}<div class="im-columns-{{columns}}" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}">{{{description}}}</div>{{/description}}
+				</div>
+				{{#image}}<div class="im-media" imagetag="imagetag" im-object="im-media-directive" data-media="{{image}}"></div>{{/image}}
+				{{#youtube.id}}<div class="im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+
+			</div>
+			{{/layout2}}
+		{{/column}}
+		{{/type.7}}
+
+	</div>
+	{{/row}}
+</div>

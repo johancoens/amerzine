@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 24, 2014, 11:49:45 AM
+    Author     : jgalama
+*/
+
+.im-header-container h1 {
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 0px 13px 0px;
+    min-width:50px;
+    opacity: 0;
+}

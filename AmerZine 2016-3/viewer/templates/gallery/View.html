@@ -1,0 +1,18 @@
+<div class="table" >
+    <div class="cell im-pg-text">
+        {{#title}}<h2 class="im-ts-title-background">{{{title}}}</h2>{{/title}}
+        {{#intro}}
+        <div class="paragraph text-block">{{{intro}}}</div>
+        {{/intro}}
+    </div>
+    <div class="photos overflowscroll">
+        {{#images}}
+        <a href="javascript:void(0);" class="cell photo bordershadow" style="background-image: url('{{helper(getImageUrl, {image.uri}, 150, 150, null, null, 1)}}');" ></a>
+        {{/images}}
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="galleryContainer">
+    <div id="gallery">
+    </div>
+</div>

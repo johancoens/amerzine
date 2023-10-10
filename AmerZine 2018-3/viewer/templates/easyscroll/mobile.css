@@ -1,0 +1,64 @@
+
+.tp-m-easyscroll  .wrapper {
+    min-width: 320px;
+    max-width: 767px;
+    min-height: 360px;
+    position: relative;
+}
+
+.tp-m-easyscroll .im-es-items {
+    padding: 0px 0px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tp-m-easyscroll .item {
+    margin: 0 0 0px 0;
+    padding: 10px 20px 0 20px;
+}
+.tp-m-easyscroll .position-right .im-es-title{
+    text-align: right;
+}
+
+.tp-m-easyscroll .im-media-video,
+.tp-m-easyscroll .im-media-video .im-ts-videocontainer {
+    width: 100%;
+}
+.tp-m-easyscroll .im-es-title {
+    margin: 10px 0;
+}
+
+.tp-m-easyscroll .paragraph {
+    padding-left:0;
+    padding-right:0;
+    /*text-align: justify;*/
+}
+
+.tp-m-easyscroll .im-ts-paragraph-background {
+    display: block;
+}
+
+.tp-m-easyscroll .im-es-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.tp-m-easyscroll .im-es-startanimation {
+    position: relative;
+}
+
+.tp-m-easyscroll hr {
+    opacity: 0.5;
+    margin:10px 0 0 0;
+}
+
+.tp-m-easyscroll h4,
+.tp-m-easyscroll h2 {
+    display:inline-block;
+}

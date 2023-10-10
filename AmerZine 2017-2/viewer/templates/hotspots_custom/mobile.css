@@ -1,0 +1,65 @@
+
+#hotspot_mobile .wrapper  {   
+    min-width: 320px;
+    max-width: 767px;	
+    position: relative;
+}
+
+#hotspot_mobile .background {
+    position: relative;
+    padding: 20px;
+}
+
+#hotspot_mobile .introtext {
+    padding: 20px;	
+}
+
+
+#hotspot_mobile table.index_item {
+    opacity: 0.9;
+    width: 100%;
+    margin: 0px 0 0 0px;
+    height: 51px;
+    border-bottom: 1pt solid #ababab;	
+}
+
+
+#hotspot_mobile table.index_item td {	
+    vertical-align: middle;	
+    text-align: left;
+
+}
+
+#hotspot_mobile table.index_item td.thumb {
+    width: 75px;
+    overflow: hidden;
+}
+
+#hotspot_mobile .crop {
+    width: 62px;
+    height: 62px;
+    overflow: hidden;	
+}
+
+#hotspot_mobile .crop img {
+    margin-left: -20%; 	
+}
+
+#hotspot_mobile table.index_item td.thumb img {
+    display: block;	
+    height: 62px;
+}
+
+#hotspot_mobile table.index_item td.title {
+    padding: 0 0 0 20px;	
+}
+
+#hotspot_mobile table.index_item td.arrow {
+    padding: 6px 0px 0 0;	
+    width: 25px;
+}
+
+#hotspot_mobile table.index_item tr {
+    border-bottom: 1pt solid #c2c2c2;
+    border-top: 1pt solid #FFFFFF;
+}

@@ -1,0 +1,15 @@
+<div class="im-tp-do-video im-align center-center im-3d im-level-3">
+    {{#title}}
+    <div class="videoTitle">
+        <h1 class="im-ts-title-background" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}">{{title}}</h1>
+    </div>
+    {{/title}}
+    {{#subtitle}}
+    <div class="videoLongtitle">
+        <h3 class="im-ts-subtitle-background" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}">{{subtitle}}</h3>
+    </div>
+    {{/subtitle}}
+    {{#youtube.id}}<div class="im-tp-do-video im-media im-media-video" style="width: {{video_width}}px; height: {{video_height}}px" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+    <!-- <div id="simplevideoMovieContainer" class="im-ts-videocontainer video_size_{{video_size}}" data-video-id="{{youtube}}" ></div> -->
+    {{#description}}<div class="text-block paragraph overflowscroll">{{{description}}}</div>{{/description}}
+</div>

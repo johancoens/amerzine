@@ -1,0 +1,40 @@
+<div class="im-co-textblock-wrapper im-co-item-intro im-align center-center">
+    <h1 class="im-ts-title-background">{{title}}</h1>
+    {{#has_text_block}}
+    <div class="text-block">
+        {{#intro}}
+        <div class="paragraph" style="{{^image}}margin-right:0;{{/image}}">{{{intro}}}</div>
+        {{/intro}}
+        {{#image}}
+        <div class="corporate-image im-ts-border-radius" style="background-image: url('{{image_uri}}'); background-repeat: no-repeat;"></div>
+        {{/image}}
+    </div>
+    {{/has_text_block}}
+</div>
+
+{{#button_text}}
+<div class="im-co-textblock-wrapper im-co-item-button im-align center-center">
+    <h1 class="im-ts-title-background">{{{title}}}</h1>
+    <div class="text-block">
+		<div class="top-button-bar top-right">
+        	<a class="button im-ts-button square-small close-button" href="{{urlbase}}"><span class="im-sp im-sp-times"></span></a>
+		</div>
+        {{#description}}
+        <div class="paragraph" style="{{^image}}margin-right:0;{{/image}}">{{{description}}}</div>
+        {{/description}}
+        {{#image}}
+        <div class="corporate-image im-ts-border-radius" style="background-image: url('{{image_uri}}'); background-repeat: no-repeat;"></div>
+        {{/image}}
+    </div>
+</div>
+{{/button_text}}
+
+{{^noNavigation}}
+<div class="im-co-buttons-container im-ts-button-background">
+    <div class="im-co-buttons">
+        {{#button_text}}
+        <a class="im-co-button im-ts-button" href="{{urlbase}}/item/{{index}}">{{{title}}}</a>
+        {{/button_text}}
+    </div>
+</div>
+{{/noNavigation}}

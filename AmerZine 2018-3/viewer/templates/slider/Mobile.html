@@ -1,0 +1,37 @@
+<div class="wrapper im-ts-mobile-view">
+    <div class="scroller mobile_list">
+
+        <div id="mInterview">
+
+            <div class="top_header">
+                <h3>{{#title}}{{{title}}}{{/title}}{{^title}}{{pagetitle}}{{/title}}</h3>
+            </div>
+            {{#description}}
+            <div class='text'>
+                <div class="paragraph">
+                    {{{description}}}
+                </div>
+            </div>
+            {{/description}}
+            {{#slider}}
+            <a href="{{urlbase}}/item/{{index}}">
+                {{#alt}}
+                <div class="mobile-header-background" style="{{#settings.position}}background-position:{{settings.position}};{{/settings.position}} background-image: url('{{helper(getBackgroundImage, {uri})}}'); "></div>
+                {{/alt}}
+                {{^alt}}
+                <div class="mobile-header-background" style="{{#background.settings.position}}background-position:{{background.settings.position}};{{/background.settings.position}} background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>
+                {{/alt}}
+                <div class='im-ts-list'>
+                    <div class='im-ts-list-row'>
+                        <h5 class='label'>{{{title}}}</h5>
+                        <span class="arrow">
+                            <span class="im-sp im-sp-arrow-right"></span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            {{/slider}}
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

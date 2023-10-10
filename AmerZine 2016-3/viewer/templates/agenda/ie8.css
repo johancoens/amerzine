@@ -1,0 +1,421 @@
+/** MOBILE CSS **/
+
+.tp-agenda header {
+    margin: 0 0 0px 0;
+    position: relative;
+}
+
+.tp-agenda #contentleft {
+    position: absolute;
+    left: 40px;
+    width: 280px;
+}
+
+.tp-agenda .im-ts-button-background {
+    height: 25px;
+    position: absolute;
+}
+
+.tp-agenda .im-tp-agenda-image {
+    margin: 30px 0 0 0;
+}
+
+.tp-agenda .im-tp-agenda-image img {
+    max-width: 280px;
+}
+
+.tp-agenda #shadow {
+    background: url(../../upload/agenda_shadow_top.png) repeat-x;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 83%;
+    z-index: 100;
+}
+
+.tp-agenda #shadow_bottom {
+    background: url(../../upload/agenda_shadow_bottom.png) repeat-x bottom;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    width: 83%;
+    z-index: 100;
+}
+
+.tp-agenda #tablecontainer {
+    position: absolute;
+    left: 340px;
+    top: 30px;
+    width: 550px;
+    height: 80%;
+    overflow:hidden;
+    margin: 8px 0 0 0;
+
+}
+
+.tp-agenda #tableInside {
+    overflow-y: scroll;
+    padding: 0px 20px 5px 20px;
+    width: 600px;
+    height: 100%;
+    top: 20px;
+
+}
+
+.tp-agenda table#items {
+    position: relative;
+    width: 100%;
+    border-collapse:separate;
+    margin: 0 20px 0 0;
+}
+
+.tp-agenda table#items tr.first td	 {
+    border-top: 0;
+}
+
+.tp-agenda table#items tr.last td	 {
+    border-bottom: 0;
+}
+
+.tp-agenda table#items td {
+    padding: 20px 15px;
+    border-top: 1pt solid rgb(255,255,255);
+    border-left: 1pt solid rgb(120,120,120);
+    border-bottom: 1pt solid rgb(120,120,120);
+    border-right: 1pt solid rgb(255,255,255);
+}
+
+
+.tp-agenda table#items tr td a {
+    display:block;
+    height:100%;
+    width:100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.tp-agenda table#items td.day {
+    border-left: 0;
+    text-align: center;
+    width: 50px;
+
+}
+
+.tp-agenda table#items td.date {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 150px;
+}
+
+.tp-agenda table#items td.item {
+    font-size: 14px;
+    border-right: 0;
+
+}
+
+.tp-agenda table#items tr:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+
+
+.tp-agenda h1 {
+    margin: 0 0 0px 0;
+
+}
+
+
+.tp-agenda a#link {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.tp-agenda a#link:hover {
+    text-decoration:underline;
+}
+
+.tp-agenda h2 {
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 20px;
+}
+
+.tp-agenda h6 {
+    padding: 0;
+
+}
+
+.tp-agenda table td {
+    vertical-align: middle;
+}
+
+.tp-agenda #overlayContainerAgenda {
+    opacity:  1;
+    display: none;
+}
+
+.tp-agenda #overlayContainerAgenda table {
+    border-collapse:separate;
+}
+
+.tp-agenda #overlayContainerAgenda table {
+    width: 500px;
+}
+
+.tp-agenda #overlayContainerAgenda table td {
+    padding: 20px;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayDay {
+    font-size: 95px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayDay h2 {
+    font-size: 95px;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayDate {
+    width: 300px;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayDate h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayDate h4 {
+    font-size: 20px;
+    padding:0;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayText div.paragraph {
+    padding: 0;
+}
+
+.tp-agenda #overlayContainerAgenda table td.overlayText {
+    vertical-align: top;
+    width: 300px;
+}
+
+.tp-agenda #overlayContainerAgenda .overlayImage {
+    width: 100px;
+}
+
+.tp-agenda #overlayContainerAgenda .overlayImage img {
+    max-width: 130px;
+}
+
+.tp-agenda .overlayHeader a.bestelBtn {
+    float: left;
+    margin: 15px 0 0 0;
+}
+
+
+.tp-agenda #tablecontainer .noshow {
+    opacity: 0.3;
+    /* IE 8 */
+    /* IE 5-7 */
+    filter: alpha(opacity=30);
+}
+
+
+/** IE* **/
+
+    .tp-agenda h1 {
+        margin: 30px 0 10px 0;
+        position: relative;
+    }
+
+    .tp-agenda .im-ts-button-background {
+        height: 25px;
+        position: absolute;
+    }
+
+    .tp-agenda .im-ag-contentleft {
+        position: absolute;
+        left: 40px;
+        width: 280px;
+    }
+
+    .tp-agenda .tp-agenda-image {
+        margin: 30px 0 0 0;
+    }
+
+    .tp-agenda .tp-agenda-image img {
+        max-width: 280px;
+        max-height: 350px;
+    }
+
+    .tp-agenda table#items {
+        position: relative;
+        width: 100%;
+        border-collapse:separate;
+        margin: 0 20px 0 0;
+    }
+
+    .tp-agenda table#items tr.first td	 {
+        border-top: 0;
+    }
+
+    .tp-agenda table#items tr.last td	 {
+        border-bottom: 0;
+    }
+
+    .tp-agenda table#items td {
+        padding: 20px 15px;
+        border-top: 1pt solid rgba(255,255,255,0.4);
+        border-left: 1pt solid rgba(120,120,120,0.5);
+        border-bottom: 1pt solid rgba(120,120,120,0.5);
+        border-right: 1pt solid rgba(255,255,255,0.4);
+
+    }
+
+    .tp-agenda table#items tr td a {
+        display:block;
+        height:100%;
+        width:100%;
+        text-decoration: none;
+    }
+
+    .tp-agenda table#items td.day {
+        border-left: 0;
+        text-align: center;
+        width: 10%;
+
+    }
+
+    .tp-agenda table#items td.date {
+        min-width: 100px;
+    }
+
+    .tp-agenda table#items td.item {
+        border-right: 0;
+        width: 60%;
+    }
+
+    .tp-agenda table#items tr:hover {
+        background: rgba(255, 255, 255, .15);
+    }
+
+
+    .tp-agenda .overlay-agenda {
+        opacity:  1;
+        display: none;
+        background:none;
+    }
+
+    .tp-agenda .overlay-agenda table {
+        border-collapse:separate;
+    }
+
+    .tp-agenda .overlay-agenda table {
+        width: 500px;
+    }
+
+    .tp-agenda .overlay-agenda table td {
+        padding: 20px;
+
+    }
+
+    .tp-agenda .overlay-agenda table td.overlayDay {
+        vertical-align: middle;
+        text-align: center;
+        width: 150px;
+        height: 100px;
+    }
+
+    .tp-agenda .overlay-agenda .im-ts-title-background {
+        display:block;
+
+    }
+
+    .tp-agenda .overlay-agenda h2 {
+        padding:0;
+        display:block;
+    }
+
+    .tp-agenda .overlay-agenda h4 {
+        padding:0;
+        display:block;
+    }
+
+    .tp-agenda .overlay-agenda table td.overlayText div.paragraph {
+        padding: 0;
+        background: none;
+    }
+    .tp-agenda .overlay-agenda .im-ts-title-background {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .tp-agenda .overlay-agenda .text-block {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .tp-agenda .text-block img{
+        float:left;
+    }
+
+    .tp-agenda .overlay-agenda table td.overlayText {
+        vertical-align: top;
+    }
+    .tp-agenda .overlay-agenda .overlayImage img {
+        max-width: 130px;
+    }
+
+
+    .tp-agenda .overlayHeader a.bestelBtn {
+        float: left;
+        margin: 15px 0 0 0;
+    }
+
+    .tp-agenda .im-ag-overview {
+        position: relative;
+
+        min-width: 300px;
+        max-width: 1100px;
+        overflow:hidden;
+        opacity: 1;
+        margin: 30px 80px 0 320px;
+
+    }
+
+    .theme-2 .tp-agenda .im-ag-overview {
+        margin: 30px 140px 0 320px;
+    }
+
+    .tp-agenda #tableInside {
+        padding: 0px 20px 5px 20px;
+        height: 100%;
+    }
+
+    .tp-agenda .im-ag-overview #tableInside {
+        opacity: 1;
+        transition: all 1s ease;
+        -o-transition: all 1s easer;
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+
+    }
+
+
+    .tp-agenda .im-ag-overview #tableInside.noshow {
+        opacity: 0.3;
+        transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+
+    }

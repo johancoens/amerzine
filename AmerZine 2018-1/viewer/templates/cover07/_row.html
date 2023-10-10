@@ -1,0 +1,37 @@
+<div class="layout-{{layout_type}} alignment-{{text_align}} clearfix row" im-object="im-style-directive" data-style="{{background_style}}" data-mobile-style="{{m_background_style}}">
+	<div class="content-row im-anm-content im-tp-highlight-pos-{{position}} full-width-{{check_width}} att-sides-{{check_sides}}" >
+		{{#title}}
+		<h1 class="im-ts-title-background im-anm-content" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{m_title_style}}"><span class="im-anm-text">{{{title}}}</span></h1><br />
+		{{/title}}
+		{{#subtitle}}
+		<h4 class="im-ts-subtitle-background im-anm-content" im-object="im-style-directive" data-style="{{subtitle_style}}" data-mobile-style="{{m_subtitle_style}}"><span class="im-anm-text">{{{subtitle}}}</span></h4><br />
+		{{/subtitle}}
+		{{#description}}
+		<div class="im-ts-paragraph paragraph text-block im-anm-content" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{m_paragraph_style}}"><span class="im-anm-text">{{{description}}}</span>
+		</div>
+		{{/description}}
+		{{#image}}<div im-object="im-media-directive" class="im-media" data-media="{{image}}" style="height: {{image.height}}px;"></div>{{/image}}
+
+		{{#highlight}}
+		<div class="im-tp-c7-h-wrapper im-anm-content text-block" im-object="im-style-directive" data-style="{{h_background_style}}" data-mobile-style="{{m_h_background_style}}">
+			<{{action.element}} target="{{action.target}}" onclick="{{action.onclick}}" href="{{action.href}}" class="im-tp-c7-highlight b-{{border}}" im-object="im-style-directive" data-style="{{h_border_style}}" data-mobile-style="{{m_h_border_style}}" >
+				<div class="im-tp-c7-highlight-container clearfix">
+
+					{{#image}}<div im-object="im-media-directive" class="im-media" data-media="{{image}}"></div>{{/image}}
+
+					<div class="im-tp-c7-highlight-paragraph-container{{#image}} has-image{{/image}}">
+						<div class="paragraph">
+							{{#title}}
+							<h1 class="im-ts-title im-anm-text" im-object="im-style-directive" data-style="{{h_title_style}}" data-mobile-style="{{m_h_title_style}}">{{{title}}}</h1>
+							{{/title}}
+							{{#subtitle}}
+							<h4 class="im-ts-subtitle im-anm-text" im-object="im-style-directive" data-style="{{h_subtitle_style}}" data-mobile-style="{{m_h_subtitle_style}}">{{{subtitle}}}</h4>
+							{{/subtitle}}
+						</div>
+					</div>
+				</div>
+			</{{action.element}}>
+		</div>
+		{{/highlight}}
+	</div>
+</div>

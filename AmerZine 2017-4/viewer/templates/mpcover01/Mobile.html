@@ -1,0 +1,19 @@
+<div class="mobilePage">
+    <div class="wrapper im-ts-mobile-view">
+        <div class="scroller" style="height:inherit;">
+            <div class="im-mp-mobile-container"><img src="{{image.src}}" /></div>
+            <div class="im-mp-mobile-container"><h1 class="im-ts-title-background">{{{title}}}</h1></div>
+            <div class="im-mp-mobile-container">
+                {{#markers}}
+                {{#on_mobile}}
+                <{{element.element}}{{{element.href}}} class="im-mp-mobile-marker">
+                    {{#image}}<img src="{{Config.magazine_url}}{{image.uri}}" />{{/image}}
+                    {{^image}}<div class="im-ts-label">{{{label}}}</label>{{/image}}
+                </{{element.element}}>
+                {{/on_mobile}}
+                {{/markers}}
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

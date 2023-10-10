@@ -1,0 +1,26 @@
+.tp-cover04 h1.im-ts-title-background {
+    margin: 20px 0;
+}
+
+.tp-cover04 .im-tp-cover04-container {
+    width: 700px;
+}
+.tp-cover04 .start-button {
+    display:inline-block;
+    padding: 10px 16px;
+    /*background: white;*/
+    /*border: 1px solid red;*/
+    margin: 20px 0;
+    float:right;
+    margin-bottom:0;
+}
+
+.tp-cover04 .start-button.custom-image {
+    display: inline-block;
+    padding: 0px;
+    background: transparent;
+    border: none;
+    margin: 20px 0;
+    float: right;
+    margin-bottom:0;
+}

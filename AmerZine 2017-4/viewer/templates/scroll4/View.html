@@ -1,0 +1,30 @@
+<div class="im-tp-sc-container">
+    <div class="im-tp-sc-overview">
+    </div>
+    <a class="up up-container dt-arrows">
+        <div class="im-sp im-sp-arrow-up-2"></div>
+        <img  class="nav-img" src="">
+        {{#title}}<h3 class="nav-text im-ts-title-background">{{{title}}}</h3>{{/title}}
+    </a>
+    <div class="im-tp-sc-detailpage text-block">
+    </div>
+    <div class="im-tp-sc-close-button-wrapper">
+        <a href="{{urlbase}}" class="button close-button im-sp-size-50-1_0"><span class="im-sp im-sp-times"></span></a>
+    </div>
+    <div class="controlsWrapper">
+            <div class="controlsContainer">
+                <div class="controls">
+                     <ul class="nav">
+                         {{#scrollitem}}
+                         <li><a class="im-ts-button-background"><span></span></a></li>
+                         {{/scrollitem}}
+                     </ul>
+                </div>
+            </div>
+     </div>
+     <a class="down down-container dt-arrows">
+        <div class="im-sp im-sp-arrow-down-2"></div>
+        {{#title}}<h3 class="nav-text-dn im-ts-title-background">{{{title}}}</h3>{{/title}}
+        <img class="nav-img-dn" src="">
+    </a>
+</div>

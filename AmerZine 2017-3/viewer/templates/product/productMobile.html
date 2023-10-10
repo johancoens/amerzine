@@ -1,0 +1,17 @@
+<{{action.element}} class="im-ts-list-row" style="{{mobile_background_style}}" {{#action.href}} href="{{action.href}}"{{/action.href}}{{#action.onclick}} onclick="{{action.onclick}}"{{/action.onclick}}{{#action.target}} target="{{action.target}}"{{/action.target}}>
+	<span class="thumb">
+		{{#image}}
+		<img src="{{helper(getImageUrl, {image.uri}, 124, 124, null, null, 1)}}"
+			 {{#image.alt}}alt="{{image.alt}}" {{/image.alt}} />
+		{{/image}}
+	</span>
+	<div class="label">
+		{{#title}}<h5  style="{{mobile_title_style}}">{{{title}}}</h5>{{/title}}
+		{{#price}}<h6  style="{{mobile_price_style}}">{{{price}}}</h6>{{/price}}
+	</div>
+	{{#action.isAnchor}}
+	<span class="arrow">
+		<span class="im-sp im-sp-arrow-right"></span>
+	</span>
+	{{/action.isAnchor}}
+</{{action.element}}>

@@ -1,0 +1,35 @@
+<div id="container" style="height:auto;">
+    {{#title}}
+    <header id="header" class="im-ts-title-background">
+        <h1 id="title">{{title}}</h1>
+        {{#link}}
+        <a id="link" href="{{link}}" target="_blank">Ga naar de webshop  »</a>
+        {{/link}}
+        <div class="clear"></div>
+    </header>
+    {{/title}}
+    <div id="productContainer">
+        <div id="productItems">
+            {{#product}}
+            <div class="productItem text-block">
+                <div class="productImage">
+                    {{#image}}
+                    <a href="{{urlbase}}/item/{{index}}">
+                        <div im-object="im-media-directive" data-media="{{image}}" width="360" height="240" class="im-media"></div>
+                    </a>
+                    {{/image}}
+                    <div class="footer paragraph">
+                        {{#title}}<h6>{{title}}</h6>{{/title}}
+                        {{#price}}<h6 class="price">{{{price}}}</h6>{{/price}}
+                        {{#button}}<div style="text-align:center;"><a href="{{urlbase}}/item/{{index}}" class="button im-ts-button">{{button}}</a></div>{{/button}}
+                    </div>
+                </div>
+            </div>
+            {{/product}}
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="overlayContainerProduct" class="alignCenter overlay" style="height:auto; ">
+</div>
+

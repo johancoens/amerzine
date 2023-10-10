@@ -1,0 +1,34 @@
+<div class="im-tp-hs2-container">
+
+    <div class="im-tp-hs2-background">
+        <div class="im-absolute-view introtext" >
+            {{#title}}<h1 class="im-ts-title-background">{{{title}}}</h1>{{/title}}
+            {{#intro}}
+            <div class="paragraph im-ts-border-radius">
+            {{{intro}}}
+            </div>
+            {{/intro}}
+        </div>
+        <div class="im-tp-hs2-marker-container"></div>
+        <div class="im-tp-hs2-textblock">
+            {{#hotspots}}
+            <div class="im-tp-hs2-block {{className}}">
+                <a class="closeButton button square-small im-sp-size-70-0_4 im-ts-button" href="{{urlbase}}">
+                    <span class="im-sp im-sp-times"></span>
+                </a>
+                <h2>{{{title}}}</h2>
+                <h4>{{{subtitle}}}</h4>
+                <div class="block-content">
+                    {{#description}}<div class="paragraph " style="{{^image}}margin-right:0;{{/image}}">{{{description}}}</div>{{/description}}
+                    {{#image}}
+                    <div class="block-image" style="background:url({{helper(getImageUrl, {image.uri}, 500, 500, null, null, 1)}})">
+                    </div>
+                    {{/image}}
+                </div>
+            </div>
+             {{/hotspots}}
+        </div>
+    </div>
+
+
+</div>

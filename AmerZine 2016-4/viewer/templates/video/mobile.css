@@ -1,0 +1,64 @@
+
+
+.tp-m-video .wrapper  {
+    min-width: 320px;
+    max-width: 767px;
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+
+
+.tp-m-video h3 {
+    line-height: 24px;
+}
+
+.tp-m-video a.videoButton {
+    float: left;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+    height: 33px;
+    padding: 0 20px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tp-m-video a.videoButton span{
+    position: relative;
+    top:10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .35);
+}
+
+.tp-m-video a.videoButton {
+    text-decoration: none;
+}
+
+.tp-m-video a.videoButton:hover{
+    opacity: .8;
+}
+
+.tp-m-video a.videoButton img {
+    top: 11px;
+    position: relative;
+    margin: 0 0  0 10px;
+
+}
+.tp-m-video #videoContainer {
+    height: 240px;
+}
+
+.tp-m-video iframe {
+    width: 100%;
+    height: 240px;
+}
+
+
+
+/* iphone fix. tp:#1085 When switching page to a video page the content disapears. This property is turned off, fixes that.  */
+.p-mobile-view.tp-m-video .im-ts-mobile-view .scroller {
+    -webkit-overflow-scrolling: auto;
+}

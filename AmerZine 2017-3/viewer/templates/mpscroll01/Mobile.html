@@ -1,0 +1,29 @@
+<div class="mobilePage">
+    <div class="wrapper im-ts-mobile-view">
+        <div class="scroller" style="height:inherit;">
+            {{#one-page}}
+            <div class="im-list" style="padding: 20px;">
+            {{#block}}
+                {{#alt}}<div class="image" style="background-image: url('{{helper(getBackgroundImage, {alt.uri})}}'); "></div>{{/alt}}
+                {{^alt}}<div class="image" style="{{#background.settings.position}}background-position:{{background.settings.position}};{{/background.settings.position}} background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>{{/alt}}
+                <h2 class="label">{{#mobile_title}}{{mobile_title}}{{/mobile_title}}{{^mobile_title}}{{title}}{{/mobile_title}}</h2>
+                {{{video}}}
+                <div class="paragraph">{{#mobile_description}}{{{mobile_description}}}{{/mobile_description}}{{^mobile_description}}{{{description}}}{{/mobile_description}}</div>
+            {{/block}}
+            </div>
+            {{/one-page}}
+            {{^one-page}}
+            <div class="im-list">
+            {{#block}}
+                <a href="{{urlbase}}/item/{{index}}" class="im-list-wide-image">
+                    {{#alt}}<div class="image" style="background-image: url('{{helper(getBackgroundImage, {alt.uri})}}'); "></div>{{/alt}}
+                    {{^alt}}<div class="image" style="{{#background.settings.position}}background-position:{{background.settings.position}};{{/background.settings.position}} background-image: url('{{helper(getBackgroundImage, {background.uri})}}'); "></div>{{/alt}}
+                    <div class="row im-sp-after im-sp-read-more-b-after"><h2 class="label">{{#mobile_title}}{{mobile_title}}{{/mobile_title}}{{^mobile_title}}{{title}}{{/mobile_title}}</h2></div>
+                </a>
+            {{/block}}
+            </div>
+            {{/one-page}}
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px"
+	 height="768px" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+<g id="icons">
+	<g id="inhoudsopgave">
+		<g>
+			<rect y="10" fill="#FFFFFF" width="5" height="4"/>
+			<rect x="6" y="10" fill="#FFFFFF" width="24" height="4"/>
+		</g>
+		<g>
+			<rect y="18" fill="#FFFFFF" width="5" height="5"/>
+			<rect x="6" y="18" fill="#FFFFFF" width="24" height="5"/>
+		</g>
+		<g>
+			<rect fill="#FFFFFF" width="5" height="5"/>
+			<rect x="6" fill="#FFFFFF" width="24" height="5"/>
+		</g>
+	</g>
+	<g id="more">
+		<circle fill="#FFFFFF" cx="4.042" cy="54.042" r="4.042"/>
+		<circle fill="#FFFFFF" cx="18.229" cy="54.042" r="4.041"/>
+		<circle fill="#FFFFFF" cx="32.417" cy="54.042" r="4.041"/>
+	</g>
+	<polygon id="prev" fill="#FFFFFF" points="6.706,110.82 14.173,103.353 10.82,100 0,110.82 10.82,121.641 14.173,118.288 	"/>
+	<polygon id="next" fill="#FFFFFF" points="7.468,160.82 0,168.288 3.353,171.641 14.173,160.82 3.353,150 0,153.353 	"/>
+</g>
+<g id="overlays">
+	<g>
+		<linearGradient id="button_x5F_square_2_" gradientUnits="userSpaceOnUse" x1="32.4312" y1="196.1968" x2="21.5683" y2="257.803">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<rect id="button_x5F_square_1_" y="200" fill="url(#button_x5F_square_2_)" width="54" height="54"/>
+		<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="53.5" y1="200" x2="53.5" y2="254"/>
+	</g>
+	<text transform="matrix(1 0 0 1 512 381.9912)" font-family="'MyriadPro-Regular'" font-size="9.6"> 100%</text>
+</g>
+</svg>

@@ -1,0 +1,40 @@
+<div class="wrapper">
+    <div class="scroller">
+        <div style="padding:20px;">
+            {{^noheader}}
+            <header>
+                {{#image}}
+                <div class="logo"><img src="{{image.src}}"  {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} /></div>
+                {{/image}}
+                {{#datetext}}
+                <div class="datetext"><h6 class="im-ts-subtitle-background">{{{datetext}}}</h6></div>
+                {{/datetext}}
+                <div class="clearfix"></div>
+            </header>
+            {{/noheader}}
+            {{#title}}
+            <h1 class="im-ts-title-background">{{{title}}}</h1>
+            {{/title}}
+            {{#intromobile}}
+            <div class="text-block paragraph im-ts-paragraph">
+                {{{intromobile}}}
+            </div>
+            {{/intromobile}}
+            <div class='im-ts-mobile-view'>
+                <div class='im-ts-list list-style-2'>
+                    {{#shortcuts}}
+                    <{{action.element}} onclick="{{action.onclick}}" target="{{action.target}}" class='im-ts-border-radius' href="{{action.href}}"  {{{helper(trackEvent,HighlightsMobile,Click,{shortcut.title})}}}>
+                        <span class="thumb">
+                            <img src="{{helper(getImageUrl, {shortcut.thumb}, 157, 109, null, null, 1)}}" title="{{shortcut.thumb.alt}}" />
+                        </span>
+                        <h5 class='label'>{{{label}}}</h5>
+                        <span class="arrow">
+                            <span class="im-sp im-sp-arrow-right"></span>
+                        </span>
+                    </{{action.element}}>
+                    {{/shortcuts}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

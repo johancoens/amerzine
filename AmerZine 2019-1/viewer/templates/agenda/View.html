@@ -1,0 +1,41 @@
+<div style=" width:100%; height:auto; padding: 40px 400px 40px 40px;">
+    <div class="im-ag-contentleft">
+        {{#title}}
+        <h1 class="im-ts-title-background">{{{title}}}</h1>
+        {{/title}}
+        <div id="introtext">
+            {{#intro}}
+            <div class="text-block paragraph">{{{intro}}}</div>
+            {{/intro}}
+        </div>
+        <div class="im-tp-agenda-image">
+            {{#image}}
+            <img src="{{Config.magazine_url}}{{image.uri}}" {{#image.alt}} alt="{{image.alt}}"{{/image.alt}} />
+            {{/image}}
+        </div>
+    </div>
+    <div id="tablecontainer" style="display:none;" class="im-ag-overview">
+        <div id="tableInside">
+            <table id="items" style="width: 100%;">
+                {{#agenda}}
+                <tr>
+                    <td class="date">
+                        <a href="{{urlbase}}/item/{{index}}" id="item">
+                            <h6>{{{datestr}}}</h6>&nbsp;
+                        </a>
+                    </td>
+                    <td class="item">
+                        <a href="{{urlbase}}/item/{{index}}" id="item">
+                            <h6>{{{title}}}</h6>
+                        </a>
+                    </td>
+                </tr>
+                {{/agenda}}
+            </table>
+        </div>
+
+    </div>
+
+    <div class="alignCenter overlay overlay-agenda" style="width:500px; height:auto; margin-left: -250px; ">
+    </div>
+</div>

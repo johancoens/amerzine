@@ -1,0 +1,31 @@
+<div id="phototext_mobile" class="mobilePage">
+    <div class="wrapper im-ts-mobile-view">
+        <div class="scroller">
+            <div id="fivBackground">
+                {{#phototext}}
+                <div class="fullscreen" style="background-image: url('{{helper(getBackgroundImage, {background.uri})}}');">  </div>
+                {{/phototext}}
+            </div>
+            <div id="fivTextBlock">
+                <div class="items">
+                    {{#phototext}}
+                    <div class="item">
+                        {{#title}}
+                                <h3>{{title}}</h3>
+                        {{/title}}
+                        {{#descriptionmobile}}
+                                <div class="text-block paragraph">{{{descriptionmobile}}}</div>
+                        {{/descriptionmobile}}
+                    </div>
+                    {{/phototext}}
+                </div>
+                <div class="label navigationBlock">
+                    <a href="javascript:void(0)" class="up"><span class="im-sp im-sp-minus"></span><span class="im-sp im-sp-plus"></span></a>
+                    <a href="javascript:void(0)" class="right next"><span class="im-sp im-sp-arrow-right-2"></span></a>
+                   <!-- <div class="indicator itemNumber"><span>1/4</span></div>-->
+                    <a href="javascript:void(0)" class="left prev"><span class="im-sp im-sp-arrow-left-2"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

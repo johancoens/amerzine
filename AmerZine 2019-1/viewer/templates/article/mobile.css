@@ -1,0 +1,147 @@
+
+
+#phototext_mobile  .wrapper {   
+    min-width: 320px;
+    max-width: 767px;
+    min-height: 360px;	
+    position: relative;
+
+}
+
+
+#phototext_mobile  h3 {	   
+    margin: 0 20px 10px 0;
+	background: rgb(255,255,255);
+    background: rgba(255,255,255,0.9);
+    display: inline-block;	
+    padding: 10px 15px;
+}
+
+#phototext_mobile  .paragraph {   
+    padding: 15px;    
+}
+
+#phototext_mobile  .items {   
+    float: left;  	
+}
+
+#phototext_mobile  .title {
+    display: block;
+    float: left;
+    margin: 0px 0 0 0;
+}
+
+#phototext_mobile  .title h1 {   
+    padding: 10px 13px;
+    background: #ff6600;
+    opacity: 0.9;
+    display: inline-block;
+}
+
+#phototext_mobile  .text  {
+    display: block;
+    float: left;
+}
+#phototext_mobile  .indicator {
+    float: right;	
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #000;
+    -webkit-border-radius: 5px;    
+    border-radius: 5px;
+    text-align: center;		
+    margin: 0 5px 0 5px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);        
+    box-shadow:  inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#phototext_mobile  .indicator span {
+    position: relative;
+    top: 11px;	
+}
+
+#phototext_mobile  .up {
+    float: right;
+    width: 40px;
+    height: 40px;    
+    -webkit-border-radius: 5px;    
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);        
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+#phototext_mobile  .up img {
+    position: absolute;
+    top: 13px;
+    left: 12px;	
+}
+
+#phototext_mobile .up img#plus{
+	opacity: 0;
+}
+
+
+
+
+#phototext_mobile .right {
+    float: right;
+    width: 40px;
+    height: 40px;   
+    -webkit-border-radius: 5px;    
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);        
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    margin: 0 30px 0 0;
+}
+
+#phototext_mobile  .right img {
+    position: relative;
+    top: 12px;
+    left: 0px;	
+}
+
+#phototext_mobile  .left {
+    float: right;
+    width: 40px;
+    height: 40px;  
+    -webkit-border-radius: 5px;    
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);        
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#phototext_mobile  .left img {
+    position: relative;
+    top: 12px;
+    left: 0px;	
+}
+
+#phototext_mobile  .fullscreen {
+    position: absolute;	
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;	
+}
+
+#phototext_mobile  .label {
+    margin: 10px 0px 0 0;	
+    display: block;
+    float: right;       
+}
+
+#phototext_mobile .hide {
+	display: none;	
+}
+
+#phototext_mobile #fivTextBlock {
+	position: absolute;	
+	margin: 20px;
+	bottom: 0;
+}

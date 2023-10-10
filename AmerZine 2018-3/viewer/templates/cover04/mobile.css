@@ -1,0 +1,29 @@
+.tp-m-cover04 .text-block {
+    margin: 5px 15px 10px 15px;
+}
+.tp-m-cover04 h1, .tp-m-cover04 header, .tp-m-cover04 .start-button {
+    margin: 5px 15px;
+}
+.tp-m-cover04 header {
+    margin:20px;
+}
+.tp-m-cover04 .start-button {
+    display:inline-block;
+    padding: 10px 16px;
+    border-style: solid;
+    border-color: transparent;
+}
+.tp-m-cover04 .start-button img {
+    max-width: 80%;
+    margin: 0 15px;
+    float: right;
+}
+
+.tp-m-cover04 .logo img {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.tp-m-cover04 .safari .scroller > *{
+    -webkit-translate:none;
+}

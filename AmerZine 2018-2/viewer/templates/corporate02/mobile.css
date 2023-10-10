@@ -1,0 +1,23 @@
+.tp-m-corporate02 #mInterview {
+    position: relative;
+}
+
+.tp-m-corporate02 .introtext {
+    padding: 20px;
+}
+
+.tp-m-corporate02 table.index_item td {
+    padding: 0 0 0 15px;
+}
+
+.tp-m-corporate02 table.index_item td.title {
+    padding: 0 0 0 20px;
+}
+
+.tp-m-corporate02 .corporate {
+    height: 120px;
+    overflow: hidden;
+    background-size:cover;
+    background-position: center center;
+    width: 100%;
+}

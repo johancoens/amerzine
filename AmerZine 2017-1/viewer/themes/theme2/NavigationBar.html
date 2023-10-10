@@ -1,0 +1,75 @@
+<div class="nav-bar only-desktop bar-right">
+    <div class="nav-bar-options">
+        <div class="nav-page nav-page-right page-index im-ts-nav-active-color">
+        </div>
+        <div class="page-index-mobile im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-right editions im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-right favorites im-ts-nav-active-color">
+        </div>
+        <div class="nav-page im-ts-sidebar nav-page-right nav-custom-page im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-right share-bar im-ts-nav-active-color">
+        </div>
+        <div class="nav-page nav-page-right print-bar im-ts-nav-active-color">
+        </div>
+    </div>
+    <div class="nav-buttons-bar im-ts-nav-bar-background">
+        <div class="buttons-top">
+            <a href="#" class="logoNav {{logo.className}}" {{{helper(trackEvent,Navigationbar,Click,Logo)}}}>
+                <img src="{{Config.magazine_url}}{{logo.uri}}"/>
+            </a>
+            <div class="page_number nav-item nav-page-number">
+                {{{pageIndexNumbers}}}
+            </div>
+        </div>
+        <div class="buttons-middle">
+        </div>
+        <div class="buttons-bottom">
+            <a data-action="next" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-next im-ts-nav-buttons" id="btnNext">
+                <span class="im-sp im-sp-arrow-right"></span>
+            </a>
+            <a data-action="prev" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-prev im-ts-nav-buttons" id="btnPrev">
+                <span class="im-sp im-sp-arrow-left"></span>
+            </a>
+            <a data-action="pageindex" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-index im-ts-nav-buttons">
+                <span class="im-sp im-sp-index"></span>
+            </a>
+            {{{searchButton}}}
+            {{{shareButton}}}
+            {{{editionsButton}}}
+            {{{infoButtons}}}
+        </div>
+    </div>
+</div>
+<div class="nav-bar only-tablet-mobile bar-bottom">
+    <div class="nav-bar-options">
+        <div class="nav-page nav-page-bottom share-bar">
+        </div>
+        <div class="nav-page nav-page-bottom more-icon-index">
+        </div>
+    </div>
+    <div class="nav-buttons-bar im-ts-nav-bar-background">
+        <div class="buttons-left">
+            <a class="nav-item im-btn-index im-ts-nav-bar-background" href="#" {{{helper(trackEvent,Navigationbar,Click,Logo)}}}>
+                <img class="ico_logo" src="{{Config.magazine_url}}{{icon.uri}}"/>
+            </a>
+            <a data-action="pageindex" href="javascript:void(0)" class="page_number im-btn-index nav-item nav-page-number">
+                {{{pageIndexNumbers}}}
+            </a>
+        </div>
+        <div class="buttons-right">
+			{{{shareButtonMobile}}}
+            <a data-action="more" data-alignment="right" class="nav-item nav-icon-button im-btn-more im-ts-nav-buttons" href="javascript:void(0)">
+                <span class="im-sp im-sp-more"></span>
+            </a>
+            <a data-action="prev" id="btnPrev" class="nav-item nav-icon-button im-btn-prev im-ts-nav-buttons" href="javascript:void(0)">
+                <span class="im-sp im-sp-arrow-left"></span>
+            </a>
+            <a data-action="next" id="btnNext" class="nav-item nav-icon-button im-btn-next im-ts-nav-buttons" href="javascript:void(0)">
+                <span class="im-sp im-sp-arrow-right"></span>
+            </a>
+        </div>
+    </div>
+</div>

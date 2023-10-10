@@ -1,0 +1,25 @@
+<div id="hotspot_mobile" class="mobilePage">
+    <div id="interviewBackground">
+        <div class="wrapper im-ts-mobile-view">
+            <div class="scroller mobile_list">
+                <div class="top_header">
+                    <h3>{{{title}}}</h3>
+                </div>
+                <div class="introtext paragraph">
+                    {{{intromobile}}}
+                </div>
+                <div class='im-ts-list'>
+                {{#markers}}
+                <a href="{{urlbase}}/item/{{index}}" class="interviewButton">
+                    <h5 class="label">{{title}}</h5>
+                    <span class="arrow">
+                        <span class="im-sp im-sp-read-more-b-20"></span>
+                    </span>
+                </a>
+                {{/markers}}
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div><!-- container -->
+    </div>
+</div>

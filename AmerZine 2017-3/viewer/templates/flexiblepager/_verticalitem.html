@@ -1,0 +1,11 @@
+<{{action.element}} {{#action.href}}href="{{action.href}}"{{/action.href}} {{#action.onclick}}onclick="{{action.onclick}}"{{/action.onclick}} {{#action.target}}target="{{action.target}}"{{/action.target}} style="{{background_style}}" class="im-tp-fop-block vertical im-block {{className}} effect-vertical" >
+	{{#image}}<div im-object="im-media-directive" data-media="{{image}}" width="1000" class="im-media im-media-image"></div>{{/image}}
+	<div class="{{#hasContentOnAppear}}animated-content {{/hasContentOnAppear}}block-content" >
+	{{#hasContent}}
+        <div class="paragraph text-block" im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{mobile_paragraph_style}}">
+        {{#title}}<h2 class="im-ts-title" im-object="im-style-directive" data-style="{{title_style}}" data-mobile-style="{{mobile_title_style}}" >{{{title}}}</h2>{{/title}}
+        {{{description}}}
+        </div>
+    {{/hasContent}}
+	</div>
+</{{action.element}}>

@@ -1,0 +1,233 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 960px) {
+    .theme-2 .tp-cover06 .block-alignment-1{
+        padding-right: 62px;
+    }
+    .theme-1 .tp-cover06 .block-alignment-1{
+        padding-right: 67px;
+    }
+    .theme-2 .tp-cover06 .im-pg-text {
+        padding-right: 62px;
+        box-sizing: border-box;
+    }
+    .theme-2 .im-n-buttons-bars .im-n-button a {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+    .tp-cover06 .im-tp-m1-container {
+        position: relative;
+    	width: 400px;
+    	height: 100%;
+        overflow:hidden;
+    	/*transition: transform 1000ms  ease-in-out;*/
+    	transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+
+        /*apply the perspective for safari and chrome*/
+/*       perspective: 1000px;*/
+	}
+    .theme-2 .im-n-buttons-bars .im-n-button a {
+        margin-left: 0;
+    }
+    .tp-cover06 .no-text .group-of-highlights .im-media-image,
+    .tp-cover06 .no-text .group-of-highlights-image {
+        width:100%;
+        height: auto;
+    }
+    .tp-cover06 .no-text .group-of-highlights .im-media-image img {
+        max-width: 100%;
+        margin: auto;
+    }
+    .tp-cover06 .im-tp-m1-container .text-block {
+        border-radius: 0;
+    }
+
+    .tp-cover06 .group-of-highlights-image {
+        opacity: 0;
+
+        transition: opacity 2000ms ease-in-out;
+        -moz-transition: opacity 2000ms ease-in-out;
+        -webkit-transition: opacity 2000ms ease-in-out;
+    }
+
+    .tp-cover06 .im-tp-m1-scrollable {
+        /*apply the perspective to the parent div of my target make the rotation working on firefox and ie10*/
+        perspective: 1000px;
+        -moz-perspective: 1000px;
+        -webkit-perspective: 1000px;
+
+    }
+    .tp-cover06 .im-pg-text .im-media img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .tp-cover06 .im-pg-text .im-media {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .tp-cover06 .im-pg-text {
+        width: 70%;
+        max-width: 630px;
+    }
+
+    .tp-cover06 .align-right {
+        text-align: right;
+    }
+
+
+    .tp-cover06 .im-pg-text .im-media,
+    .tp-cover06 .im-pg-text .im-ts-paragraph,
+    .tp-cover06 .im-pg-text .im-ts-title-background,
+    .tp-cover06 .im-pg-text .im-ts-subtitle-background,
+    .tp-cover06 .im-pg-text .im-ts-button {
+        margin-bottom: 20px;
+        opacity: 0;
+    }
+
+    .tp-cover06 .im-tp-m1-list-item {
+        min-height: 150px;
+    }
+
+	.tp-cover06 .im-tp-m1-animation {
+        /*on ie10+ the transform rule works only on display block elements*/
+
+        display:block;
+        opacity: 0;
+
+    	transition: transform 1000ms  ease-in-out;
+        -webkit-transition: -webkit-transform 1000ms  ease-in-out;
+        -moz-transition: -moz-transform 1000ms  ease-in-out;
+        -ms-transition: -ms-transform 1000ms  ease-in-out;
+
+		transform: rotateY(110deg);
+        -webkit-transform: rotateY(110deg);
+        -moz-transform: rotateY(110deg);
+        -ms-transform: rotateY(110deg);
+
+        transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+    }
+
+    .tp-cover06 .block-alignment-1 .im-tp-m1-animation {
+        transform: rotateY(-110deg);
+        -webkit-transform: rotateY(-110deg);
+        -moz-transform: rotateY(-110deg);
+        -ms-transform: rotateY(-110deg);
+
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+        -moz-transform-origin: 100% 0%;
+    }
+
+    .tp-cover06.no-items .im-tp-m1-container {
+        display:none;
+    }
+
+    .tp-cover06 .group-of-highlights {
+    	min-height: 150px;
+        width: 100%;
+    	display: table;
+        transition: box-shadow .7s cubic-bezier(0.11, 0.34, 0.45, 1.46);
+        -webkit-transition: box-shadow .7s cubic-bezier(0.11, 0.34, 0.45, 1.46);
+	}
+
+    .tp-cover06 .im-tp-m1-intro {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .tp-cover06 .start-button {
+        display:inline-block;
+        padding: 10px 16px;
+        margin-bottom:0;
+        transition: box-shadow .7s cubic-bezier(0.11, 0.34, 0.45, 1.46);
+        -webkit-transition: box-shadow .7s cubic-bezier(0.11, 0.34, 0.45, 1.46);
+    }
+
+    .tp-cover06 .start-button:hover {
+        box-shadow: 300px 0px rgba(0,0,0,.15) inset;
+    }
+
+    .tp-cover06 .align-right img {
+        float: right;
+    }
+
+    .tp-cover06 .center-center img,  .tp-cover06 .isset-center img {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .tp-cover06 .center-center,
+    .tp-cover06 .isset-center {
+        text-align: center;
+    }
+
+    .tp-cover06 .center-center .im-media,
+    .tp-cover06 .isset-center .im-media{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+	.tp-cover06 .im-tp-m1-scrollable .im-media {
+		display:table-cell;
+	}
+
+	.tp-cover06 .highlights-text {
+		display:table-cell;
+		vertical-align: middle;
+		width: 260px;
+    	box-sizing: border-box;
+	}
+
+	.tp-cover06 .group-of-highlights .im-media-image {
+    	height: 100%;
+    	width: 150px;
+    	display: block;
+    	background-size: 80%;
+    	background-repeat: no-repeat;
+    }
+
+    .tp-cover06 .image-style-0 .group-of-highlights .im-media-image {
+        background-size: cover;
+    }
+
+    .tp-cover06 .block-alignment-1  {
+        /*float: right;*/
+        position:absolute;
+        left: auto;
+        right: 0;
+    }
+
+    .tp-cover06 .im-ts-title, .tp-cover06 .im-ts-subtitle {
+    	opacity: 0;
+    	transform: translate3d(0,-10px,0);
+    	-webkit-transform: translate3d(0,-10px,0);
+    	-moz-transform: translate3d(0,-10px,0);
+    	-ms-transform: translate3d(0,-10px,0);
+
+    	transition: all 2000ms 2000ms ease-in-out;
+    	-webkit-transition: all 2000ms 2000ms ease-in-out;
+    	-ms-transition: all 2000ms 2000ms ease-in-out;
+    	-moz-transition: all 1400ms 2000ms ease-in-out;
+
+    	display:block;
+    	position: relative;
+    }
+
+    .tp-cover06 .im-tp-m1-fill-div {
+        width: 100%;
+        height: 0px;
+        display: block;
+    }
+
+}

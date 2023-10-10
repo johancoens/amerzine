@@ -1,0 +1,50 @@
+<div class="nav-bar bar-bottom">
+    <div class="nav-bar-options">
+        <div class="nav-page-bottom page-index">
+        </div>
+        <div class="page-index-mobile im-ts-nav-active-color">
+        </div>
+        <div class="nav-page-bottom more-icon-index">
+        </div>
+        <div class="nav-page-bottom print-bar">
+        </div>
+        <div class="nav-page-bottom editions">
+        </div>
+        <div class="nav-page-bottom favorites">
+        </div>
+        <div class="im-ts-sidebar nav-page nav-page-bottom horizontal nav-custom-page im-ts-nav-active-color">
+        </div>
+        <div class="nav-page-bottom nav-page-bottom share-bar">
+        </div>
+    </div>
+    <div class="nav-buttons-bar im-ts-nav-bar-background">
+        <div class="buttons-left">
+            <div class="buttons-left-before im-ts-nav-bar-background"></div>
+            <div href="#" data-action="href" class="logoNav nav-item only-desktop-tablet nav-btn" {{{helper(trackEvent,Navigationbar,Click,Logo)}}}>
+                <img src="{{Config.magazine_url}}{{logo.uri}}" style="width:{{logo.real_width}}px;" />
+            </div>
+            <div href="#" data-action="href" class="logoNav nav-item only-mobile nav-btn" {{{helper(trackEvent,Navigationbar,Click,Logo)}}}>
+                <img class='ico_logo' src="{{Config.magazine_url}}{{icon.uri}}" />
+            </div>
+            <div class="page_number nav-item nav-page-number nav-btn" href="javascript:void(0)" data-action="pageindex">
+                {{{pageIndexNumbers}}}
+            </div>
+            {{{shareButton}}}
+            {{{editionsButton}}}
+            {{{searchButton}}}
+            {{{infoButtons}}}
+            <div data-action="more" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-more im-ts-nav-buttons nav-btn {{moreClass}}">
+                <span class="im-sp im-sp-more"></span>
+            </div>
+            <div data-action="prev" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-prev im-ts-nav-buttons  nav-btn" id="btnPrev">
+                <span class="im-sp im-sp-arrow-left"></span>
+            </div>
+        </div>
+        <div class="buttons-right">
+            <div class="nav-item nav-list mood-page-list only-desktop-tablet" im-object="mood-page-list"></div>
+            <div data-action="next" href="javascript:void(0)" class="nav-item nav-icon-button im-btn-next im-ts-nav-buttons nav-btn" id="btnNext">
+                <span class="im-sp im-sp-arrow-right"></span>
+            </div>
+        </div>
+    </div>
+</div>

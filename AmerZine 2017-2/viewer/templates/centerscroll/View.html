@@ -1,0 +1,37 @@
+<div class="im-cs-wrapper">
+    <div class="im-cs-content">
+        <div class="im-cs-items-spacing"></div>
+        <div class="im-cs-items item-space-{{item_space}}">
+            {{#scrollitem}}
+            <a name="cs-p-{{index}}" class="cs-anchor"></a>
+            <div class="item text-block im-ts-paragraph-padding {{imprType}}" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear">
+                <div class='paragraph opacity' im-object="im-style-directive" data-style="{{paragraph_style}}" data-mobile-style="{{mobile_paragraph_style}}">
+                    <div class="im-cs-title">
+                        {{#title}}
+                        <h2 class="im-ts-title"  data-style="{{title_style}}" im-object="im-style-directive" data-mobile-style="{{mobile_title_style}}">{{{title}}}</h2>
+                        {{/title}}
+                        <div class="clear"></div>
+                        {{#subtitle}}
+                        <h4 class="im-ts-subtitle" data-style="{{subtitle_style}}" im-object="im-style-directive" data-mobile-style="{{mobile_subtitle_style}}">{{{subtitle}}}</h4>
+                        {{/subtitle}}
+                    </div>
+                    {{#Config.options.favorite_options}}
+                    <div im-object="im-favorite-directive" class="im-favorite-button" data-url="{{urlbase}}/item/{{index}}" data-description="{{subtitle}}" data-group="{{pagetitle}}"><span class="im-icon im-icon-fav"></span></div>
+                    {{/Config.options.favorite_options}}
+                    {{#description}}
+                    <div class="text">{{{description}}}</div>
+                    {{/description}}
+                </div>
+                <div class="opacity" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear">
+                    {{#image}}
+                    <div  im-object="im-media-directive" data-media="{{image}}" imagetag="imagetag" width="740" class="im-cs-image im-media im-media-image"></div>
+                    {{/image}}
+                </div>
+                <div class="opacity" im-object="im-parallax-directive" im-will-appear="rowWillAppear" im-did-disappear="rowDidDisappear">
+                    {{#youtube.id}}<div class="im-tp-do-video im-media im-media-video" im-object="im-media-directive"  data-media="{{youtube}}"></div>{{/youtube.id}}
+                </div>
+            </div>
+            {{/scrollitem}}
+        </div>
+    </div>
+</div>

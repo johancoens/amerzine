@@ -1,0 +1,68 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 960px) {
+    .theme-2 .tp-easyscroll .position-right {
+        margin-right: 62px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .tp-easyscroll .im-es-items {
+        padding: 0px;
+        margin: 0;
+        width: 33%;
+        min-width: 380px;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+    .tp-easyscroll .im-media-video {
+        width: 100%;
+    }
+    .tp-easyscroll .im-media-video .im-ts-videocontainer {
+        width: 100%;
+    }
+
+    .tp-easyscroll .item {
+        margin: 0 0 0px 0;
+        padding: 10px 30px;
+
+     }
+    .tp-easyscroll .position-left {
+            left: 0;
+    }
+    .tp-easyscroll .position-right {
+            right: 0;
+    }
+    .tp-easyscroll .paragraph {
+        display: block;
+        background-color: transparent;
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .tp-easyscroll .im-es-image {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .tp-easyscroll .im-es-startanimation {
+        position: relative;
+    }
+
+    .tp-easyscroll hr {
+        opacity: 0.5;
+        margin:10px 0 0 0;
+    }
+    .tp-easyscroll h4,
+    .tp-easyscroll h2 {
+        display:inline-block;
+        margin: 0 0 10px 0;
+    }
+
+}

@@ -1,0 +1,151 @@
+
+/** MOBILE CSS **/
+@import url('mobile.css') screen and (max-width: 767px);
+
+@media only screen and (min-width: 768px) {
+
+    #slider
+    {
+        width:100%;
+    }
+
+    .style01.tp-slider .bg{
+        box-shadow: none;
+        border-left: 6px solid #FFF;
+    }
+
+    .style01.tp-slider .bg .marker span{
+        opacity:1;
+    }
+
+    .tp-slider .im-sl-title.paragraph {
+        /*left: 50%;*/
+        max-width: 700px;
+        text-align: center;
+        z-index: 2;
+        padding: 16px 16px;
+    }
+
+    .tp-slider .im-ts-title-background h1 {
+        padding: 0;
+    }
+
+    .tp-slider .im-absolute-view{
+        max-width: 70%;
+    }
+
+    .tp-slider .bg{
+        display:block;
+        position:absolute;
+        height:100%;
+        box-shadow: -4px -0px 8px rgba(0,0,0,.4);
+        background-size:cover;
+	background-position:center;
+        overflow:hidden;
+        cursor:pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .tp-slider .bg.inactive{
+        cursor: default;
+    }
+
+
+    .tp-slider .bg.active {
+        cursor: default;
+    }
+    .tp-slider .bg.active .im-absolute-view {
+        display:none;
+    }
+
+    .tp-slider .im-ts-label {
+        padding: 10px 16px 7px;
+        font-size: 14px;
+    }
+
+    .tp-slider .im-sl-video {
+        position: absolute;
+        width: 80%;
+        z-index: 5;
+    }
+
+
+    .tp-slider .bg .text-block{
+        position: absolute;
+        width: 300px;
+        z-index: 5;
+        left: 40px;
+        bottom: 40px;
+    }
+    .tp-slider .bg .text-block.content_position_1{
+        right: 40px;
+        left: auto;
+    }
+
+    .tp-slider .bg .marker {
+        display:block;
+        position:absolute;
+        opacity:1;
+        -moz-transition: opacity 400ms ease-in-out;
+        transition: opacity 400ms ease-in-out;
+        -o-transition: opacity 400ms ease-in-out;
+        -webkit-transition: opacity 400ms ease-in-out;
+    }
+
+    .tp-slider .bg .marker.hidden {
+        opacity:0;
+        position:absolute;
+        top:-3pt;
+        left:-3pt;
+    }
+
+    #slider.detail .bg .marker {
+        opacity:0;
+    }
+
+    .tp-slider a.closeButton {
+        position: absolute;
+    }
+
+    .style00.tp-slider .bg .marker span{
+        -moz-transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
+        -webkit-transition: all 400ms ease-in-out;
+        transform: translate3d(40,0,0);
+        -moz-transform: translate3d(40,0,0);
+        -o-transform: translate3d(40,0,0);
+        -webkit-transform: translate3d(40,0,0);
+        opacity:0;
+    }
+
+    .style00.tp-slider .bg .marker:hover span{
+        opacity:1;
+        transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+
+    .tp-slider .bg .marker span{
+        left:50%;
+    	top:70px;
+        display: block;
+        width: auto;
+        position: absolute;
+        white-space: nowrap;
+    }
+}
+
+
+@media only screen and (min-width: 959px) {
+
+    .theme-2 .tp-slider .bg .content_position_1.text-block.last{
+        right: 102px;
+    }
+}

@@ -1,0 +1,85 @@
+
+.tp-corporate02 h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+}
+
+.tp-corporate02 .im-co-buttons {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+}
+
+.tp-corporate02 div.paragraph {
+    margin: 0 400px 0 0;
+    padding: 0;
+}
+
+.tp-corporate02 .corporate-image  {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    top: 0;
+}
+
+.tp-corporate02 .close-button {
+    z-index: 10;
+}
+
+.tp-corporate02 .im-co-textblock-wrapper {
+    opacity: 1;
+    width: 800px;
+    position: absolute;
+    display:none;
+}
+.tp-corporate02 .im-co-textblock-wrapper.active {
+    display:block;
+}
+
+.tp-corporate02 .im-co-textblock-wrapper .im-ts-title-background {
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.tp-corporate02 .text-block {
+    position: relative;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 16px;
+    margin-bottom: 117px;
+}
+
+.tp-corporate02 .im-co-buttons-container {
+    position: absolute;
+    bottom: -15px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+.tp-corporate02 .im-co-buttons {
+    display:inline-block;
+    text-align: center;
+    margin: 0 auto;
+    border-left: 1px solid rgb(0,0,0);
+}
+
+
+.tp-corporate02 .im-co-button.last {
+    margin:0;
+}
+
+.tp-corporate02 .im-co-button {
+    display: table-cell;
+    opacity: 1;
+    vertical-align: middle;
+    text-align: center;
+    height: 90px;
+    width: 180px;
+    padding: 10px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}

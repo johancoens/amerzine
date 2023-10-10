@@ -1,0 +1,291 @@
+
+    .tp-webshop .table-grid-container {
+        width:100%;
+        height:100%;
+        position:relative;
+        padding:20px;
+
+        transform: scale(2,2);
+        -webkit-transform: scale(2,2);
+        -moz-transform: scale(2,2);
+        -ms-transform: scale(2,2);
+
+        filter:alpha(opacity=0);
+    }
+
+    .tp-webshop .table-grid-container.show {
+        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        filter:alpha(opacity=100);
+    }
+
+    .tp-webshop .table-grid-container.withheader{
+        padding:90px 10px 10px 10px;
+    }
+
+    .tp-webshop .header {
+        position: absolute;
+        display: block;
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    .tp-webshop .header h1 {
+        font-size: 40px;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .tp-webshop .header a {
+        position: absolute;
+        bottom: 30px;
+        right: 180px
+    }
+
+    .tp-webshop .webshop-block {
+         width:350px;
+         display: block;
+         height: auto;
+    }
+
+    .tp-webshop .webshop-image {
+        margin-top: 4px;
+        width:100%;
+        height: 240px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .tp-webshop .content {
+        padding: 10px 20px;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .tp-webshop .content p {
+        display:none;
+    }
+
+    .tp-webshop h2 {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .tp-webshop h4 {
+        display: block;
+        text-align: center;
+    }
+
+    .tp-webshop .prices {
+        position: absolute;
+        bottom: auto;
+        top:20px;
+        width: 310px;
+    }
+
+    .tp-webshop .price {
+        padding: 6px 10px;
+        font-size: 14px;
+        float: left;
+        border: 1px solid transparent;
+    }
+
+    .tp-webshop .price.old {
+        text-decoration: line-through;
+        margin-right: -4px;
+        color:#000;
+        background-color: #FFF;
+        border: 1px solid transparent;
+    }
+
+    .tp-webshop .buttonlink {
+        float: right;
+        padding: 6px 10px;
+        font-size: 14px;
+        border: 1px solid transparent;
+    }
+
+    .tp-webshop-nav.disabled {
+        filter: alpha(opacity=0);
+    }
+
+    .tp-webshop-nav a{
+        position: relative;
+        display: block;
+        transition: all 300ms ease-in-out;
+        float: left;
+        margin-right: 2px;
+    }
+
+    .tp-webshop-nav span {
+        padding: 10px 22px;
+        font-size: 12px;
+        display:block;
+    }
+
+
+    .tp-webshop-nav .down .arrow {
+
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+
+        border-color: white;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid white;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+
+        top: -15px;
+        left: 50%;
+        margin-left: -8px;
+    }
+
+    .tp-webshop-nav .up .arrow {
+
+        position: absolute;
+        width: 0px;
+        height: 0px;
+
+        border-color: white;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid white;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+
+        bottom: -15px;
+        left: 50%;
+        margin-left: -8px;
+    }
+
+    .tp-webshop-nav .disabled {
+        filter: alpha(opacity=0);
+    }
+    .tp-webshop-nav .disabled .arrow{
+        border:none;
+    }
+
+    .tp-webshop-nav {
+        position: absolute;
+        bottom: 31px;
+        width: 100%;
+        background: none;
+        margin-left: 40%;
+        transition: all 300ms ease-in-out;
+    }
+
+    .tp-webshop-nav.only-down {
+        margin-left: 37%;
+    }
+
+    .tp-webshop-nav.only-up {
+        margin-left: 45%;
+    }
+
+    .tp-webshop .im-ts-button-close {
+        position:absolute;
+        top:-4px;
+        right:0;
+    }
+
+
+    .tp-webshop .webshop-detail {
+        position: absolute;
+        z-index: 10;
+        height: 400px;
+        width: 800px;
+
+        left: 50%;
+        top: 50%;
+        margin-left: -400px;
+        margin-top: -200px;
+        padding-top: 4px;
+
+        display:none;
+    }
+    .tp-webshop .tp-webshop-details-container {
+    }
+    .tp-webshop .webshop-detail.show {
+        display:block;
+    }
+
+    .tp-webshop .detail-image {
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: left;
+    }
+
+    .tp-webshop .detail-text-wrapper {
+        position:relative;
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: left;
+    }
+
+    .tp-webshop .detail-text {
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+
+    .tp-webshop .detail-text h3, .tp-webshop .detail-text h2 {
+        text-align: left;
+        padding: 0px;
+    }
+
+    .tp-webshop .detail-text-wrapper .im-webshop-p {
+        overflow-y: auto;
+        padding-bottom: 0px;
+        height: 220px;
+    }
+
+    .tp-webshop .detail-price .im-ts-button{
+        float:right;
+        margin-right: 10px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .tp-webshop .detail-price {
+        position: absolute;
+        margin: 10px 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .tp-webshop .detail-price:before {
+        content: ' ';
+        display: block;
+        float: left;
+        width: 16px;
+        height: 10px;
+
+    }
+
+.tp-webshop-buttons {
+    text-align: center;
+}
+
+.tp-webshop-buttons .im-ts-button {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+.theme-2 .tp-webshop .table-grid-container {
+    padding-right:72px;
+}
+.theme-2 .tp-webshop .header h1 {
+    padding-right: 80px;
+}
+.theme-2 .tp-webshop .webshop-detail {
+        margin-left: -431px;
+}
+.theme-2 .tp-webshop .im-indexpage-control {
+    margin-left: -56px;
+}
